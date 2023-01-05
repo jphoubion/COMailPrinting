@@ -31,6 +31,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # Chargement du fichier JSON des C/O
         self.data = self.load_data()
 
+        # ComboBox des sociétés
+        self.cbb_company.addItems(self.data['societes'])
+
         # Ajout de la 1ère ligne de la table
         self.btn_pressed()
         self.btnAddRow.clicked.connect(self.btn_pressed)
@@ -43,21 +46,29 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         combo_co = QComboBox()
         combo_co.addItems(self.data['co'])
-        # combo_co.activated.connect(partial(self.get_co_details, combo_co.currentText()))
-        combo_co.activated.connect(lambda x: te_coordonnees.setText(self.data['co'][combo_co.currentText()]['adresse']))
+        combo_co.currentTextChanged.connect(partial(self.get_co_details, te_coordonnees, combo_co.currentText()))
+        # combo_co.activated.connect(lambda x: te_coordonnees.setText(self.data['co'][combo_co.currentText()]['adresse']))
         self.tw_co.setCellWidget(self.tw_co.rowCount()-1, 0, combo_co)
+
+        self.get_co_details(te_coordonnees, combo_co.currentText(), combo_co.currentText())
+
+        self.tw_co.setCellWidget(self.tw_co.rowCount()-1, 4, QLabel(self.cbb_company.currentText()))
+
+        self.tw_co.resizeColumnsToContents()
 
     def load_data(self):
         with open("data.json", "r") as f:
             data = json.load(f)
         # print(data['co'])
+        print(data['societes'])
         for d in data['co']:
             print(data['co'][d])
             # print(d['co']['adresse'])
         return data
 
-    def get_co_details(self, co_name, idx):
-        return self.data['co'][co_name]['adresse']
+    def get_co_details(self, te_box, ol_co_name, new_co_name):
+        # print(te_box, new_co_name)
+        te_box.setText(self.data['co'][new_co_name]['adresse'])
     def openCOManagementWindow(self):
         self.COManagementWindow.show()
 

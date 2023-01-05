@@ -18,9 +18,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
+      <y>40</y>
       <width>871</width>
-      <height>241</height>
+      <height>481</height>
      </rect>
     </property>
     <column>
@@ -40,12 +40,12 @@
     </column>
     <column>
      <property name="text">
-      <string>Références</string>
+      <string>Client</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>Client</string>
+      <string>Références</string>
      </property>
     </column>
     <column>
@@ -53,16 +53,6 @@
       <string>Soc. emettrice</string>
      </property>
     </column>
-   </widget>
-   <widget class="QTableView" name="tableView">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>270</y>
-      <width>631</width>
-      <height>192</height>
-     </rect>
-    </property>
    </widget>
    <widget class="QPushButton" name="btnAddRow">
     <property name="geometry">
@@ -103,13 +93,26 @@
      <string>Supprimer</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>720</x>
-      <y>300</y>
-      <width>231</width>
-      <height>161</height>
+      <x>20</x>
+      <y>10</y>
+      <width>241</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Société émetrice du courrier par défaut:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbb_company">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>10</y>
+      <width>171</width>
+      <height>23</height>
      </rect>
     </property>
    </widget>
