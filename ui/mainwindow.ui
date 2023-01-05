@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>784</width>
+    <width>980</width>
     <height>560</height>
    </rect>
   </property>
@@ -14,20 +14,104 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTreeWidget" name="treeWidget">
+   <widget class="QTableWidget" name="tw_co">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>761</width>
-      <height>501</height>
+      <width>871</width>
+      <height>241</height>
      </rect>
     </property>
     <column>
      <property name="text">
-      <string notr="true">1</string>
+      <string>C/O</string>
      </property>
     </column>
+    <column>
+     <property name="text">
+      <string>Coordonnées</string>
+     </property>
+     <property name="font">
+      <font>
+       <bold>false</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Références</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Client</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Soc. emettrice</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>631</width>
+      <height>192</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAddRow">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>40</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ajouter</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAddRow_2">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>70</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Copier</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAddRow_3">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>100</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Supprimer</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>300</y>
+      <width>231</width>
+      <height>161</height>
+     </rect>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -35,7 +119,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>784</width>
+     <width>980</width>
      <height>20</height>
     </rect>
    </property>
