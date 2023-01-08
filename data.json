@@ -1,5 +1,5 @@
 {
-  "societes":
+  "companies":
   ["AMBUHUY", "AMBUJOYE" ],
 
 
@@ -7,11 +7,11 @@
   "co": {
     "Clossen":
     {
-      "adresse" : "rue machin truc\n4500 Huy"
+      "address" : "rue machin truc\n4500 Huy"
     },
     "Evrard":
     {
-      "adresse" : "rue truc much"
+      "address" : "rue truc much"
     }
   }
 
