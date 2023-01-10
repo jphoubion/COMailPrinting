@@ -28,12 +28,13 @@ class ImportFromXls:
                 for row in self.sheet.iter_rows(min_row=2):
                     # building DIC to export to JSON
                     # cleaning C/O information
-                    co = str(row[3].value).split(' ')[-2:]
-                    co_name = f"{co[-2]} {co[-1]}".upper().replace("C/O ME ",'').replace("C/O ME. ",'')
+                    co = str(row[3].value).split(' ')[2:]
+                    # co_name = f"{co[-2]} {co[-1]}".upper().replace("C/O ME ",'').replace("C/O ME. ",'')
+                    # co_name = f"{co}".upper().replace("C/O ME ", '').replace("C/O ME. ", '')
                     customer_dict.update({
                         row[0].value: {
                             "name": row[2].value,
-                            "co": co_name
+                            "co": ' '.join(co).upper()
                         }
                     })
                 # print(customer_dict)
