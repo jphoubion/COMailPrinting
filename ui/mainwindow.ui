@@ -28,22 +28,22 @@
     </property>
     <column>
      <property name="text">
+      <string>Client</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
       <string>C/O</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>Coordonnées</string>
+      <string>Coordonnées C/O</string>
      </property>
      <property name="font">
       <font>
        <bold>false</bold>
       </font>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Client</string>
      </property>
     </column>
     <column>
@@ -54,6 +54,16 @@
     <column>
      <property name="text">
       <string>Soc. emettrice</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>MAJ C/O</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>MAJ Client</string>
      </property>
     </column>
    </widget>
@@ -123,6 +133,7 @@
     </property>
    </widget>
   </widget>
+  <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -139,16 +150,15 @@
     <addaction name="separator"/>
     <addaction name="actionQuitter"/>
    </widget>
-   <widget class="QMenu" name="menuC_O">
+   <widget class="QMenu" name="menuImport">
     <property name="title">
-     <string>C/O</string>
+     <string>Import</string>
     </property>
-    <addaction name="actionGestion"/>
+    <addaction name="actionImport_customers"/>
    </widget>
    <addaction name="menufichier"/>
-   <addaction name="menuC_O"/>
+   <addaction name="menuImport"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
   <action name="actionGestion">
    <property name="text">
     <string>Gestion</string>
@@ -157,6 +167,16 @@
   <action name="actionQuitter">
    <property name="text">
     <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionImport_customers">
+   <property name="text">
+    <string>Import clients depuis XLSX</string>
+   </property>
+  </action>
+  <action name="actionImport_CO_depuis_XLSX">
+   <property name="text">
+    <string>Import CO depuis XLSX</string>
    </property>
   </action>
  </widget>
