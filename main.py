@@ -1,4 +1,5 @@
 import sys
+sys.argv += ['-platform', 'windows:darkmode=2']
 import json
 from functools import partial
 
@@ -14,6 +15,7 @@ from PySide6.QtGui import QPixmap, QIcon, QIconEngine
 
 from PySide6.QtWidgets import QDialog, QFileDialog, QLabel, QMessageBox, QComboBox, QPushButton, QTableWidgetItem, \
     QTextEdit
+
 
 from ui.mainwindow import Ui_MainWindow
 import comanagementwindow
@@ -33,6 +35,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         # Loading customer from JSON
         self.customers_data = self.load_customers_data()
+
 
         # ComboBox des sociétés
         self.cbb_company.addItems(self.data['companies'])
@@ -89,6 +92,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             data = json.load(f)
         return data
 
+    def select_co_from_customer(self):
+        pass
 
     def get_co_details(self, te_box, ol_co_name, new_co_name):
         # print(te_box, new_co_name)
@@ -100,6 +105,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         app.quit()
 
 app = QtWidgets.QApplication(sys.argv)
+app.setStyle('Fusion')
 
 window = MainWindow()
 window.show()

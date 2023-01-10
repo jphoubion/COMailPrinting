@@ -2,10 +2,12 @@
   "customers": {
     "HALLEUX JOSEPEH":
     {
+      "current_co" : "Clossen",
       "address" : "rue machin HAlleux\n4500 Huy"
     },
     "BRAIDA GIOVANNA":
     {
+      "current_co" : "Evrard",
       "address" : "rue truc much Braida"
     }
   }
