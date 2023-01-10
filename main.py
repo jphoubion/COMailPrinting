@@ -65,6 +65,13 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         self.tw_co.setCellWidget(self.tw_co.rowCount() - 1, 0, combo_cust)
 
+        ###################################################################################
+        # Add field to display C/O info
+        ###################################################################################
+        te_coordonnees = QTextEdit()
+        te_coordonnees.setFixedWidth(200)
+        self.tw_co.setCellWidget(self.tw_co.rowCount()-1, 2, te_coordonnees)
+        te_coordonnees.setFixedHeight(50)
 
         ###################################################################################
         # Add combobox for C/O on each new line and fill it with customers from JSON
@@ -77,16 +84,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         for co_name in self.co_data:
             co_list.append(self.co_data[co_name]['co_name'])
         combo_co.addItems(co_list)
-        # combo_co.currentTextChanged.connect(partial(self.get_co_details, te_coordonnees, combo_co.currentText()))
+        combo_co.currentTextChanged.connect(partial(self.get_co_details, te_coordonnees, combo_co.currentText()))
 
         self.tw_co.setCellWidget(self.tw_co.rowCount()-1, 1, combo_co)
-
-        ###################################################################################
-        # Add field to display C/O info
-        ###################################################################################
-        te_coordonnees = QTextEdit()
-        te_coordonnees.setFixedWidth(200)
-        self.tw_co.setCellWidget(self.tw_co.rowCount()-1, 2, te_coordonnees)
 
         ###################################################################################
         # Add button to update data about C/O in JSON file
@@ -109,6 +109,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.tw_co.setCellWidget(self.tw_co.rowCount()-1, 4, combo_company)
 
         self.tw_co.resizeColumnsToContents()
+        self.tw_co.resizeRowsToContents()
         # self.tw_co.setColumnWidth(3, 290)
 
     def load_company_data(self):
@@ -134,9 +135,13 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def select_co_from_customer(self):
         print('select co from customer')
 
-    def get_co_details(self, te_box, ol_co_name, new_co_name):
+    def get_co_details(self, te_box, old_co_name, new_co_name):
         # print(te_box, new_co_name)
-        te_box.setText(self.data['co'][new_co_name]['address'])
+        print(new_co_name)
+        address = f"{self.co_data[new_co_name]['address']}\n{self.co_data[new_co_name]['cp']} {self.co_data[new_co_name]['city']}".upper()
+        te_box.setText(address)
+
+
     def openCOManagementWindow(self):
         self.COManagementWindow.show()
 

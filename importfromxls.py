@@ -53,7 +53,7 @@ class ImportFromXls:
                     co_dict.update({
                         co_name: {
                             "co_name": co_name,
-                            "adress" : row[6].value,
+                            "address" : row[6].value,
                             "cp" : row[8].value,
                             "city" : row[9].value
                         }
