@@ -2,15 +2,18 @@ import sys
 if sys.platform == "windows":
     sys.argv += ['-platform', 'windows:darkmode=2']
 
+
 import json
 from functools import partial
 
 from PySide6 import QtWidgets, QtCore
-from PySide6.QtCore import Qt
-from PySide6.QtGui import QPixmap, QIcon, QIconEngine
 
 from PySide6.QtWidgets import QDialog, QFileDialog, QLabel, QMessageBox, QComboBox, QPushButton, QTableWidgetItem, \
     QTextEdit, QCompleter, QPlainTextEdit
+
+from reportlab.pdfgen.canvas import Canvas
+from reportlab.lib.pagesizes import A4
+from reportlab.lib.units import cm
 
 from  importfromxls import ImportFromXls
 
@@ -130,15 +133,19 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # self.tw_co.setColumnWidth(3, 290)
 
     def btn_print(self):
-        print(self.tw_co.rowCount())
         p = Printing()
+        p.PDFFile = Canvas("COMailPrinting.pdf", pagesize=A4)
+        p.PDFFile.setFont("Helvetica", 10)
         for row in range(0,self.tw_co.rowCount()):
             client = self.customers_data[self.tw_co.cellWidget(row,0).currentText()]['name']
             co = f"{self.tw_co.cellWidget(row,1).currentText()}\n{self.tw_co.cellWidget(row,2).toPlainText()}"
             reference = self.tw_co.cellWidget(row,5).toPlainText()
             company = self.tw_co.cellWidget(row,6).currentText()
             PDFFile_name = self.tw_co.cellWidget(row,0).currentText()
-            p.create_pages(PDFFile_name, co, client, reference, company)
+            p.create_pages(co, client, reference, company)
+        p.PDFFile.save() # Save the file on the disk
+        QMessageBox.information(self, "Export PDF", "Export du fichier COMailPrinting.pdf terminé !")
+
     def load_company_data(self):
         with open("companies.json", "r") as f:
             data = json.load(f)

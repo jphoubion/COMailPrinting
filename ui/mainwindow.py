@@ -37,22 +37,22 @@ class Ui_MainWindow(object):
         self.actionImport_CO_depuis_XLSX.setObjectName(u"actionImport_CO_depuis_XLSX")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.widget = QWidget(self.centralwidget)
-        self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(10, 10, 1091, 511))
-        self.verticalLayout_2 = QVBoxLayout(self.widget)
+        self.layoutWidget = QWidget(self.centralwidget)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(10, 10, 1091, 511))
+        self.verticalLayout_2 = QVBoxLayout(self.layoutWidget)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.label = QLabel(self.widget)
+        self.label = QLabel(self.layoutWidget)
         self.label.setObjectName(u"label")
         self.label.setMaximumSize(QSize(250, 16777215))
         self.label.setBaseSize(QSize(0, 0))
 
         self.horizontalLayout.addWidget(self.label)
 
-        self.cbb_company = QComboBox(self.widget)
+        self.cbb_company = QComboBox(self.layoutWidget)
         self.cbb_company.setObjectName(u"cbb_company")
         self.cbb_company.setMaximumSize(QSize(250, 16777215))
 
@@ -63,7 +63,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_2 = QHBoxLayout()
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
-        self.tw_co = QTableWidget(self.widget)
+        self.tw_co = QTableWidget(self.layoutWidget)
         if (self.tw_co.columnCount() < 7):
             self.tw_co.setColumnCount(7)
         __qtablewidgetitem = QTableWidgetItem()
@@ -90,18 +90,18 @@ class Ui_MainWindow(object):
         self.verticalLayout = QVBoxLayout()
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setSizeConstraint(QLayout.SetDefaultConstraint)
-        self.btnAddRow = QPushButton(self.widget)
+        self.btnAddRow = QPushButton(self.layoutWidget)
         self.btnAddRow.setObjectName(u"btnAddRow")
         self.btnAddRow.setStyleSheet(u"")
 
         self.verticalLayout.addWidget(self.btnAddRow)
 
-        self.btnAddRow_4 = QPushButton(self.widget)
+        self.btnAddRow_4 = QPushButton(self.layoutWidget)
         self.btnAddRow_4.setObjectName(u"btnAddRow_4")
 
         self.verticalLayout.addWidget(self.btnAddRow_4)
 
-        self.btnPrint = QPushButton(self.widget)
+        self.btnPrint = QPushButton(self.layoutWidget)
         self.btnPrint.setObjectName(u"btnPrint")
 
         self.verticalLayout.addWidget(self.btnPrint)
@@ -159,7 +159,7 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"Soc. emettrice", None));
         self.btnAddRow.setText(QCoreApplication.translate("MainWindow", u"Ajouter", None))
         self.btnAddRow_4.setText(QCoreApplication.translate("MainWindow", u"Supprimer", None))
-        self.btnPrint.setText(QCoreApplication.translate("MainWindow", u"Imprimer", None))
+        self.btnPrint.setText(QCoreApplication.translate("MainWindow", u"Export en PDF", None))
         self.menufichier.setTitle(QCoreApplication.translate("MainWindow", u"fichier", None))
         self.menuImport.setTitle(QCoreApplication.translate("MainWindow", u"Import", None))
     # retranslateUi

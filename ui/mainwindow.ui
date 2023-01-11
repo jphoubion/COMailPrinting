@@ -17,7 +17,7 @@
    <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -131,7 +131,7 @@
          <item>
           <widget class="QPushButton" name="btnPrint">
            <property name="text">
-            <string>Imprimer</string>
+            <string>Export en PDF</string>
            </property>
           </widget>
          </item>
