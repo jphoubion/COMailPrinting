@@ -1,3 +1,4 @@
+import os
 import sys
 if sys.platform == "windows":
     sys.argv += ['-platform', 'windows:darkmode=2']
@@ -34,26 +35,39 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         self.COManagementWindow = comanagementwindow.COMainWindow()
 
-        self.data_to_print = 'test data'
+        self.files_exist = False
 
-        self.company_data = self.load_company_data()
+        if os.path.exists("companies.json"):
+            self.company_data = self.load_company_data()
+            # ComboBox des sociétés
+            self.cbb_company.addItems(self.company_data['companies'])
+            self.files_exist = True
+        else:
+            self.files_exist = False
+
 
         # Chargement du fichier JSON des C/O
-        self.co_data = self.load_co_data()
+        if os.path.exists("co.json"):
+            self.co_data = self.load_co_data()
+        else:
+            self.files_exist = False
 
         # Loading customer from JSON
-        self.customers_data = self.load_customers_data()
-
-        # ComboBox des sociétés
-        self.cbb_company.addItems(self.company_data['companies'])
+        if os.path.exists("customers.json"):
+            self.customers_data = self.load_customers_data()
+        else:
+            self.files_exist = False
 
         # Ajout de la 1ère ligne de la table
-        self.btn_add_row()
+        if self.files_exist:
+            self.btn_add_row()
+
         self.btnAddRow.clicked.connect(self.btn_add_row)
 
         self.btnPrint.clicked.connect(self.btn_print)
 
     def btn_add_row(self):
+
         # Adding a row in the table
         self.tw_co.insertRow(self.tw_co.rowCount())
 
