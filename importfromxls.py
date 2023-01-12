@@ -42,8 +42,8 @@ class ImportFromXls:
                     })
                 # print(customer_dict)
                 json_object = json.dump(customer_dict, outfile, indent=4)
-
-                self.import_co()
+# TODO: apporter correction pour que les CO se chargent correctement meme si on ajoute des clients par arpès
+                self.import_co(mode, customer_dict)
 
     def import_co(self):
         if self.sheet is not None:
