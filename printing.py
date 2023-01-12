@@ -17,7 +17,7 @@ class Printing:
         self.PDFFile.line(2 * cm, 23.3 * cm, 19 * cm, 23.3 * cm)
         self.PDFFile.drawString(2 * cm, 22.5 * cm, f"Concerne : {client}")
         self.PDFFile.drawString(2 * cm, 22 * cm, f"Référence : {reference}")
-        self.PDFFile.drawString(2 * cm, 20 * cm, f"Maître,")
+        self.PDFFile.drawString(2 * cm, 17 * cm, f"Maître,")
         self.PDFFile.drawString(2 * cm, 16 * cm, f"Nous nous permettons de vous adresser en annexe la (les) facture(s) concernant votre administré(e).")
         self.PDFFile.drawString(2 * cm, 15.5 * cm, f"Nous vous remercions pour votre intervention dans ce dossier.")
         self.PDFFile.drawString(2 * cm, 14 * cm, f"Nous restons à votre disposition via le 0493/112.112 ou via comptaclient@lcmobility.be pour toutes ")

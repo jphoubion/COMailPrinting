@@ -24,13 +24,16 @@ class ImportFromXls:
         self.sheet = self.select_customers_file()
         customer_dict = {}
         if self.sheet is not None:
-            with open("customers.json", mode) as outfile:
+            if mode == "a":
+                with open("customers.json", "r") as f:
+                    customer_dict = json.load(f)
+                    print(len(customer_dict))
+
+            with open("customers.json", "w") as outfile:
                 for row in self.sheet.iter_rows(min_row=2):
                     # building DIC to export to JSON
                     # cleaning C/O information
                     co = str(row[3].value).split(' ')[2:]
-                    # co_name = f"{co[-2]} {co[-1]}".upper().replace("C/O ME ",'').replace("C/O ME. ",'')
-                    # co_name = f"{co}".upper().replace("C/O ME ", '').replace("C/O ME. ", '')
                     customer_dict.update({
                         row[0].value: {
                             "name": row[2].value,
@@ -38,10 +41,7 @@ class ImportFromXls:
                         }
                     })
                 # print(customer_dict)
-                json_object = json.dumps(customer_dict, indent=4)
-
-                # Writing to sample.json
-                outfile.write(json_object)
+                json_object = json.dump(customer_dict, outfile, indent=4)
 
                 self.import_co()
 
