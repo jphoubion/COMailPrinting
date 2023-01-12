@@ -149,7 +149,7 @@
      <x>0</x>
      <y>0</y>
      <width>1110</width>
-     <height>20</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menufichier">
@@ -164,6 +164,7 @@
      <string>Import</string>
     </property>
     <addaction name="actionImport_customers"/>
+    <addaction name="actionAddImportCustomers"/>
    </widget>
    <addaction name="menufichier"/>
    <addaction name="menuImport"/>
@@ -186,6 +187,11 @@
   <action name="actionImport_CO_depuis_XLSX">
    <property name="text">
     <string>Import CO depuis XLSX</string>
+   </property>
+  </action>
+  <action name="actionAddImportCustomers">
+   <property name="text">
+    <string>Ajouter depuis fichier XLSX</string>
    </property>
   </action>
  </widget>

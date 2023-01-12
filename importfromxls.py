@@ -20,11 +20,11 @@ class ImportFromXls:
             self.wb = load_workbook(self.filename[0])
             return self.wb.active
 
-    def import_customers(self):
+    def import_customers(self, mode):
         self.sheet = self.select_customers_file()
         customer_dict = {}
         if self.sheet is not None:
-            with open("customers.json", "w") as outfile:
+            with open("customers.json", mode) as outfile:
                 for row in self.sheet.iter_rows(min_row=2):
                     # building DIC to export to JSON
                     # cleaning C/O information
@@ -54,9 +54,9 @@ class ImportFromXls:
                     co_dict.update({
                         co_name: {
                             "co_name": co_name,
-                            "address" : row[6].value,
-                            "cp" : row[8].value,
-                            "city" : row[9].value
+                            "address" : row[5].value,
+                            "cp" : row[7].value,
+                            "city" : row[8].value
                         }
                     })
                 # print(customer_dict)

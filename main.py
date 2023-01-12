@@ -29,7 +29,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.import_from_xls = ImportFromXls()
         self.actionQuitter.triggered.connect(self.quit)
         self.actionGestion.triggered.connect(self.openCOManagementWindow)
-        self.actionImport_customers.triggered.connect(self.import_from_xls.import_customers)
+        self.actionImport_customers.triggered.connect(partial(self.import_from_xls.import_customers, "w"))
+        self.actionAddImportCustomers.triggered.connect(partial(self.import_from_xls.import_customers, "a"))
 
         self.COManagementWindow = comanagementwindow.COMainWindow()
 

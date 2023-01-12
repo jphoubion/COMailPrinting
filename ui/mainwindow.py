@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'mainwindow.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.4.2
+## Created by: Qt User Interface Compiler version 6.4.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -35,6 +35,8 @@ class Ui_MainWindow(object):
         self.actionImport_customers.setObjectName(u"actionImport_customers")
         self.actionImport_CO_depuis_XLSX = QAction(MainWindow)
         self.actionImport_CO_depuis_XLSX.setObjectName(u"actionImport_CO_depuis_XLSX")
+        self.actionAddImportCustomers = QAction(MainWindow)
+        self.actionAddImportCustomers.setObjectName(u"actionAddImportCustomers")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.layoutWidget = QWidget(self.centralwidget)
@@ -118,7 +120,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 1110, 20))
+        self.menubar.setGeometry(QRect(0, 0, 1110, 22))
         self.menufichier = QMenu(self.menubar)
         self.menufichier.setObjectName(u"menufichier")
         self.menuImport = QMenu(self.menubar)
@@ -130,6 +132,7 @@ class Ui_MainWindow(object):
         self.menufichier.addSeparator()
         self.menufichier.addAction(self.actionQuitter)
         self.menuImport.addAction(self.actionImport_customers)
+        self.menuImport.addAction(self.actionAddImportCustomers)
 
         self.retranslateUi(MainWindow)
 
@@ -142,6 +145,7 @@ class Ui_MainWindow(object):
         self.actionQuitter.setText(QCoreApplication.translate("MainWindow", u"Quitter", None))
         self.actionImport_customers.setText(QCoreApplication.translate("MainWindow", u"Import clients depuis XLSX", None))
         self.actionImport_CO_depuis_XLSX.setText(QCoreApplication.translate("MainWindow", u"Import CO depuis XLSX", None))
+        self.actionAddImportCustomers.setText(QCoreApplication.translate("MainWindow", u"Ajouter depuis fichier XLSX", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Soci\u00e9t\u00e9 \u00e9metrice du courrier par d\u00e9faut:", None))
         ___qtablewidgetitem = self.tw_co.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Client", None));
