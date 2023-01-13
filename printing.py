@@ -9,7 +9,7 @@ class Printing:
         now = datetime.now()
         address = co.split('\n')
         self.PDFFile.setFont("Helvetica", 10)
-        self.PDFFile.drawRightString(19 * cm, 28 * cm, f'Anhée, le {now.strftime("%d/%m/%Y")}')
+        self.PDFFile.drawRightString(19 * cm, 27 * cm, f'Anhée, le {now.strftime("%d/%m/%Y")}')
         self.PDFFile.drawString(13 * cm,26 * cm, f"Maître {address[0]}")
         self.PDFFile.drawString(13 * cm, 25.5 * cm, address[1])
         self.PDFFile.drawString(13 * cm, 25 * cm, address[2])
@@ -27,6 +27,3 @@ class Printing:
         self.PDFFile.drawString(15 * cm, 3.5 * cm, "Le service comptabilité.")
         self.PDFFile.showPage() # Close the page, the next mail will be on another page
 
-        with open("texte de base.txt", "r") as f:
-            txt = f.readlines()
-        print(txt)

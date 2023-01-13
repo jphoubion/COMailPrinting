@@ -42,12 +42,19 @@ class ImportFromXls:
                     })
                 # print(customer_dict)
                 json_object = json.dump(customer_dict, outfile, indent=4)
-# TODO: apporter correction pour que les CO se chargent correctement meme si on ajoute des clients par arpès
-                self.import_co(mode, customer_dict)
+            if mode == "a":
+                self.import_co("a")
+            else:
+                self.import_co("w")
 
-    def import_co(self):
+    def import_co(self, mode):
         if self.sheet is not None:
             co_dict = {}
+            if self.sheet is not None:
+                if mode == "a":
+                    with open("co.json", "r") as f:
+                        co_dict = json.load(f)
+
             with open("co.json", "w") as outfile:
                 for row in self.sheet.iter_rows(min_row=2):
                     co_name = str(row[3].value).upper().replace("C/O ME ",'').replace("C/O ME. ",'')
@@ -60,7 +67,4 @@ class ImportFromXls:
                         }
                     })
                 # print(customer_dict)
-                json_object = json.dumps(co_dict, indent=4)
-
-                # Writing to sample.json
-                outfile.write(json_object)
+                json_object = json.dump(co_dict, outfile, indent=4)

@@ -1,0 +1,3558 @@
+{
+    "ABGARM": {
+        "name": "ABGAR Mammat (CP)",
+        "co": "DANDOY PHILIPPE"
+    },
+    "ADAMBE": {
+        "name": "ADAM BERNADETTE",
+        "co": "TARICCO ERIC"
+    },
+    "ADAMRM": {
+        "name": "ADAM Rosa Marie",
+        "co": "TARICCO ERIC"
+    },
+    "ADRICAT": {
+        "name": "ADRIAENS CATHERINE",
+        "co": "COLSON VINCENT"
+    },
+    "AERTSF": {
+        "name": "AERTS Fr\u00e9d\u00e9ric",
+        "co": "CHIGNESSE ANNE-C\u00c9CILE"
+    },
+    "AKOMOLAFEY": {
+        "name": "AKOMOLAFE Yomi*!!!",
+        "co": "DRION XAVIER"
+    },
+    "ALAUG": {
+        "name": "ALAURIA GAETANO **",
+        "co": "BENEDETTI"
+    },
+    "ALIOK": {
+        "name": "ALIOUA KHALED (CP)",
+        "co": "COUNSON MATHILDE"
+    },
+    "ALONSOVM": {
+        "name": "ALONSO VASQUEZ Manuel",
+        "co": "DE JONGHE FRAN\u00c7OISE"
+    },
+    "ANDERLICI": {
+        "name": "ANDERLIC Ivanka",
+        "co": "THIRY SOPHIE"
+    },
+    "ANDRG": {
+        "name": "ANDRE GEORGES",
+        "co": "GILLET VALERIE"
+    },
+    "ANDRGUI": {
+        "name": "ANDRE GUILLAUME",
+        "co": "WIGNY LAURENCE"
+    },
+    "ANDRJE9532": {
+        "name": "ANDRE JEANNOT",
+        "co": "PAQUOT JEAN-LUC"
+    },
+    "ANGEJEN": {
+        "name": "ANGELUCCI JENNIFER",
+        "co": "MASSET NATHALIE"
+    },
+    "ANTOINEMAR": {
+        "name": "ANTOINE Marc",
+        "co": "TARICCO ERIC"
+    },
+    "APPAR": {
+        "name": "APPART ROBERT",
+        "co": "PEROTTI VICTORIA"
+    },
+    "AQUISA1091": {
+        "name": "AQUILA SALVATORE",
+        "co": "KELEKOM TANGUY"
+    },
+    "ARALDIM": {
+        "name": "ARALDI Martine",
+        "co": "VANDENBERGHE NAD\u00c8GE"
+    },
+    "ARNOTTEML": {
+        "name": "ARNOTTE Marie Louise",
+        "co": "DEWONCK S\u00c9VERINE"
+    },
+    "AUPAIXR": {
+        "name": "AUPAIX Ronny *!!!",
+        "co": "CAVELIER CHRISTINE"
+    },
+    "AUSSEMJ": {
+        "name": "AUSSEM Josette",
+        "co": "DEVENTER OLIVIER"
+    },
+    "AVISSEJ": {
+        "name": "AVISSE Jean",
+        "co": "FILLIEUX"
+    },
+    "BACCUSAM": {
+        "name": "BACCUS Anne-Marie",
+        "co": "PITSAER HUBERT"
+    },
+    "BACCUSP": {
+        "name": "BACCUS Philippe",
+        "co": "MIKOLAJCZAK MARC"
+    },
+    "BADRIHAYEJ": {
+        "name": "BADRIHAYE Jacques",
+        "co": "THIRY SOPHIE"
+    },
+    "BAETENMJ": {
+        "name": "BAETEN Marie Jos\u00e9e",
+        "co": "COUNSON MATHILDE"
+    },
+    "BALEA": {
+        "name": "BALES ANDREE",
+        "co": "CHARLIER DOMINIQUE"
+    },
+    "BARATEN": {
+        "name": "BARATE Narcisse (CP)",
+        "co": "KELECOM TANGUY"
+    },
+    "BARBFR": {
+        "name": "BARBE FRANCOIS",
+        "co": "JAMMAER THIERRY"
+    },
+    "BARTHELEMD": {
+        "name": "BARTHELEMY Denise",
+        "co": "DONNE MARIELLE"
+    },
+    "BASTLUC": {
+        "name": "BASTIN LUCIEN",
+        "co": "HALLEUX GENEVI\u00c8VE"
+    },
+    "BATAKAT": {
+        "name": "BATAIA KATINA",
+        "co": "DEVENTER OLIVIER"
+    },
+    "BATTEUXM": {
+        "name": "BATTEUX Martine",
+        "co": "MACHIELS PIERRE"
+    },
+    "BAUDA": {
+        "name": "BAUDUIN ANNE",
+        "co": "COUNSON MATHILDE"
+    },
+    "BAUDCL1310": {
+        "name": "BAUDUIN CLAUDINE",
+        "co": "HENQUET YVES"
+    },
+    "BAUDELOTJ": {
+        "name": "BAUDELOT Jeanne",
+        "co": "UHODA EMMANUELLE"
+    },
+    "BAYD": {
+        "name": "BAY Daniel",
+        "co": "WIGNY LAURENCE"
+    },
+    "BAYJO": {
+        "name": "BAY JOSEPHINE",
+        "co": "WIGNY LAURENCE"
+    },
+    "BEAUMANM": {
+        "name": "BEAUMAN Maria",
+        "co": "DEFOUR ANNE"
+    },
+    "BEAUMECKMC": {
+        "name": "BEAUMECKER Marie-Claire",
+        "co": "GAROT AUDREY"
+    },
+    "BEAUSIM": {
+        "name": "BEAUJEAN SIMON (\u2020)",
+        "co": "DRION DENIS"
+    },
+    "BEENW": {
+        "name": "BEENKENS WALTHERINE",
+        "co": "GOEZ INGRID"
+    },
+    "BEETO": {
+        "name": "BEETS ODETTE",
+        "co": "LOURTIE CHANTAL"
+    },
+    "BELLINAA": {
+        "name": "BELLINA Antonietta",
+        "co": "RENAUD JEAN-PHILIPPE"
+    },
+    "BENAMEH": {
+        "name": "BEN AYAD MEHDI",
+        "co": "DENONCIN VINCENT"
+    },
+    "BERBC": {
+        "name": "BERBEN CHRISTIENNE",
+        "co": "JEAN-PAUL"
+    },
+    "BERGERJ": {
+        "name": "BERGER Joseph",
+        "co": "DUPONT VINCENT"
+    },
+    "BERNARDAF": {
+        "name": "BERNARD Anne-France",
+        "co": "LAURENT MARL\u00c8NE"
+    },
+    "BERNJA989": {
+        "name": "BERNARD JACQUES",
+        "co": "DEGREVE PHILIPPE"
+    },
+    "BERTHOLETR": {
+        "name": "BERTHOLET Robert",
+        "co": "THIRY SOPHIE"
+    },
+    "BERTJEANM": {
+        "name": "BERTHOLET JEAN MARIE",
+        "co": "BASTIN BERNARD"
+    },
+    "BERTJOS": {
+        "name": "BERTRAND JOSEPH (\u2020)",
+        "co": "LEVY PHILIPPE"
+    },
+    "BERTMAR08": {
+        "name": "BERTRAND MARC",
+        "co": "THIRY SOPHIE"
+    },
+    "BERTMART": {
+        "name": "BERTRAND MARTINE (\u2020)",
+        "co": "TRIVINO ISABELLE"
+    },
+    "BERTRO1402": {
+        "name": "BERTRANDS ROSINE",
+        "co": "JAMMAER ANNE-CHARLOTTE"
+    },
+    "BERWARTP": {
+        "name": "BERWART Paula (\u2022)",
+        "co": "PITSAER HUBERT"
+    },
+    "BEUTM": {
+        "name": "BEUTELS MARIA",
+        "co": "UHODA EMMANUELLE"
+    },
+    "BIELENN": {
+        "name": "BIELEN Nicole",
+        "co": "HOUBEN"
+    },
+    "BIGOGA": {
+        "name": "BIGONI GABRIELLE",
+        "co": "MINON FRANCOIS"
+    },
+    "BILLGU": {
+        "name": "BILLEN GUY",
+        "co": "DEGUEL FRANCOIS"
+    },
+    "BIOCF": {
+        "name": "BIOCIC FRANCINE",
+        "co": "LEVY PHILIPPE"
+    },
+    "BIQUETDELR": {
+        "name": "BIQUET DELREE Stephane (\u2020)",
+        "co": "HENQUET YVES"
+    },
+    "BLAISEMC": {
+        "name": "BLAISE Marie-Claire",
+        "co": "CHAPELIER JO\u00cbL"
+    },
+    "BLAVAL": {
+        "name": "BLAVIER ALBERT",
+        "co": "MASSET MARC"
+    },
+    "BLOCTEURP": {
+        "name": "BLOCTEUR Patricia",
+        "co": "JAMAER THIERRY"
+    },
+    "BLUMPA": {
+        "name": "BLUM PATRICK (\u2020)  **",
+        "co": "BENEDETTI BARBARA"
+    },
+    "BOCHM": {
+        "name": "BOCHMER MARIETTE",
+        "co": "KELECOM TANGUY"
+    },
+    "BODOM": {
+        "name": "BODO Marie",
+        "co": "COUNSON MATHILDE"
+    },
+    "BODSVI": {
+        "name": "BODSON VIVIANE (**)",
+        "co": "THIRY"
+    },
+    "BOELENM": {
+        "name": "BOELEN Maria",
+        "co": "CHARLIER DOMINIQUE"
+    },
+    "BOGARA": {
+        "name": "BOGAERTS RAYMONDE",
+        "co": "HOUBEN MARCEL"
+    },
+    "BOINF": {
+        "name": "BOIN FREDERIC (CP)",
+        "co": "VANDENBEYLAARDT LISE"
+    },
+    "BOKMANSH": {
+        "name": "BOKMANS Hans",
+        "co": "PIERI MARIE"
+    },
+    "BOLLMI": {
+        "name": "BOLLINGH MICHELE",
+        "co": "FILLIEUX LAETITIA"
+    },
+    "BOLOJA": {
+        "name": "BOLOGNE JACQUES",
+        "co": "DOUIN SERGE"
+    },
+    "BONBJ": {
+        "name": "BONBOIRE JOHAN",
+        "co": "DEVENTER OLIVIER"
+    },
+    "BONFONDJC": {
+        "name": "BONFOND Jean-Claude",
+        "co": "BOURGEOIS PERNELLE"
+    },
+    "BONMM": {
+        "name": "BONMARIAGE MICHELE",
+        "co": "TRIVINO ISABELLE"
+    },
+    "BOSCM": {
+        "name": "BOSCH MARIE THERESE",
+        "co": "SERGE DOUIN"
+    },
+    "BOSSCHAARA": {
+        "name": "BOSSCHAART Andr\u00e9",
+        "co": "RANSY JEAN-LUC"
+    },
+    "BOUJEMAAC": {
+        "name": "BOUJEMAA Catherine",
+        "co": "GODIN PHILIPPE"
+    },
+    "BOURARM": {
+        "name": "BOURGEOIS ARMAND",
+        "co": "D'INVERNO JEAN-PASCAL"
+    },
+    "BOURDOUXHE": {
+        "name": "BOURDOUXHE Eric",
+        "co": "JACQUEMOTTE MARC"
+    },
+    "BOUREMI": {
+        "name": "BOURGEOIS EMILIO",
+        "co": "HOUBEN MARCEL"
+    },
+    "BOURGEOISA": {
+        "name": "BOURGEOIS Anouk (CP)",
+        "co": "VAN ACKERE C\u00c9CILE"
+    },
+    "BOURJA": {
+        "name": "BOURS JACQUES",
+        "co": "TARICCO ERIC"
+    },
+    "BOURMIC": {
+        "name": "BOURGUIGNON MICHELINE",
+        "co": "SCHURMANS XAVIER"
+    },
+    "BOUVMAR": {
+        "name": "BOUVEROUX MARIA",
+        "co": "DRION XAVIER"
+    },
+    "BOUVYV": {
+        "name": "BOUVAULT YVETTE",
+        "co": "LEVY PHILIPPE"
+    },
+    "BOVYJ": {
+        "name": "BOVY Joseph",
+        "co": "HENQUET YVES PAUL"
+    },
+    "BRACHETC": {
+        "name": "BRACHET Claudine",
+        "co": "LOUIS RAPAHA\u00cbLLE"
+    },
+    "BRASSEURI": {
+        "name": "BRASSEUR Ir\u00e8ne",
+        "co": "JAMMAER"
+    },
+    "BREGJ": {
+        "name": "BREGA JACQUES",
+        "co": "JAMMAER THIERRY"
+    },
+    "BREPOELSF": {
+        "name": "BREPOELS Florent",
+        "co": "CHAPELIER JO\u00cbL"
+    },
+    "BRIFFOZF": {
+        "name": "BRIFFOZ Fernande",
+        "co": "THIRY SOPHIE"
+    },
+    "BROCAN": {
+        "name": "BROCK ANNE",
+        "co": "MASSSET NATHALIE"
+    },
+    "BROCKMANSP": {
+        "name": "BROCKMANS Philippe",
+        "co": "JAMMAER THIERRY"
+    },
+    "BROEC": {
+        "name": "BROEUR CHARLES !***",
+        "co": "ROBIDA STEPHANE"
+    },
+    "BROEFRA": {
+        "name": "BROECKX FRANS",
+        "co": "DEVENTER OLIVIER"
+    },
+    "BRONJE1035": {
+        "name": "BRONCKART JEAN",
+        "co": "HUMBLET DOMINIQUE"
+    },
+    "BROSC": {
+        "name": "BROSTEAUX CHRISTIANE",
+        "co": "FIEUW FANNY"
+    },
+    "BROUMARIE2": {
+        "name": "BROUET MARIE",
+        "co": "VALVEKENS SANDRINE"
+    },
+    "BROUWERBEN": {
+        "name": "BROUWERS Benoit",
+        "co": "DE JONGHE FRAN\u00c7OISE"
+    },
+    "BROUWERSB": {
+        "name": "BROUWERS Brigitte",
+        "co": "DOUIN SERGE"
+    },
+    "BRUGGENJ": {
+        "name": "BRUGGEN Johannes \u2020",
+        "co": "MAERTENS ET MANS"
+    },
+    "BRULLA": {
+        "name": "BRULL Angela",
+        "co": "CHARLIER DOMINIQUE"
+    },
+    "BRUMENILP": {
+        "name": "BRUMENIL Patricia",
+        "co": "SCHMITZ NICOLAS"
+    },
+    "BRUTJ": {
+        "name": "BRUTINEL JEANNE",
+        "co": "LEVY PHILIPPE"
+    },
+    "BUCHW": {
+        "name": "BUCHLER WILHELMINE",
+        "co": "CHAPELIER JOEL"
+    },
+    "BUCQUOYEM": {
+        "name": "BUCQUOYE MATHEO *!!! (CP) (\u2022)",
+        "co": "DEWONCK SEVERINE"
+    },
+    "BUDEF": {
+        "name": "BUDENAERS FERNANDE",
+        "co": "DEVENTER OLIVIER"
+    },
+    "BULENSJ": {
+        "name": "BULENS JACQUELINE",
+        "co": "CHAPELIER JOEL"
+    },
+    "BULTL": {
+        "name": "BULTOT LUCETTE",
+        "co": "GIROUARD FRANCOISE"
+    },
+    "BURSKENSM": {
+        "name": "BURSKENS Mariette",
+        "co": "SCHAUFELBERGER BRIGITTE"
+    },
+    "CABUTA": {
+        "name": "CABUT Anthony",
+        "co": "LESSIRE CASSANDRA"
+    },
+    "CADINC": {
+        "name": "CADIN C\u00e9cile",
+        "co": "FILLIEUX LAETITIA"
+    },
+    "CAENENJ": {
+        "name": "CAENEN Jeanne",
+        "co": "KELECOM TANGUY"
+    },
+    "CAMBM": {
+        "name": "CAMBRESY MADELEINE",
+        "co": "EVRARD JEAN-YVES"
+    },
+    "CAMERINP": {
+        "name": "CAMERIN Pierina (\u2022)",
+        "co": "FRERE DAMIEN"
+    },
+    "CAMPMARC": {
+        "name": "CAMPION MARC (\u2022)",
+        "co": "CHIGNESSE ANNE-CECILE"
+    },
+    "CAMPOA": {
+        "name": "CAMPO Aur\u00e9lie",
+        "co": "KELECOM TANGUY"
+    },
+    "CANOVAPH": {
+        "name": "CANOVA Philippe",
+        "co": "JAMMAER THIERRY"
+    },
+    "CANTC": {
+        "name": "CANTRAINE CLAUDE",
+        "co": "DRION XAVIER"
+    },
+    "CAPOBIANCD": {
+        "name": "CAPOBIANCO Domenica",
+        "co": "KELECOM TANGUY"
+    },
+    "CARDEL": {
+        "name": "CARDAMONE ELMO",
+        "co": "CORMAN SEBASTIEN"
+    },
+    "CARLIEZL": {
+        "name": "CARLIEZ Lucien",
+        "co": "THIRY SOPHIE"
+    },
+    "CARLSI": {
+        "name": "CARLIER SIMONE",
+        "co": "WATTIEZ DIANE"
+    },
+    "CARPLOU": {
+        "name": "CARPENTIER LOUISA",
+        "co": "DEVENTER OLIVIER"
+    },
+    "CARREL": {
+        "name": "CARRE Lambertine",
+        "co": ""
+    },
+    "CARTENSTAD": {
+        "name": "CARTENSTART Dominique (\u2022)",
+        "co": "COUNSON MATHILDE"
+    },
+    "CARTIGNIER": {
+        "name": "CARTIGNIES Ren\u00e9e",
+        "co": "TOLLENAERE VAL\u00c9RIE"
+    },
+    "CASTRILLIF": {
+        "name": "CASTRILLI Francesco",
+        "co": "PEDALINO ANTOINETTE"
+    },
+    "CATEMI": {
+        "name": "CATELIN MICHELINE",
+        "co": "JAMMAER ANNE-CHARLOTTE"
+    },
+    "CEREDA": {
+        "name": "CEREXHE DANIEL",
+        "co": "BIEMAR ISABELLE"
+    },
+    "CERNGIA": {
+        "name": "CERNEAZ GIANCARLO",
+        "co": "EVRARD JEAN-YVES"
+    },
+    "CHAMNI": {
+        "name": "CHAMPENOIS NICOLE",
+        "co": "THIRY SOPHIE"
+    },
+    "CHANDRINOS": {
+        "name": "CHANDRINOS Costantina",
+        "co": "GILLIS MARIELLE"
+    },
+    "CHARLESN": {
+        "name": "CHARLES NADINE EMMA (\u2020)   (**)",
+        "co": "LARBIERE PATRICK"
+    },
+    "CHARLIERP": {
+        "name": "CHARLIER Paula",
+        "co": "MERCIER XAVIER"
+    },
+    "CHARTIER A": {
+        "name": "CHARTIER ARLETTE",
+        "co": "TRIVINO ISABELLE"
+    },
+    "CHEFNEUXM": {
+        "name": "CHEFNEUX Marie",
+        "co": "DEMBOUR FRAN\u00c7OIS"
+    },
+    "CHEYC": {
+        "name": "CHEYRELS CHRISTIAN",
+        "co": "JAMMAER"
+    },
+    "CHIAVASSAG": {
+        "name": "CHIAVASSA Giacomo",
+        "co": "LAMCHACHTI LAETITIA"
+    },
+    "CHOFN": {
+        "name": "CHOFFRAY NICOLE",
+        "co": "DELVOIE PASCALE"
+    },
+    "CHRAMTCHEF": {
+        "name": "CHRAMTCHENKO Francine (\u2020)",
+        "co": "LEONARD AUR\u00c9LIE"
+    },
+    "CIAVATTONA": {
+        "name": "CIAVATTONE Angelina",
+        "co": "MASSET NATHALIE"
+    },
+    "CILLISM": {
+        "name": "CILLIS Marguerite",
+        "co": "JAMMAER THIERRY"
+    },
+    "CIRCHIAROA": {
+        "name": "CIRCHIARO Agustino",
+        "co": "FRANCOIS CHRISTINE"
+    },
+    "CIRRIA": {
+        "name": "CIRRI Angelo",
+        "co": "BALDO ISABELLE"
+    },
+    "CIURANNOL": {
+        "name": "GIURANNO Luigi **doublon*",
+        "co": "DOUIN SERGE"
+    },
+    "CLAIRBOISN": {
+        "name": "CLAIRBOIS Nicole",
+        "co": "DUPONT VINCENT"
+    },
+    "CLAVGU1539": {
+        "name": "CLAVIER GUY",
+        "co": "TANGHE KOENRAAD"
+    },
+    "CLEPMI1178": {
+        "name": "CLEPPE MICHEL",
+        "co": "JAMMAER THIERRY"
+    },
+    "CLOSJ": {
+        "name": "CLOSQUIN JEAN-MARIE",
+        "co": "D'INVERNO JEAN-PASCAL"
+    },
+    "CLOSJO": {
+        "name": "CLOSSET JOSETTE",
+        "co": "CHAPELIER JOEL"
+    },
+    "CLOSMART": {
+        "name": "CLOSSET MARTHE",
+        "co": "THIRY SOPHIE"
+    },
+    "CLUYTENSJ": {
+        "name": "CLUYTENS JACQUES (\u2020)  *!!!",
+        "co": "PIERRARD ALINE"
+    },
+    "COCHOULM": {
+        "name": "COCHOUL Marcel",
+        "co": "UHODA EMMANUEL"
+    },
+    "COENN": {
+        "name": "COENEN NICOLAS",
+        "co": "KELECOM TANGUY"
+    },
+    "COIGF": {
+        "name": "COIGNE FABIENNE",
+        "co": "CORMAN SEBASTIEN"
+    },
+    "COLIR": {
+        "name": "COLIGNON REMY (\u2020)  **",
+        "co": "LEFEVRE NATHALIE"
+    },
+    "COLLARDMAR": {
+        "name": "COLLARD Mariette",
+        "co": "LOURTIE CHANTAL"
+    },
+    "COLLARDPOL": {
+        "name": "COLLARD Pol",
+        "co": "THIRY SOPHIE"
+    },
+    "COLLBE": {
+        "name": "COLLIN BEATRICE (\u2020)",
+        "co": "KELECOM TANGUY"
+    },
+    "COLLETTECH": {
+        "name": "COLLETTE Christine",
+        "co": "THIRY SOPHIE"
+    },
+    "COLLFE": {
+        "name": "COLLINET FERNANDE",
+        "co": "UHODA EMMANUELLE"
+    },
+    "COLLIGNOAM": {
+        "name": "COLLIGNON Anne-Marie",
+        "co": "CORMAN S\u00c9BASTIEN"
+    },
+    "COLLJACQUE": {
+        "name": "COLLINS JACQUES",
+        "co": "LEJEUNE JULIE"
+    },
+    "COMPEREY": {
+        "name": "COMPERE Yvan",
+        "co": "UHODA EMMANUELLE"
+    },
+    "CONVERTINE": {
+        "name": "CONVERTINI Elisa",
+        "co": "MASSET NATHALIE"
+    },
+    "COOKENJ": {
+        "name": "COOKEN Jos\u00e9phine",
+        "co": "VANDENBEYLAARDT LISE"
+    },
+    "COOLSM": {
+        "name": "COOLS Marcelle",
+        "co": "JAMMAER THIERRY"
+    },
+    "COPPMARI": {
+        "name": "COPPOLA MARIA",
+        "co": "CHAPELIER JOEL"
+    },
+    "CORBJEA": {
+        "name": "CORBISIER JEANNINE",
+        "co": "DUMOULIN"
+    },
+    "CORMANC": {
+        "name": "CORMAN Charles",
+        "co": "D'INVERNO JEAN-PASCAL"
+    },
+    "CORNCHRI": {
+        "name": "CORNET D'ELZIUS DE PEISSANT CHRISTIANE",
+        "co": "DEFOUR ANNE"
+    },
+    "CORNEZF": {
+        "name": "CORNEZ Fran\u00e7oise",
+        "co": "MOLITOR PHILIPPE"
+    },
+    "CORNLUC": {
+        "name": "CORNET LUC",
+        "co": "CHARLIER DOMINIQUE"
+    },
+    "CORNMARC": {
+        "name": "CORNAGO MARCO",
+        "co": "KELECOM TANGUY"
+    },
+    "CORVERSH": {
+        "name": "CORVERS Helena",
+        "co": "BALDO ISABELLE"
+    },
+    "COSTMAR": {
+        "name": "COSTA MARIA (\u2020)",
+        "co": "PONSGEN LOUIS-MARIE"
+    },
+    "CREMA": {
+        "name": "CREMERS ANNIE MATHILDE",
+        "co": "MORDANT CECILE"
+    },
+    "CROUFERMM": {
+        "name": "CROUFER Marie-Madeleine",
+        "co": "SCHMITS PIERRE"
+    },
+    "CUPERSA": {
+        "name": "CUPERS Aim\u00e9",
+        "co": "PIRON JACQUES"
+    },
+    "CUVEMARC": {
+        "name": "CUVELIER MARC",
+        "co": "DUQUENNE YVES"
+    },
+    "DAMAJ": {
+        "name": "DAMAR JACQUES (**)",
+        "co": "DE JONGHE FRANCOISE"
+    },
+    "DAMASC": {
+        "name": "DAMAS Christiane",
+        "co": "ROBIDA ST\u00c9PHANE"
+    },
+    "DAMBLONE": {
+        "name": "DAMBLON Eddy",
+        "co": "LALLEMAND GR\u00c9GORY"
+    },
+    "DAMIMAR": {
+        "name": "DAMIANO MARIO",
+        "co": "HAENEN ANNE-FRANCOISE"
+    },
+    "DAMONI": {
+        "name": "DAMOISEAU NICOLE",
+        "co": "MONTLUC MARIE"
+    },
+    "DAMSOD1496": {
+        "name": "DAMS ODETTE",
+        "co": "JAMMAER"
+    },
+    "DANIELEA": {
+        "name": "DANIELE Angiolina",
+        "co": "MASSET NATHALIE"
+    },
+    "DANSCHR": {
+        "name": "DANSE CHRISTIANE",
+        "co": "CHARLIER DOMINIQUE"
+    },
+    "DANZJ": {
+        "name": "DANZE JACQUELINE",
+        "co": "VROONEN CLAUDINE"
+    },
+    "DARCOSE": {
+        "name": "DARCOS Elena",
+        "co": "RANSY JEAN-LUC"
+    },
+    "DAXHE": {
+        "name": "DAXHELET ERNEST",
+        "co": "HAENEN ANNE-FRANCOISE"
+    },
+    "DEBATISSEJ": {
+        "name": "DEBATISSE Joseph",
+        "co": "DEVENTER OLIVIER"
+    },
+    "DEBATTYRL": {
+        "name": "DEBATTY Ren\u00e9 L\u00e9on (\u2020)",
+        "co": "THIRY SOPHIE"
+    },
+    "DEBEJA": {
+        "name": "DEBEHOGNE JACQUES",
+        "co": "DRION DENIS"
+    },
+    "DEBEMON": {
+        "name": "DEBEYS MONIQUE",
+        "co": "NEURAY JULIE"
+    },
+    "DEBORMANC": {
+        "name": "DE BORMAN CAMILLE",
+        "co": "DEHIN VICTOR-VINCENT"
+    },
+    "DEBROUXHUB": {
+        "name": "DEBROUX Hubert",
+        "co": "TARICCO ERIC"
+    },
+    "DECEANN": {
+        "name": "DECELLE ANNE-MARIE",
+        "co": "LECLERCQ BRUNO"
+    },
+    "DECERFF": {
+        "name": "DECERF Francine",
+        "co": "DEVENTER OLIVIER"
+    },
+    "DECHANXHEA": {
+        "name": "DECHANXHE ANDRE LAURENT",
+        "co": "GODIN PHILIPPE"
+    },
+    "DECHRISTIA": {
+        "name": "CHRISTAKI DE GERMAIN Arnaud",
+        "co": "KELECOM TANGUY"
+    },
+    "DECLERCQP": {
+        "name": "DE CLERCQ Patrick",
+        "co": "DANLOY G\u00c9RALDINE"
+    },
+    "DECLJ": {
+        "name": "DECLERCQ JEAN PIERRE",
+        "co": "WESTERLINCK ELEONORE"
+    },
+    "DECLNIC": {
+        "name": "DE CLERCQ NICOLE",
+        "co": "DELREE CECILE"
+    },
+    "DECOFR": {
+        "name": "DECOCK FRANCOIS",
+        "co": "DEVENTER OLIVIER"
+    },
+    "DECOURP": {
+        "name": "DECOUR Paul",
+        "co": "KELECOM TANGUY"
+    },
+    "DEFRAEYEG": {
+        "name": "DEFRAEYE Ginette",
+        "co": "DEFOUR ANNE"
+    },
+    "DEFRAEYEY": {
+        "name": "DEFRAEYE Yvette",
+        "co": "DEFOUR ANNE"
+    },
+    "DEGROOTEJL": {
+        "name": "DE GROOTE Jean-Luc",
+        "co": "GODIN PHILIPPE"
+    },
+    "DEJONCKHER": {
+        "name": "DEJONCKHEERE Raymond",
+        "co": "DEVENTER OLIVIER"
+    },
+    "DEKENI1589": {
+        "name": "DEKENS NICOLE",
+        "co": "D'INVERNO JEAN-PASCAL"
+    },
+    "DEKENSN": {
+        "name": "DEKENS NICOLAS",
+        "co": "JAMMAER THIERRY"
+    },
+    "DELAINY": {
+        "name": "DELAIN YVAN",
+        "co": "DEFOUR ANNE"
+    },
+    "DELBARTC": {
+        "name": "DELBART CHRISTINE",
+        "co": "DESSY JEAN-LUC"
+    },
+    "DELCCL": {
+        "name": "DELCOUR CLAIRE",
+        "co": "GERARDY LUCIE"
+    },
+    "DELCHAMBRV": {
+        "name": "DELCHAMBRE Val\u00e9rie",
+        "co": "HUMBLET DOMINIQUE"
+    },
+    "DELCMICH": {
+        "name": "DELCHAMBRE MICHEL !***",
+        "co": "GODIN PHILIPPE"
+    },
+    "DELCORDEA": {
+        "name": "DELCORDE Armand",
+        "co": "HIERNAUX GUY"
+    },
+    "DELCORPSG": {
+        "name": "DELCORPS Guy",
+        "co": "DEFOUR ANNE"
+    },
+    "DELCOURH": {
+        "name": "DELCOUR Henri Nicolas",
+        "co": "JAMINON ARNAUD"
+    },
+    "DELFT": {
+        "name": "DELFOSSE THIERRY",
+        "co": "EVRARD JEAN-YVES"
+    },
+    "DELHEZMJ": {
+        "name": "DELHEZ Marie Jeanne (\u2022)",
+        "co": "FILLIEUX LAETITIA"
+    },
+    "DELIENL": {
+        "name": "DELIEN Louisa",
+        "co": "THIRY SOPHIE"
+    },
+    "DELLISEJL": {
+        "name": "DELLISE JEAN LUC",
+        "co": "JOSE CLOES"
+    },
+    "DELVAVE": {
+        "name": "DELVAUX VERONIQUE",
+        "co": "UHODA EMMANUELLE"
+    },
+    "DELVNO7707": {
+        "name": "DELVAUX NOEL (\u2020)",
+        "co": "COEME MICHEL"
+    },
+    "DELVYNCKP": {
+        "name": "DELVYNCK Philippe",
+        "co": "UHODA EMMANUELLE"
+    },
+    "DEMAEYERL": {
+        "name": "DE MAEYER Luc Antoine",
+        "co": "MERTENS THOMAS"
+    },
+    "DEMAMAU": {
+        "name": "DEMARET MAURICE (CP)",
+        "co": "ISABELLE TRIVINO"
+    },
+    "DEMOLJ": {
+        "name": "DE MOL Jules Victor (CP)",
+        "co": "TARICCO ERIC"
+    },
+    "DENAEYERA": {
+        "name": "DE NAEYER Andr\u00e9",
+        "co": "KRIESCHER PAULINE"
+    },
+    "DEPAMAR": {
+        "name": "DEPAQUIER MARIE",
+        "co": "D'INVERNO JEAN-PASCAL"
+    },
+    "DEPAR": {
+        "name": "DEPASSE ROLAND LEON",
+        "co": "CORMAN SEBASTIEN"
+    },
+    "DEPOMARC": {
+        "name": "DEPOUHON MARC",
+        "co": "NAMUROIS CEDRIC"
+    },
+    "DERAEDP": {
+        "name": "DERAED Philippe",
+        "co": "VROONEN CLAUDINE"
+    },
+    "DEROYA": {
+        "name": "DEROYE YANNICK (CP)",
+        "co": "DRION XAVIER"
+    },
+    "DESMC": {
+        "name": "DE SMET CHRISTIANE",
+        "co": "KELECOM TANGUY"
+    },
+    "DESPD": {
+        "name": "DESPEGHEL DENIS",
+        "co": "DEMBOUR FRANCOIS"
+    },
+    "DESSMARI": {
+        "name": "DESSINIUS MARIE",
+        "co": "PIERRARD ALINE"
+    },
+    "DESSYC": {
+        "name": "DESSY Corinne",
+        "co": "SCHAUFELBERGER BRIGITTE"
+    },
+    "DESTINED": {
+        "name": "DESTINE Daniel",
+        "co": "KELECOM TANGUY"
+    },
+    "DETHIERELV": {
+        "name": "DETHIER Elvis (CP)",
+        "co": "GODIN PHILIPPE"
+    },
+    "DEVADA": {
+        "name": "DEVALET DANIEL",
+        "co": "CHIGNESSE ANNE-CECILE"
+    },
+    "DEVEYLDERS": {
+        "name": "DE VEYLDER Sylvain",
+        "co": "HARDY CATHERINE"
+    },
+    "DEVILLEM": {
+        "name": "DEVILLE Myrianne Jeanne (CP)",
+        "co": "FLAHAUT J\u00c9R\u00d4ME"
+    },
+    "DEVILLERSD": {
+        "name": "DE VILLERS D\u00e9sir\u00e9e",
+        "co": "FRANCOIS CHRISTINE"
+    },
+    "DEVOSD": {
+        "name": "DEVOS Daniel",
+        "co": "KUQ ERMINA"
+    },
+    "DEVUN": {
+        "name": "DE VUYST NADIA",
+        "co": "HAENEN ANNE-FRANCOISE"
+    },
+    "DHAIR": {
+        "name": "DHAINAUT RAYMONDE (\u2020)",
+        "co": "VANDERWECKENE ALBERT"
+    },
+    "DIERICKXG": {
+        "name": "DIERICKX Guy",
+        "co": "DRION XAVIER"
+    },
+    "DIETGI": {
+        "name": "DIET GILBERTE",
+        "co": "MASSET MARC"
+    },
+    "DIMARCOJ": {
+        "name": "DI MARCO Jos\u00e9e",
+        "co": "DRION"
+    },
+    "DITTEL": {
+        "name": "DITTE Liliane",
+        "co": "GILLET VAL\u00c9RIE"
+    },
+    "DNIDNIA": {
+        "name": "DNIDNI Abdellilah",
+        "co": "DUTRIEU PHILIPPE"
+    },
+    "DODEMONTB": {
+        "name": "DODEMONT B\u00e9atrice",
+        "co": "LAMBERT CATHERINE"
+    },
+    "DOLHM": {
+        "name": "DOLHAIN MARCEL",
+        "co": "BAUDEN SYLVIE"
+    },
+    "DOLLC": {
+        "name": "DOLL COLETTE",
+        "co": "KELECOM TANGUY"
+    },
+    "DONAMAD": {
+        "name": "DONAY MADELEINE",
+        "co": "GOFFINET LAURENT"
+    },
+    "DOPPG": {
+        "name": "DOPPAGNE GUY",
+        "co": "UHODA EMMANUELLE"
+    },
+    "DOSTERA": {
+        "name": "DOSTER Aim\u00e9",
+        "co": "CHIGNESSE ANNE-C\u00c9CILE"
+    },
+    "DOUCETP": {
+        "name": "DOUCET Patrick",
+        "co": "GUIMIN SYLVIE"
+    },
+    "DOUMONTA": {
+        "name": "DOUMONT Am\u00e9lie",
+        "co": "VANDENBEYLAARDT LISE"
+    },
+    "DOZINJM": {
+        "name": "DOZIN Jean Marie (\u2020)",
+        "co": "DUPONT MELISSA"
+    },
+    "DROULANSL": {
+        "name": "DROULANS Lucienne Antoinette",
+        "co": "CLOSSEN MARIE-EVE"
+    },
+    "DRUETM": {
+        "name": "DRUET Monique",
+        "co": "VROONEN CLAUDINE"
+    },
+    "DUBOANNI": {
+        "name": "DUBOIS ANNIE",
+        "co": "KELECOM TANGUY"
+    },
+    "DUBOMARGU": {
+        "name": "DUBOIS MARGUERITE",
+        "co": "MAGNEE VERONIQUE"
+    },
+    "DUCAA": {
+        "name": "DUCARME ALAIN",
+        "co": "JAMMAER THIERRY"
+    },
+    "DUCHCLAU": {
+        "name": "DUCHESNE CLAUDE",
+        "co": "RASQUIN DOMINIQUE"
+    },
+    "DUCHSIMO": {
+        "name": "DUCHESNE-RYHON SIMONE",
+        "co": "JAMMAER VINCENT"
+    },
+    "DUCOMBLEM": {
+        "name": "DUCOMBLE Marie",
+        "co": "TRIVINO ISABELLE"
+    },
+    "DUFOA": {
+        "name": "DUFOING ARLETTE",
+        "co": "CHARLIER DOMINIQUE"
+    },
+    "DUMBAB": {
+        "name": "DUMBA Bienvenu",
+        "co": "FRERE DAMIEN"
+    },
+    "DUMOEL": {
+        "name": "DUMONT ELIANE",
+        "co": "NEURAY JULIE"
+    },
+    "DUMOM1": {
+        "name": "DUMONT MARIE-MADELEINE",
+        "co": "DORANGE FRANCOISE"
+    },
+    "DUMONTJULI": {
+        "name": "DUMONT Julia",
+        "co": "VANDENBEYLAARDT LISE"
+    },
+    "DUMONTL": {
+        "name": "DUMONT LAURENCE",
+        "co": "MERCIER XAVIER"
+    },
+    "DUMONTLAUR": {
+        "name": "DUMONT Laurent",
+        "co": "MAGNEE V\u00c9RONIQUE"
+    },
+    "DURYG": {
+        "name": "DURY GERARD",
+        "co": "KELECOM TANGUY"
+    },
+    "DUTRIEUXS": {
+        "name": "DUTRIEUX S\u00e9bastien",
+        "co": "MAHIEU FR\u00c9D\u00c9RIQUE"
+    },
+    "DUVIG": {
+        "name": "DUVIA GIANCARLO",
+        "co": "DEGUEL FRANCOIS"
+    },
+    "ELAZA": {
+        "name": "EL AZZOUZI AHMED (**)",
+        "co": "KRIESCHER PAULINE"
+    },
+    "ELKEMO": {
+        "name": "EL KEFFI MOHAMED",
+        "co": "KELECOM TANGUY"
+    },
+    "ELOYC": {
+        "name": "ELOY CHRISTIANE",
+        "co": "JAMMAER THIERRY"
+    },
+    "EMBRECHTSG": {
+        "name": "EMBRECHTS Gilberte",
+        "co": "DRION XAVIER"
+    },
+    "ENGLEBERTR": {
+        "name": "ENGLEBERT Roger",
+        "co": "DEFOURNY JEAN-FRAN\u00c7OIS"
+    },
+    "ERNOULDJ": {
+        "name": "ERNOULD Jean",
+        "co": "D'INVERNO JEAN-PASCAL"
+    },
+    "EVERGUY": {
+        "name": "EVERS GUY",
+        "co": "DEVENTER OLIVIER"
+    },
+    "EVRARDJ": {
+        "name": "EVRARD Jeannine Marie",
+        "co": "D'INVERNO JEAN-PASCAL"
+    },
+    "EVRAST": {
+        "name": "EVRARD STEPHAN",
+        "co": "FILLIEUX LAETITIA"
+    },
+    "EVRAV": {
+        "name": "EVRARD VERONIQUE",
+        "co": "KRIESCHER PAULINE"
+    },
+    "EYKEMO": {
+        "name": "EYKERMAN MONIQUE",
+        "co": "DANDOY PHILIPPE"
+    },
+    "FALIM": {
+        "name": "FALISSE MARCELLE",
+        "co": "ROOSEN LAURENCE"
+    },
+    "FALLC": {
+        "name": "FALLETTA CARAVASSO CALOGERO",
+        "co": "BAUDEN SYLVIE"
+    },
+    "FAUDITOB": {
+        "name": "FAUDITO BATTA Sarai Eunicer",
+        "co": "SITKOWSKI DEBORAH"
+    },
+    "FECOG": {
+        "name": "FECONDO GIUSEPPE",
+        "co": "BAUDENS SYLVIE"
+    },
+    "FEJOSC": {
+        "name": "FEJOS Caroline (*!!!)",
+        "co": "MORDANT C\u00c9CILE"
+    },
+    "FELIXF": {
+        "name": "FELIX Fernande",
+        "co": "VALVEKENS SANDRINE"
+    },
+    "FELIXJM": {
+        "name": "FELIX Jean-Marie (\u2022)",
+        "co": "DRION XAVIER"
+    },
+    "FERAUCHEM": {
+        "name": "FERAUCHE Marcelle Emma",
+        "co": "DEVENTER OLIVIER"
+    },
+    "FEREMA": {
+        "name": "FERIR MARIE !***  (**)",
+        "co": "GROSSI PIERRE"
+    },
+    "FEROLE": {
+        "name": "FERONT LEONA",
+        "co": "DRION DENIS"
+    },
+    "FEYEML": {
+        "name": "FEYE Marie-Louise",
+        "co": "DRION DENIS"
+    },
+    "FIORITAI": {
+        "name": "FIORITA Ir\u00e8ne",
+        "co": "THIRY SOPHIE"
+    },
+    "FLAHSD": {
+        "name": "FLAHS David Mike",
+        "co": "HENQUET YVES-PAUL"
+    },
+    "FLEMALA": {
+        "name": "FLEMAL Alexandre",
+        "co": "LUC FRAN\u00c7OISE"
+    },
+    "FONSONJ": {
+        "name": "FONSON Jacqueline",
+        "co": "GODIN PHILIPPE"
+    },
+    "FONTALA": {
+        "name": "FONTAINE ALAIN",
+        "co": "LAMBERT CATHERINE"
+    },
+    "FORETM": {
+        "name": "FORET Monique (\u2020)",
+        "co": "GARSOU CHRISTIAN"
+    },
+    "FOUCARTJ": {
+        "name": "FOUCART Jacqueline",
+        "co": "THIRY"
+    },
+    "FOURMYJ": {
+        "name": "FOURMY Jean",
+        "co": "FLAHAUT J\u00c9R\u00d4ME"
+    },
+    "FOURNYJ": {
+        "name": "FOURNY JEAN",
+        "co": "JAMMAER THIERRY"
+    },
+    "FRACCARIV": {
+        "name": "FRACCARI Valentino",
+        "co": "DINEUR MICHAEL"
+    },
+    "FRAIKINA": {
+        "name": "FRAIKIN Alice",
+        "co": "THIRY SOPHIE"
+    },
+    "FRAMBACHS": {
+        "name": "FRAMBACH Suzanne",
+        "co": "WIGNY LAURENCE"
+    },
+    "FRANBERN": {
+        "name": "FRANCOIS BERNARD",
+        "co": "KELECOM TANGUY"
+    },
+    "FRANCOISR": {
+        "name": "FRANCOIS Ren\u00e9e",
+        "co": "BERCHEM NICOLAS"
+    },
+    "FRANMAR14": {
+        "name": "FRANQUET MARIE",
+        "co": "TRIVINO ISABELLE"
+    },
+    "FRANQUETMC": {
+        "name": "FRANQUET Marie-Claire Jeannine",
+        "co": "LEVY PHILIPPE"
+    },
+    "FRANSENM": {
+        "name": "FRANSEN Marie Georgette",
+        "co": "DRION XAVIER"
+    },
+    "FREBRAY": {
+        "name": "FREBUTTE RAYMOND",
+        "co": "DELVENNE JULIEN"
+    },
+    "FRERESJ": {
+        "name": "FRERES Julien",
+        "co": "DINEUR MICHA\u00cbL"
+    },
+    "FRESCHINIM": {
+        "name": "FRESCHINI Maria-Pia",
+        "co": "TRIVINO ISABELLE"
+    },
+    "FRISEELEON": {
+        "name": "FRISEE L\u00e9on",
+        "co": "JAMMAER ANNE-CHARLOTTE"
+    },
+    "GADISSEURC": {
+        "name": "GADISSEUR Catherine",
+        "co": "MORDANT C\u00c9CILE"
+    },
+    "GARCJOS": {
+        "name": "GARCIA-PULIDO JOSE",
+        "co": "SMETS VERONIQUE"
+    },
+    "GASPDA": {
+        "name": "GASPAR DANIEL (CP)",
+        "co": "HENQUET YVES"
+    },
+    "GATEF": {
+        "name": "GATEZ FRANCIS",
+        "co": "CHARLIER DOMINIQUE"
+    },
+    "GAUDINR": {
+        "name": "GAUDIN Ren\u00e9 Alphonse",
+        "co": "HUMBLET DOMINIQUE"
+    },
+    "GAUTHIERA": {
+        "name": "GAUTHIER Andr\u00e9",
+        "co": "JAMMAER"
+    },
+    "GAUTHIERJ": {
+        "name": "GAUTHIER Josette Jos\u00e9phine",
+        "co": "DESTEXHE R\u00c9GINE"
+    },
+    "GAUTHIERM": {
+        "name": "GAUTHIER Marie",
+        "co": "UHODA EMMANUELLE"
+    },
+    "GELONC": {
+        "name": "GELON Chantal",
+        "co": "LAMBERT CATHERINE"
+    },
+    "GENEJEA": {
+        "name": "GENET JEAN",
+        "co": "LEVY PHILIPPE"
+    },
+    "GENINI": {
+        "name": "GENIN Ivette Henriette (CP)",
+        "co": "KELECOM TANGUY"
+    },
+    "GEORGESMF": {
+        "name": "GEORGES Marie-France",
+        "co": "LANNOY C\u00c9CILE"
+    },
+    "GERAGILB": {
+        "name": "GERARD GILBERT",
+        "co": "TRIVINO ISABELLE"
+    },
+    "GHAYEP": {
+        "name": "GHAYE Paul  (\u00b01939)",
+        "co": "HENQUET YVES"
+    },
+    "GHYSJEAN": {
+        "name": "GHYSSELS JEAN-MICHEL (**)",
+        "co": "JEAN-LUC"
+    },
+    "GIAPP": {
+        "name": "GIAPPONE PIETRO",
+        "co": "BOIRET GHISLAIN"
+    },
+    "GIAUXM": {
+        "name": "GIAUX Marthe",
+        "co": "MONTLUC MARIE"
+    },
+    "GIELMA6736": {
+        "name": "GIELEN MARCEL",
+        "co": "CHAPELIER JOEL"
+    },
+    "GILAC": {
+        "name": "GILARD CLAUDE",
+        "co": "HAENEN ANNE-FRANCOISE"
+    },
+    "GILLANNE1": {
+        "name": "GILLES Anne",
+        "co": "DEVENTER OLIVIER"
+    },
+    "GILLESF": {
+        "name": "GILLES Fabienne",
+        "co": "HOUBEN MARCEL"
+    },
+    "GILLETJ": {
+        "name": "GILLET Jules",
+        "co": "COMBLIN MANUELA"
+    },
+    "GILLJOSEP": {
+        "name": "GILLES JOSEPH (CP) (\u2022)",
+        "co": "LECLERC VALERY"
+    },
+    "GILLONL": {
+        "name": "GILLON LUCIE",
+        "co": "BAUDEN SYLVIE"
+    },
+    "GILSDENI": {
+        "name": "GILSOUL DENISE",
+        "co": "KELECOM TANGUY"
+    },
+    "GIURL": {
+        "name": "GIURANNO LUIGI",
+        "co": "DOUIN SERGE"
+    },
+    "GIUSE": {
+        "name": "GIUSTI EMMA",
+        "co": "D'INVERNO JEAN-PASCAL"
+    },
+    "GOBIETM": {
+        "name": "GOBIET Mariette (\u2022)",
+        "co": "THIRY SOPHIE"
+    },
+    "GODEALB": {
+        "name": "GODEAU ALBERT",
+        "co": "CHIGNESSE"
+    },
+    "GODEMAG": {
+        "name": "GODEFROID MAGALI",
+        "co": "DELVOIE PASCALE"
+    },
+    "GODESAB": {
+        "name": "GODEFROID SABINE",
+        "co": "BAUDEN SYLVIE"
+    },
+    "GODFROIDC": {
+        "name": "GODFROID Chantal Anna",
+        "co": "JAMMAER THIERRY"
+    },
+    "GODONL": {
+        "name": "GODON L\u00e9opold",
+        "co": "CHAPELIER JO\u00cbL"
+    },
+    "GODONOUR": {
+        "name": "GODONOU DOSSOU Raymonde",
+        "co": "SCHMITZ NICOLAS"
+    },
+    "GOEDERTO": {
+        "name": "GOEDERT Odette Margarethe",
+        "co": "THIRY SOPHIE"
+    },
+    "GOFFMARC": {
+        "name": "GOFFINET MARCELLE",
+        "co": "THIRY SOPHIE"
+    },
+    "GOLDC": {
+        "name": "GOLDYN CLAUDETTE",
+        "co": "MASSET MARC"
+    },
+    "GONTGE": {
+        "name": "GONTHIER GEORGETTE",
+        "co": "ROBIDA STEPHANE"
+    },
+    "GONZEY": {
+        "name": "GONZE Yvan",
+        "co": "UHODA EMMANUELLE"
+    },
+    "GORDB": {
+        "name": "GORDALLA BEATRICE",
+        "co": "FRANCOIS CHRISTINE"
+    },
+    "GORNJ": {
+        "name": "GORNIK JEAN CHARLES",
+        "co": "TANGHE KOENRAAD"
+    },
+    "GRANDRYL": {
+        "name": "GRANDRY L\u00e9on (!***)",
+        "co": "LONEUX VAL\u00c9RIE"
+    },
+    "GRANDRYM": {
+        "name": "GRANDRY MARGUERITE",
+        "co": "THIRY SOPHIE"
+    },
+    "GRANG": {
+        "name": "GRANAI GIOVANNI",
+        "co": "GODIN PHILIPPE"
+    },
+    "GRANLO": {
+        "name": "GRANDRY LOUISE",
+        "co": "MINON FRANCOIS"
+    },
+    "GRAVG": {
+        "name": "GRAVE GEORGETTE",
+        "co": "GOFFINET LAURENT"
+    },
+    "GREGFER": {
+        "name": "GREGOIRE FERNAND (CP) (!***)",
+        "co": "DE JONGHE FRANCOISE"
+    },
+    "GREGOIREL": {
+        "name": "GREGOIRE L\u00e9a (\u2020)",
+        "co": "LENELLE JEROME"
+    },
+    "GRIGC": {
+        "name": "GRIGNARD CHRISTIAN",
+        "co": "OLIVIER DEVENTER"
+    },
+    "GRUNNEL": {
+        "name": "GRUN NELLY",
+        "co": "TANGHE KOENRAAD"
+    },
+    "GUERF": {
+        "name": "GUERRA FRANCESCA",
+        "co": "HENQUET YVES PAUL"
+    },
+    "GUERITTEC": {
+        "name": "GUERITTE Charlette",
+        "co": "VANDENBERGHE NAD\u00c8GE"
+    },
+    "GUILLAUMEL": {
+        "name": "GUILLAUME Liliane",
+        "co": "KELEKOM TANGUY"
+    },
+    "GUILMA": {
+        "name": "GUILLIAUME MARC (\u2022)",
+        "co": "JACQUEMOTTE MARC"
+    },
+    "GYBEL": {
+        "name": "GYBELS LILIANE",
+        "co": "SCHAUFELBERGER BRIGITTE"
+    },
+    "HABEJA": {
+        "name": "HABETS JANINE",
+        "co": "CHAPELIER JOEL"
+    },
+    "HAMEAR": {
+        "name": "HAMERS ARNO",
+        "co": "DEGUEL FRANCOIS"
+    },
+    "HANAPPEM": {
+        "name": "HANAPPE Michel",
+        "co": "BERCHEM NICOLAS"
+    },
+    "HANNECARTJ": {
+        "name": "HANNECART Jean",
+        "co": "GHILAIN-PIERARD AGN\u00c8S"
+    },
+    "HANNECARTN": {
+        "name": "HANNECART Nadine Marthe",
+        "co": "D'INVERNO JEAN-PASCAL"
+    },
+    "HAPPJ": {
+        "name": "HAPPEL JEAN-JACQUES",
+        "co": "CHAPELIER JOEL"
+    },
+    "HAQUENNEH": {
+        "name": "HAQUENNE H\u00e9l\u00e8ne",
+        "co": "THIRY SOPHIE"
+    },
+    "HARDENNEY": {
+        "name": "HARDENNE Yvette",
+        "co": "TRIVINO ISABELLE"
+    },
+    "HARDYA": {
+        "name": "HARDY ANNE",
+        "co": "GILSON MARC"
+    },
+    "HASTB": {
+        "name": "HASTIR BEATRICE",
+        "co": "MARTIN JOHANNE"
+    },
+    "HAWAYJ": {
+        "name": "HAWAY Jordan",
+        "co": "HENQUET YVES PAUL"
+    },
+    "HECKA": {
+        "name": "HECK Anna (\u2020)",
+        "co": "VANDENBEYLAARDT LISE"
+    },
+    "HECKSU": {
+        "name": "HECKLEN SUZANNE (\u2020)",
+        "co": "DEMBLON VALENTINE"
+    },
+    "HELLAL": {
+        "name": "HELLA ALAIN",
+        "co": "JAMMAER THIERRY"
+    },
+    "HELLCH": {
+        "name": "HELLINX CHRISTIANE",
+        "co": "DEFOURNY JEAN-FRANCOIS"
+    },
+    "HELLP": {
+        "name": "HELLA PAULETTE",
+        "co": "CHIGNESSE ANNE-CECILE"
+    },
+    "HENDAS": {
+        "name": "HENDRIX ASTRID",
+        "co": "TARICCO ERIC"
+    },
+    "HENDC": {
+        "name": "HENDRICKX CLAUDE",
+        "co": "DUVEILLER STEPHANIE"
+    },
+    "HENDERICKL": {
+        "name": "HENDERICKX Liliane",
+        "co": "KELECOM TANGUY"
+    },
+    "HENRYM": {
+        "name": "HENRY Marc",
+        "co": "DEVENTER OLIVIER"
+    },
+    "HEPTIAO": {
+        "name": "HEPTIA Olga",
+        "co": "LECLERCQ PIERRE"
+    },
+    "HERMANCM": {
+        "name": "HERMAN Christiane Marguerite",
+        "co": "TRIVINO ISABELLE"
+    },
+    "HERMSU": {
+        "name": "HERMANS SUZANNE",
+        "co": "D'INVERNO JEAN-PASCAL"
+    },
+    "HERNARDINJ": {
+        "name": "HERNARDIN Jeannine",
+        "co": "MALEVE BENOIT"
+    },
+    "HERRVI": {
+        "name": "HERREMAN VINCENT",
+        "co": "CECILE VAN ACKERE"
+    },
+    "HEUZEM": {
+        "name": "HEUZE Micka\u00ebl Edmond",
+        "co": "HALLEUX GENEVI\u00c8VE"
+    },
+    "HEVIF": {
+        "name": "HEVIA FERNANDEZ MARIA",
+        "co": "AARTS DOMINIQUE"
+    },
+    "HIDRAL": {
+        "name": "HIDRA Ladjal",
+        "co": "UHODA EMMANUELLE"
+    },
+    "HILBJA1562": {
+        "name": "HILBERT JACQUES",
+        "co": "DEVENTER OLIVIER"
+    },
+    "HIPNAN": {
+        "name": "HIPNAROWICZ ANNE MARIE",
+        "co": "HAENEN ANNE-FRANCOISE"
+    },
+    "HOORC": {
+        "name": "HOORELBEKE CHRISTIANE",
+        "co": "TANGHE KOENRAAD"
+    },
+    "HOUNHANOUJ": {
+        "name": "HOUNHANOU Julien (\u2020)",
+        "co": "NOLLET PAUL-XAVIER"
+    },
+    "HOUSGI": {
+        "name": "HOUSSIER GISELE",
+        "co": "LEDOUX JEAN-FRANCOIS"
+    },
+    "HOYAL": {
+        "name": "HOYAUX LEON",
+        "co": "LEVY PHILIPPE"
+    },
+    "HUBIGE": {
+        "name": "HUBIN GERARD",
+        "co": "HUBIN HELENE"
+    },
+    "HUBRECHTA": {
+        "name": "HUBRECHT Anna",
+        "co": "KELECOM TANGUY"
+    },
+    "HUBYR": {
+        "name": "HUBY RENEE (\u2020)",
+        "co": "GOB MARYLIN"
+    },
+    "HUYGA": {
+        "name": "HUYGEN ANTOINE",
+        "co": "CHARLIER DOMINIQUE"
+    },
+    "HUYGENJ": {
+        "name": "HUYGEN Jessica",
+        "co": "CHARLIER DOMINIQUE"
+    },
+    "HUYNJO": {
+        "name": "HUYNEN JOSEPH",
+        "co": "GILLIS MARIELLE"
+    },
+    "ILLINGG": {
+        "name": "ILLING G\u00e9rard Henri",
+        "co": "GILLIS MARIELLE"
+    },
+    "INFAE": {
+        "name": "INFANTINO ERIC (\u2022)",
+        "co": "DUBOIS FRAN\u00c7OIS"
+    },
+    "IOVIGUI": {
+        "name": "IOVINO GIUSEPPE",
+        "co": "CHAPELIER JOEL"
+    },
+    "ISTASA": {
+        "name": "ISTAS Anny",
+        "co": "MALEVE BENOIT"
+    },
+    "IVENJ": {
+        "name": "IVEN JEANNINE",
+        "co": "THIRY SOPHIE"
+    },
+    "IVENMO": {
+        "name": "IVENS MONIQUE",
+        "co": "DUMOULIN NATHALIE"
+    },
+    "JACOANDR": {
+        "name": "JACOBY ANDRE",
+        "co": "VERDAY DAVID"
+    },
+    "JACOBE": {
+        "name": "JACOB Emile",
+        "co": "GERARDY LUCIE"
+    },
+    "JACOBG": {
+        "name": "JACOB Georgine",
+        "co": "D'INVERNO JEAN-PASCAL"
+    },
+    "JACOBSL": {
+        "name": "JACOBS Lucie",
+        "co": "MASSET NATHALIE"
+    },
+    "JACQUETMAD": {
+        "name": "JACQUET Madelaine",
+        "co": "DE JONGHE FRAN\u00c7OISE"
+    },
+    "JADOE": {
+        "name": "JADOT EMMANUEL",
+        "co": "PAQUOT MURIELLE"
+    },
+    "JADON": {
+        "name": "JADOT NADIA",
+        "co": "PAQUOT MURIEL"
+    },
+    "JAMARNAD": {
+        "name": "JAMAR Nadine",
+        "co": "LAMALLE GR\u00c9GORY"
+    },
+    "JAMIRE": {
+        "name": "JAMIN RENE",
+        "co": "GOEZ INGRID"
+    },
+    "JAMOGI5937": {
+        "name": "JAMOULLE GILBERTE (\u2020)",
+        "co": "DETERME FRANCIS"
+    },
+    "JANKOWSKIS": {
+        "name": "JANKOWSKI STEPHANE (\u2022)",
+        "co": "DEGUEL FRANCOIS"
+    },
+    "JANOW": {
+        "name": "JANOSZEK WANDA",
+        "co": "CHAPELIER JOEL"
+    },
+    "JANSGH": {
+        "name": "JANS GHISLAINE (\u2022)",
+        "co": "BAUDEN SYLVIE"
+    },
+    "JANSJEA02": {
+        "name": "JANSSENS JEANINE",
+        "co": "DEFOURNY JEAN-FRANCOIS"
+    },
+    "JANSSU": {
+        "name": "JANSSEN SUZANNE",
+        "co": "TARICCO ERIC"
+    },
+    "JASSAR": {
+        "name": "JASSOGNE ARLETTE",
+        "co": "GRUSLIN GILLES"
+    },
+    "JAUMCH": {
+        "name": "JAUMOTTE CHRISTIANE",
+        "co": "UHODA EMMANUELLE"
+    },
+    "JEANED": {
+        "name": "JEANFILS EDWARD",
+        "co": "THIRY SOPHIE"
+    },
+    "JOBAP": {
+        "name": "JOBA PHILIPPE",
+        "co": "DEVENTER OLIVIER"
+    },
+    "JORIA": {
+        "name": "JORIS ANNY",
+        "co": "CLIGNET JEAN-CLAUDE"
+    },
+    "JORICA4643": {
+        "name": "JORIS CATHERINE",
+        "co": "CHAPELIER JOEL"
+    },
+    "JOSEPHL": {
+        "name": "JOSEPH Laetitia",
+        "co": "ROYEN GHISLAIN"
+    },
+    "JOYEUXN": {
+        "name": "JOYEUX Nelly",
+        "co": "BERNARD ERIC"
+    },
+    "JULIENM": {
+        "name": "JULIEN Madeleine",
+        "co": "UHODA EMMANUELLE"
+    },
+    "KALUC": {
+        "name": "KALUT CHRISTIAN",
+        "co": "UHODA EMMANUEL"
+    },
+    "KASPRZAKP": {
+        "name": "KASPRZAK Patrick (CP)",
+        "co": "VANDENBEYLAARDT LISE"
+    },
+    "KATSERSP": {
+        "name": "KATSERS Pierre",
+        "co": "LEVY PHILIPPE"
+    },
+    "KERKL": {
+        "name": "KERKHOFS LOUISA",
+        "co": "DRION XAVIER"
+    },
+    "KESENH": {
+        "name": "KESEN Hubert (\u2020)",
+        "co": "LAMBERT CATHERINE"
+    },
+    "KETELEERV": {
+        "name": "KETELEER Val\u00e9rie (\u2022)",
+        "co": "DRION XAVIER"
+    },
+    "KEULDERSJ": {
+        "name": "KEULDERS Jan",
+        "co": "GOEZ INGRID"
+    },
+    "KEVERA": {
+        "name": "KEVER Anne",
+        "co": "FRANCOIS CHRISTINE"
+    },
+    "KIMPJU": {
+        "name": "KIMPLAIRE JULES (\u2022) (CP)",
+        "co": "KELECOM TANGUY"
+    },
+    "KINDM": {
+        "name": "KINDO MAMOUNA (**)",
+        "co": "DEFOURNY JEAN-FRANCOIS"
+    },
+    "KINETD": {
+        "name": "KINET Dominique",
+        "co": "DANLOY G\u00c9RALDINE"
+    },
+    "KOENR": {
+        "name": "KOENIGS ROGER",
+        "co": "VANDENBEYLAARDT LISE"
+    },
+    "KOGC": {
+        "name": "KOG C\u00e9line",
+        "co": "LEDOUX G\u00c9RALDINE"
+    },
+    "KONOR": {
+        "name": "KONOWALUK ROSE-MARIE",
+        "co": "CLOSSEN MARIE-EVE"
+    },
+    "KOOPP": {
+        "name": "KOOP Paul",
+        "co": "KELECOM TANGUY"
+    },
+    "KOUMODJIA": {
+        "name": "KOUMODJI Adjo",
+        "co": "KELECOM TANGUY"
+    },
+    "KRIJMON": {
+        "name": "KRIJNEN MONIQUE",
+        "co": "THIRY SOPHIE"
+    },
+    "KROTJ": {
+        "name": "KROTT JACQUELINE",
+        "co": "DEFOURNY JEAN-FRANCOIS"
+    },
+    "KUNEJF": {
+        "name": "KUNEJ Freddy",
+        "co": "THIRY SOPHIE"
+    },
+    "LABALUEG": {
+        "name": "LABALUE Gabrielle",
+        "co": "LEJEUNE JULIE"
+    },
+    "LABUCHERET": {
+        "name": "LABUCHERE Th\u00e9r\u00e8se",
+        "co": "CORMAN S\u00c9BASTIEN"
+    },
+    "LACOMBLEZM": {
+        "name": "LACOMBLEZ MARTINE JEANNE",
+        "co": "PHILIPPART DE FOY NICOLAS"
+    },
+    "LADURONC": {
+        "name": "LADURON Marie Claire",
+        "co": "WATTIEZ DIANE"
+    },
+    "LAEREL": {
+        "name": "LAEREMANS ELISABETH (CP)",
+        "co": "ROOS VIRGINIE"
+    },
+    "LAHAJA": {
+        "name": "LAHAYE JACQUELINE",
+        "co": "TOLLENAERE VALERIE"
+    },
+    "LALLEMANDR": {
+        "name": "LALLEMAND Remy",
+        "co": "TIHON JEAN-MARIE"
+    },
+    "LALOMAU": {
+        "name": "LALOYAUX MAURICE",
+        "co": "CORMAN SEBASTIEN"
+    },
+    "LALOS": {
+        "name": "LALOUX SERGE",
+        "co": "WIGNY LAURENCE"
+    },
+    "LALOUXC": {
+        "name": "LALOUX Cristina",
+        "co": "LIMBOURG MARIE"
+    },
+    "LAMBAD": {
+        "name": "LAMBERT ADELINE",
+        "co": "DOUIN SERGE"
+    },
+    "LAMBERTDIT": {
+        "name": "LAMBERT DIT MINGUET Jean Marie",
+        "co": "MASSET NATHALIE"
+    },
+    "LAMBOTTEK": {
+        "name": "LAMBOTTE Katty",
+        "co": "WESTERLINCK EL\u00c9ONORE"
+    },
+    "LAMOCKH": {
+        "name": "LAMOCK Huguette",
+        "co": "TOLLENAERE VAL\u00c9RIE"
+    },
+    "LANAUDP": {
+        "name": "LANAUD Philippe",
+        "co": "MACHIELS PIERRE"
+    },
+    "LANDENNEM": {
+        "name": "LANDENNE Marcelle",
+        "co": "KELECOM TANGUY"
+    },
+    "LANDERLOOS": {
+        "name": "LANDERLOOS Johnny",
+        "co": "LAMCHACHTI LAETITIA"
+    },
+    "LAPAILLEJM": {
+        "name": "LAPAILLE Jean-Marie (\u2022)",
+        "co": "BAUDEN SYLVIE"
+    },
+    "LAPPJP": {
+        "name": "LAPP Jean-Pierre",
+        "co": "DEVENTER OLIVIER"
+    },
+    "LAROM": {
+        "name": "LA ROSA MARIA (\u00b01965)",
+        "co": "WYNANTS YVES"
+    },
+    "LAROSAS": {
+        "name": "LA ROSA Santo",
+        "co": "MASSET NATHALIE"
+    },
+    "LAVIGNEJL": {
+        "name": "LAVIGNE Jean-Louis",
+        "co": "GILSON MARC"
+    },
+    "LEBASC": {
+        "name": "LEBAS Catherine",
+        "co": "PHILIPPART DE FOY NICOLAS"
+    },
+    "LEBOMA": {
+        "name": "LEBON MAURICE",
+        "co": "FILLIEUX LAETITIA"
+    },
+    "LEBRUNG": {
+        "name": "LEBRUN Gilberte",
+        "co": "LECLERCQ BRUNO"
+    },
+    "LEBURTONC": {
+        "name": "LEBURTON Claudy",
+        "co": "HUMBLET DOMINIQUE"
+    },
+    "LECARTE": {
+        "name": "LECART Emma",
+        "co": "THIRY SOPHIE"
+    },
+    "LECLCA": {
+        "name": "LECLERCQ CAROLINE",
+        "co": "DEGUEL FRANCOIS"
+    },
+    "LECLE": {
+        "name": "LECLERCQ ELISE",
+        "co": "MASSET NATHALIE"
+    },
+    "LECLER": {
+        "name": "LECLERCQ ERIC",
+        "co": "WIGNY LAURENCE"
+    },
+    "LECOCQA": {
+        "name": "LECOCQ ALAIN",
+        "co": "CHARLIER DOMINIQUE"
+    },
+    "LECOCQMT": {
+        "name": "LECOCQ Marie-Th\u00e9r\u00e8se",
+        "co": "CHAPELIER JO\u00cbL"
+    },
+    "LECRF": {
+        "name": "LECROMPE FRANCIS",
+        "co": "LAMBERT CATHERINE"
+    },
+    "LEDEI": {
+        "name": "LEDENT IVONNE",
+        "co": "DEVENTER OLIVIER"
+    },
+    "LEEMANSL": {
+        "name": "LEEMANS Luc",
+        "co": "LEVY PHILIPPE"
+    },
+    "LEENEU": {
+        "name": "LEENAERS EUGENIE",
+        "co": "CLOES JOSE"
+    },
+    "LEGLISEO": {
+        "name": "LEGLISE Olivier Joseph",
+        "co": "HERMANT LUCIE"
+    },
+    "LEGRANDA": {
+        "name": "LEGRAND Anita",
+        "co": "CHAPELIER JO\u00cbL"
+    },
+    "LEGRANDC": {
+        "name": "LEGRAND Colette",
+        "co": "COCHART J\u00c9R\u00d4ME"
+    },
+    "LEGRANDD": {
+        "name": "LEGRAND Daniel",
+        "co": "DRION XAVIER"
+    },
+    "LEGRANDPAU": {
+        "name": "LEGRAND Paul Charles (\u2022)",
+        "co": "VAN ACKERE C\u00c9CILE"
+    },
+    "LEGRAR": {
+        "name": "LEGRAND ARLETTE",
+        "co": "D'INVERNO JEAN-PASCAL"
+    },
+    "LEGRCA": {
+        "name": "LEGRAND CARINE SONIA",
+        "co": "CAVELIER CHRISTINE"
+    },
+    "LEGRFAB": {
+        "name": "LEGRAND FABIEN",
+        "co": "GIROUARD FRANCOISE"
+    },
+    "LEGRSY": {
+        "name": "LEGRAND SYLVIE",
+        "co": "VANDENBEYLAARDT LISE"
+    },
+    "LEHRIVK": {
+        "name": "LEHRI Vinay Kumr",
+        "co": "KELECOM TANGUY"
+    },
+    "LEISTERTH": {
+        "name": "LEISTERT Huguette",
+        "co": "DEVENTER OLIVIER"
+    },
+    "LEKEJ": {
+        "name": "LEKEU JEAN-FRANCOIS",
+        "co": "GODIN PHILIPPE"
+    },
+    "LEKEUJC": {
+        "name": "LEKEU Jean Claude",
+        "co": "DRION DENIS"
+    },
+    "LELOF": {
+        "name": "LELOUP FRANCOIS",
+        "co": "CHARLIER DOMINIQUE"
+    },
+    "LEMBREEG": {
+        "name": "LEMBREE Gis\u00e8le",
+        "co": "UERLINGS GUY"
+    },
+    "LENAERTSJ": {
+        "name": "LENAERTS Jeanne",
+        "co": "UHODA EMMANUELLE"
+    },
+    "LENAERTSR": {
+        "name": "LENAERTS Rapha\u00ebl",
+        "co": "JAMMAER THIERRY"
+    },
+    "LENASY": {
+        "name": "LENAERTS SYBILLA",
+        "co": "CHAPELIER"
+    },
+    "LEONHF": {
+        "name": "LEON HERNANDEZ FRANCISCA",
+        "co": "DEVENTER OLIVIER"
+    },
+    "LEROA": {
+        "name": "LEROY ANNE-MARIE",
+        "co": "HAENEN ANNE-FRANCOISE"
+    },
+    "LESUISSEA": {
+        "name": "LESUISSE Alain",
+        "co": "BALDO ISABELLE"
+    },
+    "LEVEQUEM": {
+        "name": "LEVEQUE Marie",
+        "co": "HEINS RENAUD"
+    },
+    "LHOMGEO": {
+        "name": "LHOMME GEORGES",
+        "co": "TANGHE KOENRAAD"
+    },
+    "LIBEA": {
+        "name": "LIBERT Anny Rose",
+        "co": "TANGHE KOENRAAD"
+    },
+    "LIBEDENI": {
+        "name": "LIBERT DENISE (\u00b01939)",
+        "co": "MANTANUS MAGGY"
+    },
+    "LIBEMO": {
+        "name": "LIBENS MONIQUE",
+        "co": "NOEL ANNE-CECILE"
+    },
+    "LIGNONG": {
+        "name": "LIGNON Gilbert",
+        "co": "BERCHEM NICOLAS"
+    },
+    "LINCHAMPSR": {
+        "name": "LINCHAMPS Roland",
+        "co": "TOLLENAERE VAL\u00c9RIE"
+    },
+    "LISIN": {
+        "name": "LISIN NARCISSE",
+        "co": "CHIGNESSE ANNE-CECILE"
+    },
+    "LISMAS": {
+        "name": "LISMAN ASTRIDE",
+        "co": "CHAPELIER JOEL"
+    },
+    "LODOE": {
+        "name": "LODOMEZ ELISE",
+        "co": "JAMMAER VINCENT"
+    },
+    "LOGISTJ": {
+        "name": "LOGIST Jacques",
+        "co": "BERCHEM NICOLAS"
+    },
+    "LOGNOULC": {
+        "name": "LOGNOUL Corn\u00e9lie",
+        "co": "BOURGEOIS PERNELLE"
+    },
+    "LOISSEAUR": {
+        "name": "LOISSEAU Roger",
+        "co": "TRIVINO ISABELLE"
+    },
+    "LOMBARTG": {
+        "name": "LOMBART GUY (\u2020)",
+        "co": "CRISMER PHILIPPE"
+    },
+    "LONEMA": {
+        "name": "LONEUX MARTHE",
+        "co": "NOIRHOMME LUC"
+    },
+    "LONNOYC": {
+        "name": "LONNOY Charlotte",
+        "co": "CORMAN S\u00c9BASTIEN"
+    },
+    "LOOSJT": {
+        "name": "LOOS Jos\u00e9e Th\u00e9r\u00e8se",
+        "co": "CHARLIER DOMINIQUE"
+    },
+    "LOOZR": {
+        "name": "LOOZ Raymond",
+        "co": "RENAUD JEAN-PHILIPPE"
+    },
+    "LOUIN": {
+        "name": "LOUIS NADINE",
+        "co": "UHODA EMMANUELLE"
+    },
+    "LOUTTEF": {
+        "name": "LOUTTE Fernand",
+        "co": "COLLART LUC"
+    },
+    "LOWIRE": {
+        "name": "LOWIES RENEE (\u2022)",
+        "co": "KRIESCHER PAULINE"
+    },
+    "LUREMONDEP": {
+        "name": "LUREMONDE Patrick (CP)",
+        "co": "DEGEUL FRAN\u00c7OIS"
+    },
+    "LUXMIC": {
+        "name": "LUX MICHELLE",
+        "co": "EVRARD JEAN-YVES"
+    },
+    "MACHOTC": {
+        "name": "MACHOT Catherine",
+        "co": "DEPREZ BRUNO"
+    },
+    "MACIEJEWSK": {
+        "name": "MACIEJEWSKA IRENA",
+        "co": "UHODA EMMANUELLE"
+    },
+    "MADARASZM": {
+        "name": "MADARASZ Miguel",
+        "co": "PARMENTIER CHRISTINE"
+    },
+    "MAENHOUTC": {
+        "name": "MAENHOUT Claudine",
+        "co": "DEFOUR ANNE"
+    },
+    "MAESANNIE": {
+        "name": "MAES Annie",
+        "co": "WIGNY LAURENCE"
+    },
+    "MAEYNINCKX": {
+        "name": "MAEYNINCKX Martine",
+        "co": "KELEKOM TANGUY"
+    },
+    "MAEYSU": {
+        "name": "MAEYNINCKX SUZANNE",
+        "co": "DRION DENIS"
+    },
+    "MAGNEEB": {
+        "name": "MAGNEE Berthe",
+        "co": "DEVENTER OLIVIER"
+    },
+    "MAGNERYN": {
+        "name": "MAGNERY Nadine",
+        "co": "THIRY SOPHIE"
+    },
+    "MAGNH": {
+        "name": "MAGNERY HELENE",
+        "co": "VILLALBA MARIE"
+    },
+    "MAGOE": {
+        "name": "MAGONETTE EUGENE (\u2020)  (**)",
+        "co": "TRIVINO ISABELLE"
+    },
+    "MALAISEM": {
+        "name": "MALAISE Michelle",
+        "co": "DEGUEL FRANCOIS"
+    },
+    "MALENGED": {
+        "name": "MALENGE Danielle",
+        "co": "DRION XAVIER"
+    },
+    "MALFAITC": {
+        "name": "MALFAIT Christiane",
+        "co": "MASSET MARC"
+    },
+    "MANIA": {
+        "name": "MANICA ALAIN",
+        "co": "THIRY SOPHIE"
+    },
+    "MARCHALG": {
+        "name": "MARCHAL Ginette",
+        "co": "CRUYSMANS GAUTHIER"
+    },
+    "MARCMIA": {
+        "name": "MARCHAND MIA",
+        "co": "MASSET MARC"
+    },
+    "MARIONJ": {
+        "name": "MARION Jacqueline",
+        "co": "LECLERCQ BRUNO"
+    },
+    "MARIQUER": {
+        "name": "MARIQUE R\u00e9ginald",
+        "co": "THIERRY JAMMAER"
+    },
+    "MARNEFFES": {
+        "name": "MARNEFFE Suzanne",
+        "co": "MONTLUC MARIE"
+    },
+    "MARNETTEML": {
+        "name": "MARNETTE Marie-Louise",
+        "co": "SCHROEDER FRANCIS"
+    },
+    "MARQMA": {
+        "name": "MARQUET MARCELLINE",
+        "co": "UHODA EMMANUELLE"
+    },
+    "MASSARLIL": {
+        "name": "MASSAR Liliane Leona",
+        "co": "BAUDENS SYLVIE"
+    },
+    "MASSARTP": {
+        "name": "MASSART Pierre",
+        "co": "DEVENTER OLIVIER"
+    },
+    "MASSN": {
+        "name": "MASSON NADINE",
+        "co": "UHODA"
+    },
+    "MATHHE1525": {
+        "name": "MATHIEU HELGA",
+        "co": "DEFOURNY JEAN-FRANCOIS"
+    },
+    "MATHIEUCM": {
+        "name": "MATHIEU Chantal Mireille",
+        "co": "BOURGEOIS PERNELLE"
+    },
+    "MATHJA1316": {
+        "name": "MATHIEU JACQUELINE",
+        "co": "CLOES JOSE"
+    },
+    "MATHYD": {
+        "name": "MATHY Daniel",
+        "co": "MALEVE BENOIT"
+    },
+    "MAURELJC": {
+        "name": "MAUREL Jean-Claude (\u2020)",
+        "co": "ESTIENNE EMMANUEL"
+    },
+    "MAWEJOS": {
+        "name": "MAWET JOSEPH",
+        "co": "GALAND PIERRE-LOUIS"
+    },
+    "MAZYG": {
+        "name": "MAZY Genevi\u00e8ve",
+        "co": "MONTLUC MARIE"
+    },
+    "MEERC": {
+        "name": "MEERT CARINE",
+        "co": "CHAPELIER JOEL"
+    },
+    "MELAC": {
+        "name": "MELARD CHANTAL",
+        "co": "DEVENTER OLIVIER"
+    },
+    "MERCIERAND": {
+        "name": "MERCIER Andr\u00e9 (\u2020)",
+        "co": "BRIGITTE"
+    },
+    "MERCIERM": {
+        "name": "MERCIER Mich\u00e8le",
+        "co": "STOUPY SARAH"
+    },
+    "MERTA": {
+        "name": "MERTENS ANN",
+        "co": "SOPHIE THIRY"
+    },
+    "MESKENSP": {
+        "name": "MESKENS PAUL",
+        "co": "SOPHIE"
+    },
+    "MEUNIERD": {
+        "name": "MEUNIER Didier",
+        "co": "JACQUEMOTTE MARC"
+    },
+    "MEURAML": {
+        "name": "MEURA Marie-Louise",
+        "co": "TARICCO ERIC"
+    },
+    "MEURCE5788": {
+        "name": "MEURA CELINA",
+        "co": "HENQUET YVES"
+    },
+    "MICHIELSR": {
+        "name": "MICHIELS Rosa",
+        "co": "LUYCKX LUDIVINE"
+    },
+    "MICHOD": {
+        "name": "MICHELIN ODETTE",
+        "co": "TILQUIN LAURENCE"
+    },
+    "MICHYVE": {
+        "name": "MICHIELS YVETTE",
+        "co": "TRIVINO ISABELLE"
+    },
+    "MIEVV": {
+        "name": "MIEVIS VINCENT",
+        "co": "JAMMAER"
+    },
+    "MINARIR": {
+        "name": "MINARI Regina",
+        "co": "CHAPELIER JO\u00cbL"
+    },
+    "MINYP": {
+        "name": "MINY Paule Ernestine",
+        "co": "GOB MARILYN"
+    },
+    "MODAVEH": {
+        "name": "MODAVE Henri Fernand",
+        "co": "GERARDY LUCIE"
+    },
+    "MOISRO": {
+        "name": "MOISSE ROLAND",
+        "co": "HENQUET YVES-PAUL"
+    },
+    "MOLINADCFF": {
+        "name": "MOLINA DA COSTA Francisco Felix",
+        "co": "MAGNEE V\u00c9RONIQUE"
+    },
+    "MOLOR": {
+        "name": "MOLORD ROBERT",
+        "co": "FRANKIGNOUL CAROLINE"
+    },
+    "MONFORTM": {
+        "name": "MONFORT Marie",
+        "co": "GILLET VAL\u00c9RIE"
+    },
+    "MONSC": {
+        "name": "MONSARRAT CORINNE",
+        "co": "BIAR ERIC"
+    },
+    "MORDC": {
+        "name": "MORDANT CARMEN",
+        "co": "GILLIS MARIELLE"
+    },
+    "MORECA": {
+        "name": "MORENO NUNO CARLOS",
+        "co": "HALLEUX GENEVI\u00c8VE"
+    },
+    "MORNGE": {
+        "name": "MORNARD GERMAINE",
+        "co": "THIERRY"
+    },
+    "MOSSAYV": {
+        "name": "MOSSAY Victor",
+        "co": "WENRIC JEAN-LUC"
+    },
+    "MOSSCH": {
+        "name": "MOSSAY CHANTAL",
+        "co": "TARICCO ERIC"
+    },
+    "MOSSD": {
+        "name": "MOSSAY DANIELE",
+        "co": "KELECOM TANGUY"
+    },
+    "MOTTJOS": {
+        "name": "MOTTART JOSETTE",
+        "co": "HAENEN ANNE-FRANCOISE"
+    },
+    "MOTUVI1562": {
+        "name": "MOTUS VICTOR",
+        "co": "TANGHE KOENRAAD"
+    },
+    "MOUSTAKIN": {
+        "name": "MOUSTAKI Noureddin",
+        "co": "TARICCO ERIC"
+    },
+    "MUGARAY": {
+        "name": "MUGARA Yves",
+        "co": "KRIESCHER PAULINE"
+    },
+    "MULLERIDA": {
+        "name": "MULLER Ida",
+        "co": "CORMAN S\u00c9BASTIEN"
+    },
+    "MULLERSG": {
+        "name": "MULLERS Guy",
+        "co": "CHIGNESSE ANNE-C\u00c9CILE"
+    },
+    "MULUMBAM": {
+        "name": "MULUMBA-MULUMBA M\u00e9dart",
+        "co": "VANDERWECKENE ALBERT"
+    },
+    "NAISP": {
+        "name": "NAISY PASCALINE (\u2020)",
+        "co": "VERHEYDEN JOHAN"
+    },
+    "NANIACKG": {
+        "name": "NANYACK GILLES",
+        "co": "EVRARD JEAN-YVES"
+    },
+    "NDAYIZIGAD": {
+        "name": "NDAYIZIGA Didier Arnaud",
+        "co": "DEVENTER OLIVIER"
+    },
+    "NEUKF": {
+        "name": "NEUKERMANS FRANCINE",
+        "co": "LECLERCQ BRUNO"
+    },
+    "NIESGU": {
+        "name": "NIESSEN GUY",
+        "co": "CORMAN S\u00c9BASTIEN"
+    },
+    "NIHOULP": {
+        "name": "NIHOUL Paul",
+        "co": "VANDERSTEEN GR\u00c9GORY"
+    },
+    "NINANEJULE": {
+        "name": "NINANE Jules",
+        "co": "DRION XAVIER"
+    },
+    "NIZEHE": {
+        "name": "NIZET HENRIETTE",
+        "co": "CLOES JOSE"
+    },
+    "NOEF": {
+        "name": "NOE Florentine",
+        "co": "UHODA EMMANUELLE"
+    },
+    "NOPPD": {
+        "name": "NOPP DANIELLE",
+        "co": "DEVENTER OLIVIER"
+    },
+    "NOTAC": {
+        "name": "NOTAY CATHERINE",
+        "co": "DEVENTER OLIVIER"
+    },
+    "NSUKP": {
+        "name": "NSUKA PAPY",
+        "co": "KELECOM TANGUY"
+    },
+    "NTAMC": {
+        "name": "NTAMBI CAROLINE",
+        "co": "OLIVIER DEVENTER"
+    },
+    "NUMEF": {
+        "name": "NUMES GOMES FERNANDO",
+        "co": "TANGUY KELECOM"
+    },
+    "OKSUBUN": {
+        "name": "OKSUZ BUNYAMI",
+        "co": "LEVY PHILIPPE"
+    },
+    "ORBAR": {
+        "name": "ORBAN ROGER",
+        "co": "KELECOM TANGUY"
+    },
+    "OSAEJ": {
+        "name": "OSAER JACQUES",
+        "co": "DEVENTER OLIVIER"
+    },
+    "PAGIC": {
+        "name": "PAGIN CLARISSE",
+        "co": "DEVENTER OLIVIER"
+    },
+    "PAJEM": {
+        "name": "PAJERA-CHAMPAGNE MYREILLE",
+        "co": "LAMBERT CATHERINE"
+    },
+    "PALACZI": {
+        "name": "PALACZ Ir\u00e8ne",
+        "co": "MASSET NATHALIE"
+    },
+    "PANSA": {
+        "name": "PANSAERTS ANITA",
+        "co": "LOURTIE CHANTAL"
+    },
+    "PANTANOML": {
+        "name": "PANTANO Maria Luisa",
+        "co": "THIRY SOPHIE"
+    },
+    "PANTJ": {
+        "name": "PANTHOFER JOHANNA",
+        "co": "DE WILDE D'ESTMAEL GREGOIRE"
+    },
+    "PAQUEJC": {
+        "name": "PAQUE JEAN-CLAUDE",
+        "co": "DEMBOUR FRANCOIS"
+    },
+    "PAQUOTPIER": {
+        "name": "PAQUOT Pierre",
+        "co": "CHIGNESSE ANNE-C\u00c9CILE"
+    },
+    "PARIL": {
+        "name": "PARISIS LAURENT",
+        "co": "WIGNY LAURENCE"
+    },
+    "PASQM": {
+        "name": "PASQUALE MARIOLINA",
+        "co": "SCHAUFELBERGER BRIGITTE"
+    },
+    "PAUWELSM": {
+        "name": "PAUWELS Marc",
+        "co": "DEVENTER OLIVIER"
+    },
+    "PAWLIKOWSK": {
+        "name": "PAWLIKOWSKI Aniela",
+        "co": "DANLOY G\u00c9RALDINE"
+    },
+    "PEETERSMJ": {
+        "name": "PEETERS Marie Jos\u00e9e",
+        "co": "TRIVINO ISABELLE"
+    },
+    "PEETMY": {
+        "name": "PEETERS MYRIAM",
+        "co": "CORMAN SEBASTIEN"
+    },
+    "PEIGIRE": {
+        "name": "PEIGNEUX IRENE  (**) (\u2020)",
+        "co": "MAGHE BENOIT"
+    },
+    "PEIGMY": {
+        "name": "PEIGNOIS MYRIAM",
+        "co": "ADAM GENEVIEVE"
+    },
+    "PERAUL": {
+        "name": "PERAU LUCETTE",
+        "co": "CARLOZZI ADRIEN"
+    },
+    "PETERSMARG": {
+        "name": "PETERS Marguerite",
+        "co": "DEVENTER OLIVIER"
+    },
+    "PETITJEANL": {
+        "name": "PETITJEAN Lea",
+        "co": "BOURGUET BERNADETTE"
+    },
+    "PETITMARTH": {
+        "name": "PETIT Marthe",
+        "co": "UHODA EMMANUELLE"
+    },
+    "PETRJ": {
+        "name": "PETRASCH JEAN-LUC",
+        "co": "WEIJENBERG RAPHAEL"
+    },
+    "PETRM": {
+        "name": "PETROVIC MILICA",
+        "co": "BALTUS HELENE"
+    },
+    "PEZZA": {
+        "name": "PEZZOTTI ANGELO",
+        "co": "RADERMECKER NADINE"
+    },
+    "PIATW": {
+        "name": "PIATEK WANDA",
+        "co": "KELECOM TANGUY"
+    },
+    "PIERREM": {
+        "name": "PIERRE Marc",
+        "co": "FREDERIC ROSA"
+    },
+    "PIETTEF": {
+        "name": "PIETTE Florent",
+        "co": "THIRY SOPHIE"
+    },
+    "PIRAPIERRE": {
+        "name": "PIRA Pierre",
+        "co": "CORMAN S\u00c9BASTIEN"
+    },
+    "PIREJEANN": {
+        "name": "PIRENNE JEANNE",
+        "co": "DE JONGHE FRANCOISE"
+    },
+    "PIREMAR": {
+        "name": "PIRE MARIE-ROSE",
+        "co": "GODIN PHILIPPE"
+    },
+    "PIRLETM": {
+        "name": "PIRLET Maurice",
+        "co": "TOLLENAERE VAL\u00c9RIE"
+    },
+    "PIROGEO": {
+        "name": "PIROTTE GEORGES",
+        "co": "VANDENBEYLAARDT LISE"
+    },
+    "PIROMAR07": {
+        "name": "PIRON MARIETTE",
+        "co": "THIRY SOPHIE"
+    },
+    "PIROPAT": {
+        "name": "PIROTTE PATRICIA",
+        "co": "HAENEN ANNE-FRANCOISE"
+    },
+    "PIROSA": {
+        "name": "PIROTTE SABINE",
+        "co": "JAMMAER THIERRY"
+    },
+    "PIROTTONS": {
+        "name": "PIROTTON SEBASTIEN  (**)",
+        "co": "KELECOM TANGUY"
+    },
+    "PIRSONA": {
+        "name": "PIRSON Agn\u00e8s",
+        "co": "GOEZ INGRID"
+    },
+    "PIZZG": {
+        "name": "PIZZIMENTI GERMAINE",
+        "co": "CHAPELIER JOEL"
+    },
+    "PLAPC": {
+        "name": "PLAPIED CLAUDINE",
+        "co": "FLAHAUT JEROME"
+    },
+    "PLASMANP": {
+        "name": "PLASMAN Paul",
+        "co": "BALTUS HELENE"
+    },
+    "PLUMES": {
+        "name": "PLUME Serge",
+        "co": "CARLIER PASCALE"
+    },
+    "POESJ": {
+        "name": "POESEN JEAN-LUC",
+        "co": "MORDANT CECILE"
+    },
+    "POLMJA": {
+        "name": "P\u00d6LLMANN JACQUES",
+        "co": "DEVENTER OLIVIER"
+    },
+    "POSSRA1495": {
+        "name": "POSSEMIERS RAYMONDE",
+        "co": "TANGHE"
+    },
+    "POUMAYD": {
+        "name": "POUMAY Damien",
+        "co": "DEVENTER OLIVIER"
+    },
+    "POUPN": {
+        "name": "POUPAERT NATHALIE",
+        "co": "GIROUARD FRANCOISE"
+    },
+    "POZOF": {
+        "name": "POZO FABIOLA",
+        "co": "CLOES JOSE"
+    },
+    "PRHNEM": {
+        "name": "PRHNE Martin",
+        "co": "D'INVERNO JEAN-PASCAL"
+    },
+    "PROOM": {
+        "name": "PROOST MONIQUE",
+        "co": "BERTRAND SOPHIE"
+    },
+    "PRZYR": {
+        "name": "PRZYSIWEK ROBERT",
+        "co": "CHIGNESSE ANNE-CECILE"
+    },
+    "PUITVI": {
+        "name": "PUIT VICTOR",
+        "co": "FRANCOIS CHRISTINE"
+    },
+    "PUTZD": {
+        "name": "PUTZ DANIEL",
+        "co": "DRION"
+    },
+    "RABED": {
+        "name": "RABEUX DESIRE",
+        "co": "LEVY PHILIPPE"
+    },
+    "RADEC": {
+        "name": "RADERMACHER CLAUDE",
+        "co": "KELECOM TANGUY"
+    },
+    "RAETD": {
+        "name": "RAETS DANIELLE",
+        "co": "NOEL ANNE-CECILE"
+    },
+    "RAIMONDS": {
+        "name": "RAIMOND Serge",
+        "co": "PONCELET DAMIEN"
+    },
+    "RAQUJE": {
+        "name": "RAQUET JEAN (\u2020)",
+        "co": "ROBIDA STEPHANE"
+    },
+    "RASIMAR": {
+        "name": "RASIR MARGUERITE",
+        "co": "CHAPELIER JOEL"
+    },
+    "RAYEA": {
+        "name": "RAYER ANNIE (CP)",
+        "co": "FILLIEUX LAETITIA"
+    },
+    "RAYMAEKERM": {
+        "name": "RAYMAEKERS Mathildis",
+        "co": "BERCHEM NICOLAS"
+    },
+    "RECULEM": {
+        "name": "RECULE Michel",
+        "co": "EVRARD JEAN-YVES"
+    },
+    "REMYJOSEE": {
+        "name": "REMY Jos\u00e9e",
+        "co": "CHARLIER DOMINIQUE"
+    },
+    "REMYMAR": {
+        "name": "REMY MARIE-CLAIRE",
+        "co": "DEGUEL FRANCOIS"
+    },
+    "RENIS": {
+        "name": "RENIER SYLVIE",
+        "co": "LANNOY CECILE"
+    },
+    "RENKE": {
+        "name": "RENKIN ERIC",
+        "co": "GIROUARD FRANCOISE"
+    },
+    "RENWARDM": {
+        "name": "RENWARD Mathilde",
+        "co": "BISINELLA YVES"
+    },
+    "RESPENTINO": {
+        "name": "RESPENTINO Michelle",
+        "co": "LEMPEREUR JEAN-LUC"
+    },
+    "REYNNI9461": {
+        "name": "REYNAERTS NICOLE",
+        "co": "MAQUET BERNARD"
+    },
+    "RICHARDML": {
+        "name": "RICHARD Marie-Louise",
+        "co": "BAUDEN SYLVIE"
+    },
+    "RICHBRI": {
+        "name": "RICHET BRIGITTE",
+        "co": "BALTUS HELENE"
+    },
+    "RICHJAC": {
+        "name": "RICHARD JACQUELINE",
+        "co": "REARD FREDERIK"
+    },
+    "RIESTERERD": {
+        "name": "RIESTERER Dominique",
+        "co": "DEVENTER OLIVIER"
+    },
+    "ROBAAN": {
+        "name": "ROBA ANGELE",
+        "co": "DRION XAVIER"
+    },
+    "ROBEHE": {
+        "name": "ROBERT HELENE",
+        "co": "BAUDEN SYLVIE"
+    },
+    "ROBERTW": {
+        "name": "ROBERT Willy",
+        "co": "CHARLIER DOMINIQUE"
+    },
+    "ROCHEJM": {
+        "name": "ROCHE Jean Marie",
+        "co": "DEGUEL FRAN\u00c7OIS"
+    },
+    "RODRCARM": {
+        "name": "RODRIGUEZ CARMEN",
+        "co": "TRIVINO ISABELLE"
+    },
+    "ROFFJA": {
+        "name": "ROFFARE JACQUELINE",
+        "co": "DEFOURNY JEAN-FRANCOIS"
+    },
+    "ROLALI": {
+        "name": "ROLAND LILIANE",
+        "co": "LUC FRANCOISE"
+    },
+    "ROMAY": {
+        "name": "ROMANS YVETTE",
+        "co": "OUDEWATER YVETTE"
+    },
+    "ROMBACHM": {
+        "name": "ROMBACH Marie",
+        "co": "DE JONGHE FRAN\u00c7OISE"
+    },
+    "RONDASR": {
+        "name": "RONDAS Robert",
+        "co": "LOURTIE CHANTAL"
+    },
+    "ROTHE": {
+        "name": "ROTH ERICA",
+        "co": "DEVENTER OLIVIER"
+    },
+    "ROUFJOS": {
+        "name": "ROUFART JOSEPHINE",
+        "co": "DEVENTER OLIVIER"
+    },
+    "ROUSSEAUR": {
+        "name": "ROUSSEAU Ren\u00e9",
+        "co": "GROSSI PIERRE"
+    },
+    "ROUSSELR": {
+        "name": "ROUSSEL Rachel",
+        "co": "ELOIN ANNE-C\u00c9CILE"
+    },
+    "RUBBC": {
+        "name": "RUBBENS CHRISTINE",
+        "co": "DEMBOUR FRANCOIS"
+    },
+    "RUBEPA1090": {
+        "name": "RUBENS PAULETTE",
+        "co": "JAMMAER THIERRY"
+    },
+    "RUMASHARIF": {
+        "name": "RUMA SHARIF AIDARUS Khadija (CP)",
+        "co": "MORDANT C\u00c9CILE"
+    },
+    "SAEYR": {
+        "name": "SAEY Ren\u00e9",
+        "co": "BOURGUET BERNADETTE"
+    },
+    "SAIVEM": {
+        "name": "SAIVE Micheline",
+        "co": "NAMUR BERTRAND"
+    },
+    "SAIVMARG": {
+        "name": "SAIVE MARGUERITE",
+        "co": "DRION XAVIER"
+    },
+    "SALLEJP": {
+        "name": "SALLE Jean-Pierre",
+        "co": "MASSET NATHALIE"
+    },
+    "SANGMAU": {
+        "name": "SANGLIER MAURICE",
+        "co": "GENICOT JEAN"
+    },
+    "SANTA": {
+        "name": "SANTAMARIA ANGELO",
+        "co": "NOIR FLORENCE"
+    },
+    "SANTD": {
+        "name": "SANTORO DOMENICA",
+        "co": "CHAPELIER JOEL"
+    },
+    "SAROM": {
+        "name": "SAROLEA MARCEL",
+        "co": "HOUBEN MARCEL"
+    },
+    "SASCM": {
+        "name": "SASCHENKO MARIA",
+        "co": "UHODA EMMANUELLE"
+    },
+    "SAUERM": {
+        "name": "SAUER Maria",
+        "co": "HENQUET YVES"
+    },
+    "SAUVROB": {
+        "name": "SAUVAGE ROBERT",
+        "co": "HENQUET YVES"
+    },
+    "SAVYM": {
+        "name": "SAVY MARCEL",
+        "co": "HOUBEN"
+    },
+    "SCALP": {
+        "name": "SCALLIET PAULETTE",
+        "co": "CLOSSEN MARIE-EVE"
+    },
+    "SCARCELLAG": {
+        "name": "SCARCELLA Giuseppe",
+        "co": "DEVENTER OLIVIER"
+    },
+    "SCHEJ": {
+        "name": "SCHEER JEAN-CLAUDE",
+        "co": "ROYEN GHISLAIN"
+    },
+    "SCHEJEAN01": {
+        "name": "SCHELKENS JEAN",
+        "co": "OLIVIERS GILLES"
+    },
+    "SCHEJEANP": {
+        "name": "SCHERPENBERGHS JEAN-PIERRE",
+        "co": "GIROUARD FRANCOISE"
+    },
+    "SCHINAT": {
+        "name": "SCHIPPERS NATHALIE",
+        "co": "THIRY SOPHIE"
+    },
+    "SCHIVIR": {
+        "name": "SCHILTZ VIRGINIE (\u2020)",
+        "co": "DEVENTER OLIVIER"
+    },
+    "SCHMIMAJ": {
+        "name": "SCHMITZ MARIE JOSEE",
+        "co": "ISABELLE TRIVINO"
+    },
+    "SCHOAR": {
+        "name": "SCHOEMANS ARLETTE",
+        "co": "GALAND PIERRE-LOUIS"
+    },
+    "SCHOCH": {
+        "name": "SCHOLPP CHRISTINE",
+        "co": "KELECOM TANGUY"
+    },
+    "SCHOONBRON": {
+        "name": "SCHOONBROODT Nicolas",
+        "co": "DE JONGHE FRAN\u00c7OISE"
+    },
+    "SCHROBILTM": {
+        "name": "SCHROBILTGEN Malorie",
+        "co": "OUDEWATER MARIE-NO\u00cbLLE"
+    },
+    "SEDEN": {
+        "name": "SEDEYN NICOLE",
+        "co": "SEINLET SOPHIE"
+    },
+    "SEECHIMM": {
+        "name": "SEECHIM Marie",
+        "co": "LYDAKIS PIERRE"
+    },
+    "SEFFERR": {
+        "name": "SEFFER Rose (\u2022)",
+        "co": "TRIVINO ISABELLE"
+    },
+    "SEHAF": {
+        "name": "SEHA FRANCINE",
+        "co": "LEVY PHILIPPE"
+    },
+    "SEPTONF": {
+        "name": "SEPTON Francy",
+        "co": "DONNE MARIELLE"
+    },
+    "SEREJ": {
+        "name": "SERET JULES",
+        "co": "FRANCOIS CHRISTINE"
+    },
+    "SEREL": {
+        "name": "SERESSIA LAURE",
+        "co": "LEON LIGOT"
+    },
+    "SERONVALML": {
+        "name": "SERONVAL Marie-Louise",
+        "co": "KELECOM TANGUY"
+    },
+    "SERRE": {
+        "name": "SERRES ERIC",
+        "co": "DEGUEL FRANCOIS"
+    },
+    "SILLIENM": {
+        "name": "SILLIEN Marc",
+        "co": "ROBIDA ST\u00c9PHANE"
+    },
+    "SILVESTREF": {
+        "name": "SILVESTRE Francine",
+        "co": "EVRARD JEAN-YVES"
+    },
+    "SIMACYR": {
+        "name": "SIMAR CYRILLE (\u2020)",
+        "co": "LAGUESSE ET STOCKART"
+    },
+    "SIMOP": {
+        "name": "SIMON PHILIPPE",
+        "co": "UHODA EMMANUELLE"
+    },
+    "SLUSEE": {
+        "name": "SLUSE EMILE (\u2022)",
+        "co": "GOEZ INGRID"
+    },
+    "SLUSEL": {
+        "name": "SLUSE Louis  (\u2020)",
+        "co": "DUSSART PHILIPPE (NOT)"
+    },
+    "SMITT": {
+        "name": "SMIT Th\u00e9odore",
+        "co": "TRIVINO ISABELLE"
+    },
+    "SNYERSA": {
+        "name": "SNYERS Annette (*!!!)  (CP)",
+        "co": "LUYCK LUDIVINE"
+    },
+    "SOLHM": {
+        "name": "SOLHEID MYRIAM",
+        "co": "HOUBEN MARCEL"
+    },
+    "SOUBRDA": {
+        "name": "SOUBRE DANIELE",
+        "co": "GOEZ INGRID"
+    },
+    "SOUMAHA": {
+        "name": "SOUMAH Alpha",
+        "co": "DELVOIE PASCALE"
+    },
+    "SPAPD": {
+        "name": "SPAPEN DANIELLE",
+        "co": "PAQUOT MURIELLE"
+    },
+    "SPOIANN": {
+        "name": "SPOIDEN ANNE",
+        "co": "DEVENTER OLIVIER"
+    },
+    "STEEES": {
+        "name": "STEENEBRUGEN ESTELLE",
+        "co": "DEGUEL FRANCOIS"
+    },
+    "STELF": {
+        "name": "STELLA FIORELLA",
+        "co": "HOUBEN"
+    },
+    "STERCKMANS": {
+        "name": "STERCKMANS Philipe",
+        "co": "DEVENTER OLIVIER"
+    },
+    "STIEVENARG": {
+        "name": "STIEVENART Guy",
+        "co": "CHIGNESSE ANNE-C\u00c9CILE"
+    },
+    "STOQI": {
+        "name": "STOQUART ISABELLE",
+        "co": "REYNDERS ALEXANDRE"
+    },
+    "STOUPYC": {
+        "name": "STOUPY Christine",
+        "co": "GIROUARD FRAN\u00c7OISE"
+    },
+    "STRECLAU": {
+        "name": "STREBLER CLAUDE (CP)",
+        "co": "FLAHAUT JEROME"
+    },
+    "STRUMAND": {
+        "name": "STRUMAN Daniel Jean",
+        "co": "JAMMAER VINCENT"
+    },
+    "STUCKENSP": {
+        "name": "STUCKENS Pascale",
+        "co": "GILLET VAL\u00c9RIE"
+    },
+    "SYNEM": {
+        "name": "SYNE MARGUERITE",
+        "co": "CHARLIER DOMINIQUE"
+    },
+    "TAMBC": {
+        "name": "TAMBE CALOGERA",
+        "co": "TARICCO ERIC"
+    },
+    "TERRG": {
+        "name": "TERRANOVA GIUSEPPA",
+        "co": "KELECOM TANGUY"
+    },
+    "THEISENE": {
+        "name": "THEISEN Eddy",
+        "co": "DEVENTER OLIVIER"
+    },
+    "THEODOREC": {
+        "name": "THEODORE Celina",
+        "co": "GOEZ INGRID"
+    },
+    "THEULIL": {
+        "name": "THEUNISSEN LILIANE",
+        "co": "KELECOM TANGUY"
+    },
+    "THEUNISG": {
+        "name": "THEUNIS Georgette",
+        "co": "SACRE THIBAULT"
+    },
+    "THEUNISSEE": {
+        "name": "THEUNISSEN Eddy",
+        "co": "BOURGEOIS PERNELLE"
+    },
+    "THEYSB": {
+        "name": "THEYS Bernard",
+        "co": "KELECOM TANGUY"
+    },
+    "THIRYONG": {
+        "name": "THIRYON Georges",
+        "co": "TRIVINO ISABELLE"
+    },
+    "THONAN": {
+        "name": "THONON ANGELE",
+        "co": "CORINNE"
+    },
+    "THONESJ": {
+        "name": "THONES Jeannine",
+        "co": "DEVENTER OLIVIER"
+    },
+    "THONG": {
+        "name": "THONON GEORGETTE",
+        "co": "EVRARD JEAN-YVES"
+    },
+    "THYSRE": {
+        "name": "THYS RENEE **",
+        "co": "ROGER"
+    },
+    "TIBOSA1526": {
+        "name": "TIBOU SABRINA",
+        "co": "HUEZ GEOFFROY"
+    },
+    "TILMN": {
+        "name": "TILMAN NICOLE",
+        "co": "FILLIEUX LAETITIA"
+    },
+    "TIMMG": {
+        "name": "TIMMERMANS GUY",
+        "co": "TARICCO ERIC"
+    },
+    "TIRTJE7914": {
+        "name": "TIRTIAUX JEAN",
+        "co": "DEVENTER OLIVIER"
+    },
+    "TONGLETG": {
+        "name": "TONGLET Guy",
+        "co": "KELECOM TANGUY"
+    },
+    "TOPADOM": {
+        "name": "TOPA DOMINIQUE",
+        "co": "UHODA EMMANUELLE"
+    },
+    "TOPD": {
+        "name": "TOP DANIELE",
+        "co": "MASSET MARC"
+    },
+    "TORDEURC": {
+        "name": "TORDEUR Christian",
+        "co": "KELECOM TANGUY"
+    },
+    "TORTCA6690": {
+        "name": "TORTOLANI CARINE",
+        "co": "COUNSON MATHILDE"
+    },
+    "TOUSMARI": {
+        "name": "TOUSSAINT MARIE",
+        "co": "UHODA EMMANUELLE"
+    },
+    "TRENOYED": {
+        "name": "TRENOYE Didier",
+        "co": "DORANGE FRAN\u00c7OISE"
+    },
+    "TROIAN": {
+        "name": "TROISFONTAINES ANDRE",
+        "co": "MASSET NATHALIE"
+    },
+    "TRULLEMANS": {
+        "name": "TRULLEMANS Denise",
+        "co": "ROOSEN LAURENCE"
+    },
+    "UETENM": {
+        "name": "UETEN Monique",
+        "co": "DRION"
+    },
+    "UMINAP": {
+        "name": "UMINA PIETRO",
+        "co": "CORMAN SEBASTIEN"
+    },
+    "URASJB": {
+        "name": "URAS Jean-Bernard (\u2020)",
+        "co": "EVRARD JEAN-YVES"
+    },
+    "USJALIL": {
+        "name": "USJAK LILIANE",
+        "co": "JAMMAER VINCENT"
+    },
+    "VALKENBOGE": {
+        "name": "VALKENBORGH Georgius (\u2020)",
+        "co": "DE WILDE D'ESTMAEL GR\u00c9GOIRE"
+    },
+    "VANAJEAN": {
+        "name": "VANAERTENRYCK JEANNINE",
+        "co": "MASSET NATHALIE"
+    },
+    "VANBCAT": {
+        "name": "VANBEVER CATHERINE",
+        "co": "GERARDY LUCIE"
+    },
+    "VANBGE": {
+        "name": "VAN BELLE GERARD",
+        "co": "GODEFROID ISABELLE"
+    },
+    "VANBONM": {
+        "name": "VANBON Mireille",
+        "co": "JAMMAER ANNE-CHARLOTTE"
+    },
+    "VANCMARI": {
+        "name": "VANCATTENDIJCK MARIE",
+        "co": "DUMOULIN NATHALIE"
+    },
+    "VANDAMMEM": {
+        "name": "VAN DAMME Michael (\u2022)",
+        "co": "VALVEKENS SANDRINE"
+    },
+    "VANDANN02": {
+        "name": "VAN DE WEGHE ANNIE",
+        "co": "CHAPELIER JOEL"
+    },
+    "VANDCHARLE": {
+        "name": "VANDERVELPEN CHARLES",
+        "co": "HUMBLET DOMINIQUE"
+    },
+    "VANDEBEEKA": {
+        "name": "VANDEBEEK Arlette",
+        "co": "SCHMITS PIERRE"
+    },
+    "VANDEREYDA": {
+        "name": "VAN DE REYD Andr\u00e9",
+        "co": "GODIN PHILIPPE"
+    },
+    "VANDERHAEB": {
+        "name": "VANDERHAEGEN Brigitte",
+        "co": "HAENEN ANNE-FRAN\u00c7OISE"
+    },
+    "VANDERVEKM": {
+        "name": "VAN DER VEKEN Marc",
+        "co": "FRANCOIS CHRISTINE"
+    },
+    "VANDPAS": {
+        "name": "VAN DIJCK PASCALE",
+        "co": "WENRIC JEAN-LUC"
+    },
+    "VANHULEMS": {
+        "name": "VANHULEM Suzanne",
+        "co": "JACQUEMOTTE MARC"
+    },
+    "VANLAEKER": {
+        "name": "VANLAEKE Rebecca",
+        "co": "JAMMAER"
+    },
+    "VANLEEUWML": {
+        "name": "VAN LEEUW Marie Louise",
+        "co": "BAUDEN SYLVIE"
+    },
+    "VANLGER": {
+        "name": "VAN LOO GERMAINE",
+        "co": "THIRY SOPHIE"
+    },
+    "VANLLUC": {
+        "name": "VAN LIERDE LUC (adm)",
+        "co": "VROONEN CLAUDINE"
+    },
+    "VANPG": {
+        "name": "VAN PEE GILBERTE",
+        "co": "PEROTTI VICTORIA"
+    },
+    "VANRCHR": {
+        "name": "VAN ROELEN CHRISTIAN",
+        "co": "SEINLET SOPHIE"
+    },
+    "VANROYG": {
+        "name": "VANROY G\u00e9rard",
+        "co": "MONTLUC MARIE"
+    },
+    "VECCGI9804": {
+        "name": "VECCHIO GIOVANNI",
+        "co": "WIGNY LAURENCE"
+    },
+    "VEENA": {
+        "name": "VEENSTRA ANDRE",
+        "co": "ROOSEN LAURENCE"
+    },
+    "VERACHTERT": {
+        "name": "VERACHTERT Brigitte",
+        "co": "KELECOM TANGUY"
+    },
+    "VERCLI": {
+        "name": "VERCRUYSSE LINDA",
+        "co": "VANDENBEYLAARDT LISE"
+    },
+    "VERDY": {
+        "name": "VERDOOT YVETTE ** (CP)  (\u2022)",
+        "co": "SOUGNE FABIENNE"
+    },
+    "VERHULSTC": {
+        "name": "VERHULST Christine",
+        "co": "VAN DER STEEN GR\u00c9GORY"
+    },
+    "VERPLAETML": {
+        "name": "VERPLAETSE Marie-Louise",
+        "co": "ROYEN GHISLAIN"
+    },
+    "VERVIERA": {
+        "name": "VERVIER Alain Jean",
+        "co": "DOUIN SERGE"
+    },
+    "VILLERSR": {
+        "name": "VILLERS Rapha\u00ebl",
+        "co": "HOUBEN MARCEL"
+    },
+    "VILLMA7576": {
+        "name": "VILLERS MARIE ANTOINETTE",
+        "co": "MASSET NATHALIE"
+    },
+    "VINCCL": {
+        "name": "VINCENT CLAUDE",
+        "co": "DEMBOUR FRANCOIS"
+    },
+    "VINKL": {
+        "name": "VINKENROYE LEONIE",
+        "co": "CHAPELIER JOEL"
+    },
+    "VIOTE": {
+        "name": "VIOTTO ELISABETH",
+        "co": "CORMAN SEBASTIEN"
+    },
+    "VIRZPAO": {
+        "name": "VIRZI PAOLO",
+        "co": "DEMOULIN CASSIANE"
+    },
+    "VISSERSD": {
+        "name": "VISSERS David",
+        "co": "JAMMAER THIERRY"
+    },
+    "VLACHONIKS": {
+        "name": "VLACHONIKOLOS Stavroula",
+        "co": "LOUIS RAPHA\u00cbLLE"
+    },
+    "VOIGTB": {
+        "name": "VOIGT Blanche",
+        "co": "DE JONGHE FRAN\u00c7OISE"
+    },
+    "VOLONPH": {
+        "name": "VOLON Philippe",
+        "co": "DANLOY G\u00c9RALDINE"
+    },
+    "VONKL": {
+        "name": "VON KEREKESSY LYDIA (CP)",
+        "co": "SOMERS EVA"
+    },
+    "WAERTSF": {
+        "name": "WAERTS Francine",
+        "co": "PIERI MARIE"
+    },
+    "WALRG": {
+        "name": "WALRAND GEORGES",
+        "co": "HOUBEN MARCEL"
+    },
+    "WANETM": {
+        "name": "WANET Micheline",
+        "co": "DRION XAVIER"
+    },
+    "WANNA": {
+        "name": "WANNEZ ALINE",
+        "co": "TARICCO ERIC"
+    },
+    "WARZEEJ": {
+        "name": "WARZEE Jeanne",
+        "co": "LEMPEREUR JEAN"
+    },
+    "WASTIAUXA": {
+        "name": "WASTIAUX Andr\u00e9e",
+        "co": "BERCHEM NICOLAS"
+    },
+    "WATHIEUI": {
+        "name": "WATHIEU IVETTE",
+        "co": "UHODA EMMANUELLE"
+    },
+    "WATHR": {
+        "name": "WATHIEUX RENEE",
+        "co": "MERCIER XAVIER"
+    },
+    "WATRH": {
+        "name": "WATRIN HENRY",
+        "co": "VAN ACKERE CECILE"
+    },
+    "WEGENERJ": {
+        "name": "WEGENER Jeremie",
+        "co": "MAGNEE V\u00c9RONIQUE"
+    },
+    "WEIGERTH": {
+        "name": "WEIGERT Henri Joseph",
+        "co": "DRION XAVIER"
+    },
+    "WEILF": {
+        "name": "WEILAND FABIENNE (CP)",
+        "co": "UHODA EMMANUELLE"
+    },
+    "WELKENHUYM": {
+        "name": "WELKENHUYSEN Michelle",
+        "co": "DOUIN SERGE"
+    },
+    "WELKH": {
+        "name": "WELKENHUZEN HENRI",
+        "co": "FILLIEUX LAETITIA"
+    },
+    "WELLERSHAI": {
+        "name": "WELLERSHAUSEN Ir\u00e8ne",
+        "co": "WYNANTS YVES"
+    },
+    "WENSG": {
+        "name": "WENS Godelive",
+        "co": "WESTERLINCK EL\u00c9ONORE"
+    },
+    "WERYANNE": {
+        "name": "WERY ANNE-MARIE",
+        "co": "CORMAN SEBASTIEN"
+    },
+    "WIECL": {
+        "name": "WIECZOREK LESZEK",
+        "co": "GODIN PHILIPPE"
+    },
+    "WIERZBAE": {
+        "name": "WIERZBA Edouard",
+        "co": "THIRY SOPHIE"
+    },
+    "WIJNENJ": {
+        "name": "WIJNEN John",
+        "co": "HENQUET YVES"
+    },
+    "WILIQUETEM": {
+        "name": "WILIQUET Emile",
+        "co": "CORMAN S\u00c9BASTIEN"
+    },
+    "WILISQUIP": {
+        "name": "WILISQUI Patricia",
+        "co": "FABER MARIE"
+    },
+    "WILKINF": {
+        "name": "WILKIN Fr\u00e9d\u00e9rick",
+        "co": "DE JONGHE FRAN\u00c7OISE"
+    },
+    "WILLEMSJM": {
+        "name": "WILLEMS JEAN-MARIE",
+        "co": "DEVENTER OLIVIER"
+    },
+    "WILLJE": {
+        "name": "WILLEM JEAN-FRANCOIS",
+        "co": "PIRSON"
+    },
+    "WILLMARGU": {
+        "name": "WILLEMSEN MARGUERITE",
+        "co": "TRIVINO ISABELLE"
+    },
+    "WINAJO": {
+        "name": "WINAND JOELLE",
+        "co": "DOUIN SERGE"
+    },
+    "WINKL": {
+        "name": "WINKLER LOUIS",
+        "co": "CHIGNESSE ANNE-CECILE"
+    },
+    "WISHIYAMUL": {
+        "name": "WISHIYA MULAMBA Cedrick",
+        "co": "JAMMAER ANNE-CHARLOTTE"
+    },
+    "WITMC": {
+        "name": "WITMEUR CHRISTIAN",
+        "co": "HOUBEN MARCEL"
+    },
+    "WYNAP": {
+        "name": "WYNANDS PIERRE",
+        "co": "FILLIEUX LAETITIA"
+    },
+    "XHIBG": {
+        "name": "XHIBITTE GEORGES",
+        "co": "BERNARD ERIC"
+    },
+    "YAACOUBIA": {
+        "name": "YAACOUBI Abderrazak",
+        "co": "KELECOM TANGUY"
+    },
+    "YANGE": {
+        "name": "YANGINCI EMINE",
+        "co": "JAMMAER THIERRY"
+    },
+    "ZARMANIANA": {
+        "name": "ZARMANIAN Antranig",
+        "co": "FIEUW FANNY"
+    },
+    "ZBICB": {
+        "name": "ZBICZAK BARBARA",
+        "co": "PIERRET SOPHIE"
+    },
+    "ZIMMC": {
+        "name": "ZIMMERMANN CATHERINE",
+        "co": "MASSET NATHALIE"
+    },
+    "ZWIERNIKL": {
+        "name": "ZWIERNIK Lucja Klara",
+        "co": "TRIVINO ISABELLE"
+    }
+}
