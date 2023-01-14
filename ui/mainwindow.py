@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'mainwindow.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.4.0
+## Created by: Qt User Interface Compiler version 6.4.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -16,16 +16,17 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QIcon, QImage, QKeySequence, QLinearGradient,
     QPainter, QPalette, QPixmap, QRadialGradient,
     QTransform)
-from PySide6.QtWidgets import (QApplication, QComboBox, QHBoxLayout, QHeaderView,
-    QLabel, QLayout, QMainWindow, QMenu,
-    QMenuBar, QPushButton, QSizePolicy, QStatusBar,
-    QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QApplication, QComboBox, QGridLayout, QHBoxLayout,
+    QHeaderView, QLabel, QLayout, QMainWindow,
+    QMenu, QMenuBar, QPushButton, QSizePolicy,
+    QSpacerItem, QStatusBar, QTableWidget, QTableWidgetItem,
+    QVBoxLayout, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1110, 570)
+        MainWindow.resize(1280, 720)
         MainWindow.setStyleSheet(u"")
         self.actionGestion = QAction(MainWindow)
         self.actionGestion.setObjectName(u"actionGestion")
@@ -37,24 +38,26 @@ class Ui_MainWindow(object):
         self.actionImport_CO_depuis_XLSX.setObjectName(u"actionImport_CO_depuis_XLSX")
         self.actionAddImportCustomers = QAction(MainWindow)
         self.actionAddImportCustomers.setObjectName(u"actionAddImportCustomers")
+        self.actionDropTables = QAction(MainWindow)
+        self.actionDropTables.setObjectName(u"actionDropTables")
+        self.actionCompanyManagement = QAction(MainWindow)
+        self.actionCompanyManagement.setObjectName(u"actionCompanyManagement")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.layoutWidget = QWidget(self.centralwidget)
-        self.layoutWidget.setObjectName(u"layoutWidget")
-        self.layoutWidget.setGeometry(QRect(10, 10, 1091, 511))
-        self.verticalLayout_2 = QVBoxLayout(self.layoutWidget)
+        self.gridLayout = QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.verticalLayout_2 = QVBoxLayout()
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.label = QLabel(self.layoutWidget)
+        self.label = QLabel(self.centralwidget)
         self.label.setObjectName(u"label")
         self.label.setMaximumSize(QSize(250, 16777215))
         self.label.setBaseSize(QSize(0, 0))
 
         self.horizontalLayout.addWidget(self.label)
 
-        self.cbb_company = QComboBox(self.layoutWidget)
+        self.cbb_company = QComboBox(self.centralwidget)
         self.cbb_company.setObjectName(u"cbb_company")
         self.cbb_company.setMaximumSize(QSize(250, 16777215))
 
@@ -65,7 +68,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_2 = QHBoxLayout()
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
-        self.tw_co = QTableWidget(self.layoutWidget)
+        self.tw_co = QTableWidget(self.centralwidget)
         if (self.tw_co.columnCount() < 7):
             self.tw_co.setColumnCount(7)
         __qtablewidgetitem = QTableWidgetItem()
@@ -92,21 +95,25 @@ class Ui_MainWindow(object):
         self.verticalLayout = QVBoxLayout()
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setSizeConstraint(QLayout.SetDefaultConstraint)
-        self.btnAddRow = QPushButton(self.layoutWidget)
+        self.btnAddRow = QPushButton(self.centralwidget)
         self.btnAddRow.setObjectName(u"btnAddRow")
         self.btnAddRow.setStyleSheet(u"")
 
         self.verticalLayout.addWidget(self.btnAddRow)
 
-        self.btnAddRow_4 = QPushButton(self.layoutWidget)
+        self.btnAddRow_4 = QPushButton(self.centralwidget)
         self.btnAddRow_4.setObjectName(u"btnAddRow_4")
 
         self.verticalLayout.addWidget(self.btnAddRow_4)
 
-        self.btnPrint = QPushButton(self.layoutWidget)
+        self.btnPrint = QPushButton(self.centralwidget)
         self.btnPrint.setObjectName(u"btnPrint")
 
         self.verticalLayout.addWidget(self.btnPrint)
+
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout.addItem(self.verticalSpacer)
 
 
         self.horizontalLayout_2.addLayout(self.verticalLayout)
@@ -114,13 +121,16 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2.addLayout(self.horizontalLayout_2)
 
+
+        self.gridLayout.addLayout(self.verticalLayout_2, 0, 0, 1, 1)
+
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
         MainWindow.setStatusBar(self.statusbar)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 1110, 22))
+        self.menubar.setGeometry(QRect(0, 0, 1280, 20))
         self.menufichier = QMenu(self.menubar)
         self.menufichier.setObjectName(u"menufichier")
         self.menuImport = QMenu(self.menubar)
@@ -132,7 +142,9 @@ class Ui_MainWindow(object):
         self.menufichier.addSeparator()
         self.menufichier.addAction(self.actionQuitter)
         self.menuImport.addAction(self.actionImport_customers)
-        self.menuImport.addAction(self.actionAddImportCustomers)
+        self.menuImport.addAction(self.actionCompanyManagement)
+        self.menuImport.addSeparator()
+        self.menuImport.addAction(self.actionDropTables)
 
         self.retranslateUi(MainWindow)
 
@@ -140,12 +152,14 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"COMailPrinting", None))
         self.actionGestion.setText(QCoreApplication.translate("MainWindow", u"Gestion", None))
         self.actionQuitter.setText(QCoreApplication.translate("MainWindow", u"Quitter", None))
         self.actionImport_customers.setText(QCoreApplication.translate("MainWindow", u"Import clients depuis XLSX", None))
         self.actionImport_CO_depuis_XLSX.setText(QCoreApplication.translate("MainWindow", u"Import CO depuis XLSX", None))
         self.actionAddImportCustomers.setText(QCoreApplication.translate("MainWindow", u"Ajouter depuis fichier XLSX", None))
+        self.actionDropTables.setText(QCoreApplication.translate("MainWindow", u"Supprimer et recr\u00e9er les tables", None))
+        self.actionCompanyManagement.setText(QCoreApplication.translate("MainWindow", u"Gestion des soci\u00e9t\u00e9s", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Soci\u00e9t\u00e9 \u00e9metrice du courrier par d\u00e9faut:", None))
         ___qtablewidgetitem = self.tw_co.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Client", None));
@@ -165,6 +179,6 @@ class Ui_MainWindow(object):
         self.btnAddRow_4.setText(QCoreApplication.translate("MainWindow", u"Supprimer", None))
         self.btnPrint.setText(QCoreApplication.translate("MainWindow", u"Export en PDF", None))
         self.menufichier.setTitle(QCoreApplication.translate("MainWindow", u"fichier", None))
-        self.menuImport.setTitle(QCoreApplication.translate("MainWindow", u"Import", None))
+        self.menuImport.setTitle(QCoreApplication.translate("MainWindow", u"Gestion des donn\u00e9es", None))
     # retranslateUi
 

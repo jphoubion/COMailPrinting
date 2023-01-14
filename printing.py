@@ -10,7 +10,7 @@ class Printing:
         address = co.split('\n')
         self.PDFFile.setFont("Helvetica", 10)
         self.PDFFile.drawRightString(19 * cm, 27 * cm, f'Anhée, le {now.strftime("%d/%m/%Y")}')
-        self.PDFFile.drawString(13 * cm,26 * cm, f"Maître {address[0]}")
+        self.PDFFile.drawString(13 * cm,26 * cm, f"MAITRE {address[0]}")
         self.PDFFile.drawString(13 * cm, 25.5 * cm, address[1])
         self.PDFFile.drawString(13 * cm, 25 * cm, address[2])
         self.PDFFile.line(2 * cm, 21.5 * cm, 19 * cm, 21.5 * cm)

@@ -2,11 +2,16 @@ import json
 
 from PySide6.QtWidgets import QFileDialog
 from openpyxl import Workbook, load_workbook
+import sqlite3
+
+import re
+
+import sqlmanagement
+
 
 class ImportFromXls:
 
     def __init__(self):
-
         self.wb = Workbook()
         self.sheet = None
 
@@ -20,51 +25,49 @@ class ImportFromXls:
             self.wb = load_workbook(self.filename[0])
             return self.wb.active
 
-    def import_customers(self, mode):
+    def import_customers(self, conn, db_cursor):
         self.sheet = self.select_customers_file()
-        customer_dict = {}
+
+        # Fill CO table first
+        ######################
+        self.import_co(conn, db_cursor)
+
+        db_connection = conn
         if self.sheet is not None:
-            if mode == "a":
-                with open("customers.json", "r") as f:
-                    customer_dict = json.load(f)
-                    print(len(customer_dict))
+            for row in self.sheet.iter_rows(min_row=2):
+                co_name = str(row[3].value).upper().replace("'","").replace("C/O ME ",'').replace("C/O ME. ",'').replace("C/O MAITRE ",'').lstrip()
+                co_id = sqlmanagement.get_result(db_connection, f"SELECT * FROM co WHERE co_name='{co_name}'")
+                # remove weird characters from the name
+                customer = self.clean_string(row[2].value)
+                req_customers = "INSERT INTO customers (customer_code, customer_name, co_id) VALUES "
+                req_customers += f"('{row[0].value}', '{customer}', '{co_id[0][0]}')"
+                try:
+                    db_cursor.execute(req_customers)
+                    db_connection.commit()
+                except sqlite3.IntegrityError as e:
+                    print(e)
+                    print(req_customers)
 
-            with open("customers.json", "w") as outfile:
-                for row in self.sheet.iter_rows(min_row=2):
-                    # building DIC to export to JSON
-                    # cleaning C/O information
-                    co = str(row[3].value).split(' ')[2:]
-                    customer_dict.update({
-                        row[0].value: {
-                            "name": row[2].value,
-                            "co": ' '.join(co).upper()
-                        }
-                    })
-                # print(customer_dict)
-                json_object = json.dump(customer_dict, outfile, indent=4)
-            if mode == "a":
-                self.import_co("a")
-            else:
-                self.import_co("w")
 
-    def import_co(self, mode):
+    def import_co(self, conn, db_cursor):
+        db_connection = conn
         if self.sheet is not None:
-            co_dict = {}
-            if self.sheet is not None:
-                if mode == "a":
-                    with open("co.json", "r") as f:
-                        co_dict = json.load(f)
+            for row in self.sheet.iter_rows(min_row=2):
+                req_co = "INSERT INTO co (co_name, co_address) VALUES "
+                co_name = str(row[3].value).upper().replace("'","").replace("C/O ME ",'').replace("C/O ME. ",'').replace("C/O MAITRE ",'').lstrip()
+                # print(co_name)
+                address = f"{row[5].value}\n{row[7].value}\n{row[8].value}".replace("'", ' ')
+                req_co += f"('{co_name.upper()}', '{address.upper()}'),"
+                try:
+                    db_cursor.execute(req_co[:-1])
+                    db_connection.commit()
+                except sqlite3.IntegrityError as e:
+                    print(e)
+                    # print(req_co)
 
-            with open("co.json", "w") as outfile:
-                for row in self.sheet.iter_rows(min_row=2):
-                    co_name = str(row[3].value).upper().replace("C/O ME ",'').replace("C/O ME. ",'')
-                    co_dict.update({
-                        co_name: {
-                            "co_name": co_name,
-                            "address" : row[5].value,
-                            "cp" : row[7].value,
-                            "city" : row[8].value
-                        }
-                    })
-                # print(customer_dict)
-                json_object = json.dump(co_dict, outfile, indent=4)
+    def clean_string(self, string):
+        # remove weird characters from the name
+        pattern = re.compile('[\W_0-9]+')
+        dirty_name = str(string).split()
+        cleaned_list = [pattern.sub('', word) for word in dirty_name]
+        return ' '.join(cleaned_list).upper()
