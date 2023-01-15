@@ -14,9 +14,9 @@ from reportlab.pdfgen.canvas import Canvas
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import cm
 import sqlite3
+from datetime import datetime
 
 import sqlmanagement
-import msgbox
 
 from importfromxls import ImportFromXls
 
@@ -38,24 +38,33 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         #################################################"
         self.db_connection, self.cursor = sqlmanagement.setup_connection("db.sqlite3")
 
+        #################################################"
+        # SETUP CONNECTION BETWEEN MENU/BUTTON TO FUNCTION
+        #################################################"
         self.setup_connection()
 
         ##########################
         # Test if DB contents data
         ##########################
         if sqlmanagement.data_exists(self.cursor) is None:
-            msgbox.display_msgbox("COMailPrinting - Erreur", QMessageBox.Critical, \
+            QMessageBox.critical(self, "COMailPrinting - Erreur",\
                                   "Aucune donnée actuellement dans la DB.\n"
                                   "Veuillez importer des données et remplir" \
                                   " la table des sociétés !", \
                                    QMessageBox.StandardButton.Ok)
+            # Creates empty tables in the DB
+            res = sqlmanagement.drop_create_tables(self.db_connection, self.cursor)
+            if res is None:
+                # Empty the COMPANIES combobox and disables it
+                self.cbb_company.clear()
+                self.cbb_company.setEnabled(False)
+                # Empty the main table
+                self.empty_table()
         else:
             ################################
             # Add the first row of the table
             ################################
             self.btn_add_row()
-            self.btnAddRow.clicked.connect(self.btn_add_row)
-            self.btnPrint.clicked.connect(self.btn_print)
 
             ################################
             # Load companies list
@@ -67,17 +76,56 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         if len(req_companies) > 0:
             for company in req_companies:
                 self.cbb_company.addItem(company[1])
+            self.cbb_company.setEnabled(True)
 
     def setup_connection(self):
         # Connect methods to menu options
         ##################################
         self.actionQuitter.triggered.connect(self.quit)
-        # self.actionGestion.triggered.connect(self.openCOManagementWindow)
-        self.actionCompanyManagement.triggered.connect(self.openCompanyManagementWindow)
+        self.actionCompanyManagement.triggered.connect(self.open_company_management_window)
+        self.actionImport_customers.triggered.connect(partial(self.import_data, self.db_connection, self.cursor))
+        self.actionDropTables.triggered.connect(partial(self.drop_create_tables, self.db_connection, self.cursor))
 
-        self.import_from_xls = ImportFromXls()
-        self.actionImport_customers.triggered.connect(partial(self.import_from_xls.import_customers, self.db_connection, self.cursor))
-        self.actionDropTables.triggered.connect(partial(sqlmanagement.drop_create_tables, self.db_connection, self.cursor))
+        # Connect BUTTONS to methods
+        #############################
+        self.btnAddRow.clicked.connect(self.btn_add_row)
+        self.btnDeleteRow.clicked.connect(self.btn_delete_row)
+        self.btnEmptyTable.clicked.connect(self.empty_table)
+        self.btnPrint.clicked.connect(self.btn_print)
+
+    def import_data(self, conn, cursor):
+        import_from_xls = ImportFromXls()
+        import_from_xls.import_customers(conn, cursor)
+
+        # Open companies managmement window if combobox is empty
+        if self.cbb_company.count() == 0:
+            self.open_company_management_window()
+        # # Add a row it the table is empty
+        # if self.tw_co.rowCount() == 0:
+        #     self.btn_add_row()
+
+    def drop_create_tables(self, conn, cursor):
+        result = QMessageBox.critical(self, "COMailPrinting - Vidange de la base de données",
+                                            "Etes-vous certain de vouloir  vider la base donnée ?\n\n" \
+                                            "Il faudra réimporter les clients depuis un fichier XLSX" \
+                                            " et recéer réencoder les sociétés émettrices.", \
+                                            QMessageBox.StandardButton.Ok | QMessageBox.StandardButton.Cancel)
+        if result == QMessageBox.StandardButton.Ok:
+            res = sqlmanagement.drop_create_tables(conn, cursor)
+            if res is None:
+                # Empty the COMPANIES combobox and disables it
+                self.cbb_company.clear()
+                self.cbb_company.setEnabled(False)
+                # Empty the main table
+                self.empty_table()
+                QMessageBox.information(self, "COMailPrinting - Vidange de la base de données",
+                                            "Base de données éffacée !",\
+                                            QMessageBox.StandardButton.Ok)
+
+    def empty_table(self):
+        self.tw_co.selectRow(0)
+        for row in range(0, self.tw_co.rowCount()):
+            self.tw_co.removeRow(self.tw_co.currentRow())
 
     def btn_add_row(self):
 
@@ -93,7 +141,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         te_coordonnees.setFixedHeight(40)
 
         ###################################################################################
-        # Add combobox for C/O on each new line  from JSON
+        # Add combobox for C/O on each new line
         ###################################################################################
         combo_co = QComboBox()
         combo_co.setEditable(True)
@@ -110,7 +158,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # print(f"NB de CO = {combo_co.count()}")
 
         ###################################################################################
-        # Add combobox for CUSTOMERS on each new line and fill it with customers from JSON
+        # Add combobox for CUSTOMERS on each new line
         ###################################################################################
         combo_cust = QComboBox()
         combo_cust.setEditable(True)
@@ -164,32 +212,43 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.tw_co.resizeRowsToContents()
         # self.tw_co.setColumnWidth(3, 290)
 
+    def btn_delete_row(self):
+        self.tw_co.removeRow(self.tw_co.currentRow())
+
     def btn_print(self):
         p = Printing()
-        p.PDFFile = Canvas("COMailPrinting.pdf", pagesize=A4)
+        now = datetime.now()
+        PDF_name = f"COMailPrinting - {now.strftime('%d-%m-%Y')}.pdf"
+        p.PDFFile = Canvas(PDF_name, pagesize=A4)
         p.PDFFile.setFont("Helvetica", 10)
-        for row in range(0,self.tw_co.rowCount()):
-            # print(self.tw_co.cellWidget(row,0).currentText())
-            req_customer = f"SELECT customer_name FROM customers WHERE customer_code='{self.tw_co.cellWidget(row,0).currentText()}'"
-            client = sqlmanagement.get_result(self.db_connection,req_customer)[0][0]
-            co = f"{self.tw_co.cellWidget(row,1).currentText()}\n{self.tw_co.cellWidget(row,2).toPlainText()}"
-            reference = self.tw_co.cellWidget(row,5).text()
-            company = self.tw_co.cellWidget(row,6).currentText()
-            PDFFile_name = self.tw_co.cellWidget(row,0).currentText()
-            p.create_pages(co, client, reference, company)
-        p.PDFFile.save() # Save the file on the disk
-        QMessageBox.information(self, "Export PDF", "Export du fichier COMailPrinting.pdf terminé !")
+        ok_for_print = False
+        for row in range(0, self.tw_co.rowCount()):
+            if self.tw_co.cellWidget(row,0).currentText() != ' ':
+                req_customer = f"SELECT customer_name FROM customers WHERE customer_code='{self.tw_co.cellWidget(row,0).currentText()}'"
+                client = sqlmanagement.get_result(self.db_connection,req_customer)[0][0]
+                co = f"{self.tw_co.cellWidget(row,1).currentText()}\n{self.tw_co.cellWidget(row,2).toPlainText()}"
+                reference = self.tw_co.cellWidget(row,5).text()
+                company = self.tw_co.cellWidget(row,6).currentText()
+                # PDFFile_name = self.tw_co.cellWidget(row,0).currentText()
+                p.create_pages(co, client, reference, company)
+                ok_for_print = True
+            else:
+                ok_for_print = False
+        if ok_for_print:
+            p.PDFFile.save() # Save the file on the disk
+            QMessageBox.information(self, "COMailPrinting - Export PDF", f"Export du fichier {PDF_name} terminé !")
+        else:
+            QMessageBox.warning(self, "COMailPrinting - Export PDF", "Il y a des erreurs dans la table, impossible d'exporter en PDF"\
+                              "\n\nVérifiez s'il n'y a pas de zone 'Client' ou 'C/O' vide...", QMessageBox.StandardButton.Ok)
 
-    def openCompanyManagementWindow(self):
+    def open_company_management_window(self):
         company_management_window = CompanyManagementWindow(self.db_connection, self)
         company_management_window.show()
 
     def select_co_from_customer(self, combo_co, old_customer, customer):
-        co_id_from_customer = sqlmanagement.get_result(self.db_connection, f"SELECT co_id FROM customers WHERE customer_code = '{customer}'")
-
         if customer != " ":
+            co_id_from_customer = sqlmanagement.get_result(self.db_connection, f"SELECT co_id FROM customers WHERE customer_code = '{customer}'")
             co_name = sqlmanagement.get_result(self.db_connection, f"SELECT co_name FROM co WHERE id = {co_id_from_customer[0][0]}")
-
             combo_co.setCurrentText(co_name[0][0])
         else:
             combo_co.setCurrentIndex(0)

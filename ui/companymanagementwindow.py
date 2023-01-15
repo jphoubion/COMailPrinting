@@ -25,7 +25,7 @@ class Ui_CompanyManagementWindow(object):
         if not CompanyManagementWindow.objectName():
             CompanyManagementWindow.setObjectName(u"CompanyManagementWindow")
         CompanyManagementWindow.setWindowModality(Qt.ApplicationModal)
-        CompanyManagementWindow.resize(482, 377)
+        CompanyManagementWindow.resize(509, 456)
         self.centralwidget = QWidget(CompanyManagementWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.gridLayout_2 = QGridLayout(self.centralwidget)

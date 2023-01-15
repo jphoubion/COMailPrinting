@@ -50,6 +50,10 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout.addItem(self.horizontalSpacer)
+
         self.label = QLabel(self.centralwidget)
         self.label.setObjectName(u"label")
         self.label.setMaximumSize(QSize(250, 16777215))
@@ -59,6 +63,8 @@ class Ui_MainWindow(object):
 
         self.cbb_company = QComboBox(self.centralwidget)
         self.cbb_company.setObjectName(u"cbb_company")
+        self.cbb_company.setEnabled(False)
+        self.cbb_company.setMinimumSize(QSize(200, 0))
         self.cbb_company.setMaximumSize(QSize(250, 16777215))
 
         self.horizontalLayout.addWidget(self.cbb_company)
@@ -101,13 +107,19 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.btnAddRow)
 
-        self.btnAddRow_4 = QPushButton(self.centralwidget)
-        self.btnAddRow_4.setObjectName(u"btnAddRow_4")
+        self.btnDeleteRow = QPushButton(self.centralwidget)
+        self.btnDeleteRow.setObjectName(u"btnDeleteRow")
 
-        self.verticalLayout.addWidget(self.btnAddRow_4)
+        self.verticalLayout.addWidget(self.btnDeleteRow)
+
+        self.btnEmptyTable = QPushButton(self.centralwidget)
+        self.btnEmptyTable.setObjectName(u"btnEmptyTable")
+
+        self.verticalLayout.addWidget(self.btnEmptyTable)
 
         self.btnPrint = QPushButton(self.centralwidget)
         self.btnPrint.setObjectName(u"btnPrint")
+        self.btnPrint.setEnabled(True)
 
         self.verticalLayout.addWidget(self.btnPrint)
 
@@ -175,8 +187,9 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"R\u00e9f\u00e9rences", None));
         ___qtablewidgetitem6 = self.tw_co.horizontalHeaderItem(6)
         ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"Soc. emettrice", None));
-        self.btnAddRow.setText(QCoreApplication.translate("MainWindow", u"Ajouter", None))
-        self.btnAddRow_4.setText(QCoreApplication.translate("MainWindow", u"Supprimer", None))
+        self.btnAddRow.setText(QCoreApplication.translate("MainWindow", u"Ajouter une ligne", None))
+        self.btnDeleteRow.setText(QCoreApplication.translate("MainWindow", u"Supprimer une ligne", None))
+        self.btnEmptyTable.setText(QCoreApplication.translate("MainWindow", u"Vider la table", None))
         self.btnPrint.setText(QCoreApplication.translate("MainWindow", u"Export en PDF", None))
         self.menufichier.setTitle(QCoreApplication.translate("MainWindow", u"fichier", None))
         self.menuImport.setTitle(QCoreApplication.translate("MainWindow", u"Gestion des donn\u00e9es", None))

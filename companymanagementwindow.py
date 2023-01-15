@@ -1,7 +1,7 @@
 from functools import partial
 
 from PySide6 import QtWidgets
-from PySide6.QtWidgets import QMainWindow, QPlainTextEdit, QLineEdit, QLabel
+from PySide6.QtWidgets import QMainWindow, QPlainTextEdit, QLineEdit, QLabel, QMessageBox
 
 from ui.companymanagementwindow import Ui_CompanyManagementWindow
 
@@ -46,6 +46,7 @@ class CompanyManagementWindow(QtWidgets.QMainWindow, Ui_CompanyManagementWindow)
         te_company_form.setText(form)
         self.tw_companies.setCellWidget(self.tw_companies.rowCount() - 1, 1, te_company_form)
         te_company_form.setFixedHeight(30)
+
     def addCompany(self, conn, name, form):
         res_company = sqlmanagement.get_result(conn, \
                     f"INSERT INTO companies (company_name, company_type) VALUES ('{name.text()}','{form.text()}')")
@@ -67,6 +68,18 @@ class CompanyManagementWindow(QtWidgets.QMainWindow, Ui_CompanyManagementWindow)
         self.tw_companies.removeRow(self.tw_companies.currentRow())
 
     def quit(self):
-        self.parentWindow.cbb_company.clear()
-        self.parentWindow.load_companies(self.db_connection)
-        self.close()
+        if self.tw_companies.rowCount() == 0:
+            result = QMessageBox.question(self, "COMailPrinting - Gestion des sociétés émettrices", \
+                                          "Aucune société émettrice n'a été crée.\n\nCeci implique qu'aucun nom"\
+                                          " de société ne sera mentionné en signature des courriers !\n\n"\
+                                          "Voulez-vous quitter cette fenêtre sans créer de société ?", \
+                                          QMessageBox.StandardButton.Ok, QMessageBox.StandardButton.Cancel)
+            if result == QMessageBox.StandardButton.Ok:
+                self.parentWindow.btn_add_row()
+                self.close()
+        else:
+            self.parentWindow.cbb_company.clear()
+            self.parentWindow.load_companies(self.db_connection)
+            self.parentWindow.cbb_company.setEnabled(True)
+            self.parentWindow.btn_add_row()
+            self.close()
