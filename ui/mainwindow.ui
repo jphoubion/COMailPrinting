@@ -188,7 +188,7 @@
      <x>0</x>
      <y>0</y>
      <width>1280</width>
-     <height>20</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menufichier">
@@ -204,6 +204,8 @@
     </property>
     <addaction name="actionImport_customers"/>
     <addaction name="actionCompanyManagement"/>
+    <addaction name="actionCustomerManagement"/>
+    <addaction name="actionCoManagement"/>
     <addaction name="separator"/>
     <addaction name="actionDropTables"/>
    </widget>
@@ -237,12 +239,27 @@
   </action>
   <action name="actionDropTables">
    <property name="text">
-    <string>Supprimer et recréer les tables</string>
+    <string>Supprimer et recréer les tables de la DB</string>
    </property>
   </action>
   <action name="actionCompanyManagement">
    <property name="text">
     <string>Gestion des sociétés</string>
+   </property>
+  </action>
+  <action name="actionDropCreateCompanies">
+   <property name="text">
+    <string>Supprimer et recréer la table des sociétés</string>
+   </property>
+  </action>
+  <action name="actionCustomerManagement">
+   <property name="text">
+    <string>Gestion des clients</string>
+   </property>
+  </action>
+  <action name="actionCoManagement">
+   <property name="text">
+    <string>Gestion des C/O</string>
    </property>
   </action>
  </widget>

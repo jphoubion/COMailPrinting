@@ -21,9 +21,11 @@ import sqlmanagement
 from importfromxls import ImportFromXls
 
 from ui.mainwindow import Ui_MainWindow
-from ui.companymanagementwindow import Ui_CompanyManagementWindow
+# from ui.companymanagementwindow import Ui_CompanyManagementWindow
 
 from companymanagementwindow import CompanyManagementWindow
+from comanagementwindow import CoManagementWindow
+from customermanagementwindow import CustomerManagementWindow
 
 from printing import Printing
 
@@ -79,12 +81,15 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.cbb_company.setEnabled(True)
 
     def setup_connection(self):
-        # Connect methods to menu options
+        # Connect methods to MENU options
         ##################################
         self.actionQuitter.triggered.connect(self.quit)
         self.actionCompanyManagement.triggered.connect(self.open_company_management_window)
+        self.actionCustomerManagement.triggered.connect(self.open_customer_management_window)
+        self.actionCoManagement.triggered.connect(self.open_co_management_window)
         self.actionImport_customers.triggered.connect(partial(self.import_data, self.db_connection, self.cursor))
         self.actionDropTables.triggered.connect(partial(self.drop_create_tables, self.db_connection, self.cursor))
+
 
         # Connect BUTTONS to methods
         #############################
@@ -218,7 +223,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def btn_print(self):
         p = Printing()
         now = datetime.now()
-        PDF_name = f"COMailPrinting - {now.strftime('%d-%m-%Y')}.pdf"
+        PDF_name = f"COMailPrinting - {now.strftime('%d-%m-%Y - %H%M')}.pdf"
         p.PDFFile = Canvas(PDF_name, pagesize=A4)
         p.PDFFile.setFont("Helvetica", 10)
         ok_for_print = False
@@ -246,6 +251,14 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def open_company_management_window(self):
         company_management_window = CompanyManagementWindow(self.db_connection, self)
         company_management_window.show()
+
+    def open_customer_management_window(self):
+        customer_management_window = CustomerManagementWindow(self.db_connection, self)
+        customer_management_window.show()
+    def open_co_management_window(self):
+        co_management_window = CoManagementWindow(self.db_connection, self)
+        co_management_window.show()
+
 
     def select_co_from_customer(self, combo_co, old_customer, customer):
         if customer != " ":
