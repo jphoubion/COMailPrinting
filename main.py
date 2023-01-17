@@ -229,8 +229,10 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 co = f"{self.tw_co.cellWidget(row,1).currentText()}\n{self.tw_co.cellWidget(row,2).toPlainText()}"
                 reference = self.tw_co.cellWidget(row,5).text()
                 company = self.tw_co.cellWidget(row,6).currentText()
+                req_company = f"SELECT company_type FROM companies WHERE company_name = '{company}'"
+                company_type = sqlmanagement.get_result(self.db_connection,req_company)[0][0]
                 # PDFFile_name = self.tw_co.cellWidget(row,0).currentText()
-                p.create_pages(co, client, reference, company)
+                p.create_pages(co, client, reference, company, company_type)
                 ok_for_print = True
             else:
                 ok_for_print = False
