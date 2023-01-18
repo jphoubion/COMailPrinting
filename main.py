@@ -72,7 +72,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             # Load companies list
             ################################
             self.load_companies(self.db_connection)
-
+# TODO: Créer les completer
     def load_companies(self, conn):
         req_companies = sqlmanagement.get_result(conn, "SELECT * FROM companies")
         if len(req_companies) > 0:
