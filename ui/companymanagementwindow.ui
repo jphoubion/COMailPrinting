@@ -24,6 +24,11 @@
        <widget class="QTableWidget" name="tw_companies">
         <column>
          <property name="text">
+          <string>id</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
           <string>Nom</string>
          </property>
         </column>
@@ -82,6 +87,13 @@
            <widget class="QPushButton" name="btn_add">
             <property name="text">
              <string>Ajouter</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_modify">
+            <property name="text">
+             <string>Modifier</string>
             </property>
            </widget>
           </item>

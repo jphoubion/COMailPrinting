@@ -1,5 +1,9 @@
 import os
 import sys
+
+import PySide6
+from PySide6.QtCore import Qt
+
 if sys.platform == "windows":
     sys.argv += ['-platform', 'windows:darkmode=2']
 
@@ -72,13 +76,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             # Load companies list
             ################################
             self.load_companies(self.db_connection)
-# TODO: Créer les completer
-    def load_companies(self, conn):
-        req_companies = sqlmanagement.get_result(conn, "SELECT * FROM companies")
-        if len(req_companies) > 0:
-            for company in req_companies:
-                self.cbb_company.addItem(company[1])
-            self.cbb_company.setEnabled(True)
 
     def setup_connection(self):
         # Connect methods to MENU options
@@ -108,6 +105,13 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # # Add a row it the table is empty
         # if self.tw_co.rowCount() == 0:
         #     self.btn_add_row()
+
+    def load_companies(self, conn):
+        req_companies = sqlmanagement.get_result(conn, "SELECT * FROM companies")
+        if len(req_companies) > 0:
+            for company in req_companies:
+                self.cbb_company.addItem(company[1])
+            self.cbb_company.setEnabled(True)
 
     def drop_create_tables(self, conn, cursor):
         result = QMessageBox.critical(self, "COMailPrinting - Vidange de la base de données",
@@ -156,7 +160,12 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         req_result = sqlmanagement.get_result(self.db_connection, "SELECT * FROM co")
         for co_name in req_result:
             co_list.append(co_name[1])
-        combo_co.addItems(co_list)
+        # combo_co.addItems(co_list)
+
+        co_completer = QCompleter(co_list)
+        co_completer.setCaseSensitivity(Qt.CaseInsensitive)
+        combo_co.setCompleter(co_completer)
+
         combo_co.currentTextChanged.connect(partial(self.get_co_details, te_coordonnees, combo_co.currentText()))
 
         self.tw_co.setCellWidget(self.tw_co.rowCount()-1, 1, combo_co)
@@ -173,12 +182,15 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         req_result = sqlmanagement.get_result(self.db_connection, "SELECT * FROM customers")
         for cust in req_result:
             customer_list.append(cust[1])
-        combo_cust.addItems(customer_list)
+
+        cust_completer = QCompleter(customer_list)
+        cust_completer.setCaseSensitivity(Qt.CaseInsensitive)
+        combo_cust.setCompleter(cust_completer)
 
         combo_cust.currentTextChanged.connect(partial(self.select_co_from_customer, combo_co, combo_cust.currentText()))
 
         self.tw_co.setCellWidget(self.tw_co.rowCount() - 1, 0, combo_cust)
-        # print(f"NB de CUST = {combo_cust.count()}")
+        
         ###################################################################################
         # Add button to update data about C/O
         ###################################################################################
@@ -200,6 +212,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         te_reference = QLineEdit()
         te_reference.setFixedWidth(150)
         te_reference.setFixedHeight(40)
+
         self.tw_co.setCellWidget(self.tw_co.rowCount() - 1, 5, te_reference)
 
         ###################################################################################
@@ -255,6 +268,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def open_customer_management_window(self):
         customer_management_window = CustomerManagementWindow(self.db_connection, self)
         customer_management_window.show()
+
     def open_co_management_window(self):
         co_management_window = CoManagementWindow(self.db_connection, self)
         co_management_window.show()
@@ -263,17 +277,25 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def select_co_from_customer(self, combo_co, old_customer, customer):
         if customer != " ":
             co_id_from_customer = sqlmanagement.get_result(self.db_connection, f"SELECT co_id FROM customers WHERE customer_code = '{customer}'")
-            co_name = sqlmanagement.get_result(self.db_connection, f"SELECT co_name FROM co WHERE id = {co_id_from_customer[0][0]}")
-            combo_co.setCurrentText(co_name[0][0])
+            if len(co_id_from_customer) > 0:
+                co_name = sqlmanagement.get_result(self.db_connection, f"SELECT co_name FROM co WHERE id = {co_id_from_customer[0][0]}")
+                print(co_name)
+                combo_co.setCurrentText(co_name[0][0])
+            else:
+                combo_co.setCurrentText('')
         else:
             combo_co.setCurrentIndex(0)
 
     def get_co_details(self, te_box, old_co_name, new_co_name):
-        if new_co_name != " ":
-            address = sqlmanagement.get_result(self.db_connection,f"SELECT co_address FROM co WHERE co_name = '{new_co_name}'")
-            te_box.setPlainText(address[0][0])
+        if len(new_co_name) > 0:
+            if new_co_name != " " or new_co_name != "":
+                address = sqlmanagement.get_result(self.db_connection,f"SELECT co_address FROM co WHERE co_name = '{new_co_name}'")
+                if len(address) > 0:
+                    te_box.setPlainText(address[0][0])
+                else:
+                    te_box.setPlainText('')
         else:
-            te_box.setText('')
+            te_box.setPlainText('')
 
     def update_co(self):
         print("update co")

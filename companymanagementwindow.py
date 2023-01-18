@@ -17,9 +17,13 @@ class CompanyManagementWindow(QtWidgets.QMainWindow, Ui_CompanyManagementWindow)
         self.setupConnection()
 
         self.fillTable(self.db_connection)
+        self.tw_companies.cellClicked.connect(self.fill_fields)
+
+        self.company_id = ''
 
     def setupConnection(self):
         self.btn_add.clicked.connect(partial(self.addCompany, self.db_connection, self.le_name, self.le_form))
+        self.btn_modify.clicked.connect(partial(self.modifyCompany, self.db_connection))
         self.btn_delete.clicked.connect(partial(self.deleteCompany, self.db_connection))
         self.btn_quit.clicked.connect(self.quit)
 
@@ -28,23 +32,33 @@ class CompanyManagementWindow(QtWidgets.QMainWindow, Ui_CompanyManagementWindow)
         for company in res_companies:
             # Adding a row in the table
             self.tw_companies.insertRow(self.tw_companies.rowCount())
+            self.addIdField(company[0])
             self.addCompanyNameField(company[1])
             self.addCompanyFormField(company[2])
+
             self.tw_companies.resizeColumnsToContents()
             self.tw_companies.resizeRowsToContents()
+
+    def addIdField(self, id):
+        te_id = QLabel()
+        # te_id.setFixedWidth(0)
+        te_id.setText(str(id))
+        self.tw_companies.setCellWidget(self.tw_companies.rowCount() - 1, 0, te_id)
+        self.tw_companies.hideColumn(0)
+        # te_id.setFixedHeight(30)
 
     def addCompanyNameField(self, name):
         te_company_name = QLabel()
         te_company_name.setFixedWidth(200)
         te_company_name.setText(name)
-        self.tw_companies.setCellWidget(self.tw_companies.rowCount() - 1, 0, te_company_name)
+        self.tw_companies.setCellWidget(self.tw_companies.rowCount() - 1, 1, te_company_name)
         te_company_name.setFixedHeight(30)
 
     def addCompanyFormField(self, form):
         te_company_form = QLabel()
         te_company_form.setFixedWidth(200)
         te_company_form.setText(form)
-        self.tw_companies.setCellWidget(self.tw_companies.rowCount() - 1, 1, te_company_form)
+        self.tw_companies.setCellWidget(self.tw_companies.rowCount() - 1, 2, te_company_form)
         te_company_form.setFixedHeight(30)
 
     def addCompany(self, conn, name, form):
@@ -60,12 +74,24 @@ class CompanyManagementWindow(QtWidgets.QMainWindow, Ui_CompanyManagementWindow)
         self.le_name.clear()
         self.le_form.clear()
 
+    def modifyCompany(self, conn):
+        name = self.le_name.text()
+        form = self.le_form.text()
+        req = f"UPDATE companies SET company_name = '{name}', company_type = '{form}' WHERE id = {self.company_id}"
+        result = sqlmanagement.get_result(conn, req)
+        conn.commit()
+
     def deleteCompany(self, conn):
         name = self.tw_companies.cellWidget(self.tw_companies.currentRow(),0)
         res_company = sqlmanagement.get_result(conn, \
             f"DELETE FROM companies WHERE company_name = '{name.text()}'")
         conn.commit()
         self.tw_companies.removeRow(self.tw_companies.currentRow())
+
+    def fill_fields(self):
+        self.company_id = self.tw_companies.cellWidget(self.tw_companies.currentRow(), 0).text()
+        self.le_name.setText(self.tw_companies.cellWidget(self.tw_companies.currentRow(), 1).text())
+        self.le_form.setText(self.tw_companies.cellWidget(self.tw_companies.currentRow(), 2).text())
 
     def quit(self):
         if self.tw_companies.rowCount() == 0:

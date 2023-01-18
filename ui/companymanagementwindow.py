@@ -25,7 +25,7 @@ class Ui_CompanyManagementWindow(object):
         if not CompanyManagementWindow.objectName():
             CompanyManagementWindow.setObjectName(u"CompanyManagementWindow")
         CompanyManagementWindow.setWindowModality(Qt.ApplicationModal)
-        CompanyManagementWindow.resize(509, 456)
+        CompanyManagementWindow.resize(467, 479)
         self.centralwidget = QWidget(CompanyManagementWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.gridLayout_2 = QGridLayout(self.centralwidget)
@@ -33,12 +33,14 @@ class Ui_CompanyManagementWindow(object):
         self.gridLayout = QGridLayout()
         self.gridLayout.setObjectName(u"gridLayout")
         self.tw_companies = QTableWidget(self.centralwidget)
-        if (self.tw_companies.columnCount() < 2):
-            self.tw_companies.setColumnCount(2)
+        if (self.tw_companies.columnCount() < 3):
+            self.tw_companies.setColumnCount(3)
         __qtablewidgetitem = QTableWidgetItem()
         self.tw_companies.setHorizontalHeaderItem(0, __qtablewidgetitem)
         __qtablewidgetitem1 = QTableWidgetItem()
         self.tw_companies.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        __qtablewidgetitem2 = QTableWidgetItem()
+        self.tw_companies.setHorizontalHeaderItem(2, __qtablewidgetitem2)
         self.tw_companies.setObjectName(u"tw_companies")
 
         self.gridLayout.addWidget(self.tw_companies, 0, 0, 1, 1)
@@ -84,6 +86,11 @@ class Ui_CompanyManagementWindow(object):
 
         self.horizontalLayout_3.addWidget(self.btn_add)
 
+        self.btn_modify = QPushButton(self.centralwidget)
+        self.btn_modify.setObjectName(u"btn_modify")
+
+        self.horizontalLayout_3.addWidget(self.btn_modify)
+
         self.btn_delete = QPushButton(self.centralwidget)
         self.btn_delete.setObjectName(u"btn_delete")
 
@@ -120,12 +127,15 @@ class Ui_CompanyManagementWindow(object):
     def retranslateUi(self, CompanyManagementWindow):
         CompanyManagementWindow.setWindowTitle(QCoreApplication.translate("CompanyManagementWindow", u"Gestion des soci\u00e9t\u00e9s", None))
         ___qtablewidgetitem = self.tw_companies.horizontalHeaderItem(0)
-        ___qtablewidgetitem.setText(QCoreApplication.translate("CompanyManagementWindow", u"Nom", None));
+        ___qtablewidgetitem.setText(QCoreApplication.translate("CompanyManagementWindow", u"id", None));
         ___qtablewidgetitem1 = self.tw_companies.horizontalHeaderItem(1)
-        ___qtablewidgetitem1.setText(QCoreApplication.translate("CompanyManagementWindow", u"Forme jur.", None));
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("CompanyManagementWindow", u"Nom", None));
+        ___qtablewidgetitem2 = self.tw_companies.horizontalHeaderItem(2)
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("CompanyManagementWindow", u"Forme jur.", None));
         self.label.setText(QCoreApplication.translate("CompanyManagementWindow", u"Nom de la soci\u00e9t\u00e9 :", None))
         self.label_2.setText(QCoreApplication.translate("CompanyManagementWindow", u"Forme juridique :", None))
         self.btn_add.setText(QCoreApplication.translate("CompanyManagementWindow", u"Ajouter", None))
+        self.btn_modify.setText(QCoreApplication.translate("CompanyManagementWindow", u"Modifier", None))
         self.btn_delete.setText(QCoreApplication.translate("CompanyManagementWindow", u"Supprimer", None))
         self.btn_quit.setText(QCoreApplication.translate("CompanyManagementWindow", u"Quitter", None))
     # retranslateUi
