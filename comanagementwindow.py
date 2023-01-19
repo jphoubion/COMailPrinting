@@ -13,14 +13,14 @@ class CoManagementWindow(QtWidgets.QMainWindow, Ui_CoManagementWindow):
     def __init__(self, conn, parent=None):
         super(CoManagementWindow, self).__init__(parent)
         self.setupUi(self)
-        self.db_connecion = conn
+        self.db_connection = conn
         self.parentWindow = parent
 
         self.setupConnection()
-        self.fillTable(self.db_connecion)
+        self.fillTable(self.db_connection)
 
     def setupConnection(self):
-        self.btn_add.clicked.connect(partial(self.addCo, self.db_connecion, self.le_name, self.te_address))
+        self.btn_add.clicked.connect(partial(self.addCo, self.db_connection, self.le_name, self.te_address))
 
     def fillTable(self, conn):
         QApplication.setOverrideCursor(Qt.WaitCursor)

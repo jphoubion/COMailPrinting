@@ -17,7 +17,6 @@ class CompanyManagementWindow(QtWidgets.QMainWindow, Ui_CompanyManagementWindow)
         self.setupConnection()
 
         self.fillTable(self.db_connection)
-        self.tw_companies.cellClicked.connect(self.fill_fields)
 
         self.company_id = ''
 
@@ -26,6 +25,7 @@ class CompanyManagementWindow(QtWidgets.QMainWindow, Ui_CompanyManagementWindow)
         self.btn_modify.clicked.connect(partial(self.modifyCompany, self.db_connection))
         self.btn_delete.clicked.connect(partial(self.deleteCompany, self.db_connection))
         self.btn_quit.clicked.connect(self.quit)
+        self.tw_companies.cellClicked.connect(self.fill_fields)
 
     def fillTable(self, conn):
         res_companies = sqlmanagement.get_result(conn, "SELECT * FROM companies")
@@ -63,7 +63,7 @@ class CompanyManagementWindow(QtWidgets.QMainWindow, Ui_CompanyManagementWindow)
 
     def addCompany(self, conn, name, form):
         res_company = sqlmanagement.get_result(conn, \
-                    f"INSERT INTO companies (company_name, company_type) VALUES ('{name.text()}','{form.text()}')")
+                                               f"INSERT INTO companies (company_name, company_type) VALUES ('{name.text()}','{form.text()}')")
         conn.commit()
 
         # Adding a row in the table
@@ -84,7 +84,7 @@ class CompanyManagementWindow(QtWidgets.QMainWindow, Ui_CompanyManagementWindow)
     def deleteCompany(self, conn):
         name = self.tw_companies.cellWidget(self.tw_companies.currentRow(),0)
         res_company = sqlmanagement.get_result(conn, \
-            f"DELETE FROM companies WHERE company_name = '{name.text()}'")
+                                               f"DELETE FROM companies WHERE company_name = '{name.text()}'")
         conn.commit()
         self.tw_companies.removeRow(self.tw_companies.currentRow())
 
@@ -96,8 +96,8 @@ class CompanyManagementWindow(QtWidgets.QMainWindow, Ui_CompanyManagementWindow)
     def quit(self):
         if self.tw_companies.rowCount() == 0:
             result = QMessageBox.question(self, "COMailPrinting - Gestion des sociétés émettrices", \
-                                          "Aucune société émettrice n'a été crée.\n\nCeci implique qu'aucun nom"\
-                                          " de société ne sera mentionné en signature des courriers !\n\n"\
+                                          "Aucune société émettrice n'a été crée.\n\nCeci implique qu'aucun nom" \
+                                          " de société ne sera mentionné en signature des courriers !\n\n" \
                                           "Voulez-vous quitter cette fenêtre sans créer de société ?", \
                                           QMessageBox.StandardButton.Ok, QMessageBox.StandardButton.Cancel)
             if result == QMessageBox.StandardButton.Ok:
