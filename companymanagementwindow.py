@@ -21,11 +21,12 @@ class CompanyManagementWindow(QtWidgets.QMainWindow, Ui_CompanyManagementWindow)
         self.company_id = ''
 
     def setupConnection(self):
+        self.btn_new.clicked.connect(self.newCompany)
         self.btn_add.clicked.connect(partial(self.addCompany, self.db_connection, self.le_name, self.le_form))
         self.btn_modify.clicked.connect(partial(self.modifyCompany, self.db_connection))
         self.btn_delete.clicked.connect(partial(self.deleteCompany, self.db_connection))
         self.btn_quit.clicked.connect(self.quit)
-        self.tw_companies.cellClicked.connect(self.fill_fields)
+        self.tw_companies.cellClicked.connect(self.fillFields)
 
     def fillTable(self, conn):
         res_companies = sqlmanagement.get_result(conn, "SELECT * FROM companies")
@@ -61,6 +62,10 @@ class CompanyManagementWindow(QtWidgets.QMainWindow, Ui_CompanyManagementWindow)
         self.tw_companies.setCellWidget(self.tw_companies.rowCount() - 1, 2, te_company_form)
         te_company_form.setFixedHeight(30)
 
+    def newCompany(self):
+        self.le_name.setText('')
+        self.le_form.setText('')
+
     def addCompany(self, conn, name, form):
         res_company = sqlmanagement.get_result(conn, \
                                                f"INSERT INTO companies (company_name, company_type) VALUES ('{name.text()}','{form.text()}')")
@@ -75,20 +80,24 @@ class CompanyManagementWindow(QtWidgets.QMainWindow, Ui_CompanyManagementWindow)
         self.le_form.clear()
 
     def modifyCompany(self, conn):
+        id = self.tw_companies.cellWidget(self.tw_companies.currentRow(), 0)
         name = self.le_name.text()
         form = self.le_form.text()
-        req = f"UPDATE companies SET company_name = '{name}', company_type = '{form}' WHERE id = {self.company_id}"
+        req = f"UPDATE companies SET company_name = '{name}', company_type = '{form}' WHERE id = {id.text()}"
         result = sqlmanagement.get_result(conn, req)
         conn.commit()
 
+        self.tw_companies.cellWidget(self.tw_companies.currentRow(), 1).setText(name)
+        self.tw_companies.cellWidget(self.tw_companies.currentRow(), 2).setText(form)
+
     def deleteCompany(self, conn):
-        name = self.tw_companies.cellWidget(self.tw_companies.currentRow(),0)
+        id = self.tw_companies.cellWidget(self.tw_companies.currentRow(),0)
         res_company = sqlmanagement.get_result(conn, \
-                                               f"DELETE FROM companies WHERE company_name = '{name.text()}'")
+        f"DELETE FROM companies WHERE company_name = '{id}'")
         conn.commit()
         self.tw_companies.removeRow(self.tw_companies.currentRow())
 
-    def fill_fields(self):
+    def fillFields(self):
         self.company_id = self.tw_companies.cellWidget(self.tw_companies.currentRow(), 0).text()
         self.le_name.setText(self.tw_companies.cellWidget(self.tw_companies.currentRow(), 1).text())
         self.le_form.setText(self.tw_companies.cellWidget(self.tw_companies.currentRow(), 2).text())
@@ -107,5 +116,5 @@ class CompanyManagementWindow(QtWidgets.QMainWindow, Ui_CompanyManagementWindow)
             self.parentWindow.cbb_company.clear()
             self.parentWindow.load_companies(self.db_connection)
             self.parentWindow.cbb_company.setEnabled(True)
-            self.parentWindow.btn_add_row()
+            # self.parentWindow.btn_add_row()
             self.close()

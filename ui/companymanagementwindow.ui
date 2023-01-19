@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>467</width>
-    <height>479</height>
+    <width>492</width>
+    <height>513</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -83,6 +83,13 @@
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="btn_new">
+            <property name="text">
+             <string>Nouveau</string>
+            </property>
+           </widget>
+          </item>
           <item>
            <widget class="QPushButton" name="btn_add">
             <property name="text">

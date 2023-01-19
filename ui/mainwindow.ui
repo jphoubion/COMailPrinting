@@ -188,7 +188,7 @@
      <x>0</x>
      <y>0</y>
      <width>1280</width>
-     <height>22</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menufichier">
@@ -239,7 +239,7 @@
   </action>
   <action name="actionDropTables">
    <property name="text">
-    <string>Supprimer et recréer les tables de la DB</string>
+    <string>Supprimer et recréer les tables CLIENTS et CO</string>
    </property>
   </action>
   <action name="actionCompanyManagement">

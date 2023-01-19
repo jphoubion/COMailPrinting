@@ -19,6 +19,7 @@ from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import cm
 import sqlite3
 from datetime import datetime
+import qdarktheme
 
 import sqlmanagement
 
@@ -220,6 +221,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # display the current default company
         ###################################################################################
         combo_company = QComboBox()
+        combo_company.setFixedWidth(150)
         req_companies = sqlmanagement.get_result(self.db_connection, "SELECT * FROM companies")
         for company in req_companies:
             combo_company.addItem(company[1])
@@ -307,8 +309,11 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         app.quit()
 
 
+
 app = QtWidgets.QApplication(sys.argv)
 app.setStyle('Fusion')
+# Apply the complete dark theme to your Qt App.
+qdarktheme.setup_theme()
 
 window = MainWindow()
 window.show()

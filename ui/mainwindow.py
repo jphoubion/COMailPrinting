@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'mainwindow.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.4.0
+## Created by: Qt User Interface Compiler version 6.4.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -148,7 +148,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 1280, 22))
+        self.menubar.setGeometry(QRect(0, 0, 1280, 20))
         self.menufichier = QMenu(self.menubar)
         self.menufichier.setObjectName(u"menufichier")
         self.menuImport = QMenu(self.menubar)
@@ -178,7 +178,7 @@ class Ui_MainWindow(object):
         self.actionImport_customers.setText(QCoreApplication.translate("MainWindow", u"Import clients depuis XLSX", None))
         self.actionImport_CO_depuis_XLSX.setText(QCoreApplication.translate("MainWindow", u"Import CO depuis XLSX", None))
         self.actionAddImportCustomers.setText(QCoreApplication.translate("MainWindow", u"Ajouter depuis fichier XLSX", None))
-        self.actionDropTables.setText(QCoreApplication.translate("MainWindow", u"Supprimer et recr\u00e9er les tables de la DB", None))
+        self.actionDropTables.setText(QCoreApplication.translate("MainWindow", u"Supprimer et recr\u00e9er les tables CLIENTS et CO", None))
         self.actionCompanyManagement.setText(QCoreApplication.translate("MainWindow", u"Gestion des soci\u00e9t\u00e9s", None))
         self.actionDropCreateCompanies.setText(QCoreApplication.translate("MainWindow", u"Supprimer et recr\u00e9er la table des soci\u00e9t\u00e9s", None))
         self.actionCustomerManagement.setText(QCoreApplication.translate("MainWindow", u"Gestion des clients", None))
