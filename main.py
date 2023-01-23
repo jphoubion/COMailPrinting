@@ -253,13 +253,22 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.tw_co.resizeRowsToContents()
         # self.tw_co.setColumnWidth(3, 290)
 
+    def addIdCustomerField(self):
+        pass
+
+
+    def addIdCoField(self):
+        pass
+
     def btn_add_row(self):
         # Adding a row in the table
         self.tw_co.insertRow(self.tw_co.rowCount())
 
         te_coordonnees = self.addCOInfoTextEdit()
         cbb_co = self.addCOComboBox(te_coordonnees)
+        self.addIdCoField()
         self.addCustomerComboBox(cbb_co)
+        self.addIdCustomerField()
         self.addBtnCOUpdate()
         self.addBtnCustomerUpdate()
         self.addReferenceTextEdit()
