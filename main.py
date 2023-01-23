@@ -40,6 +40,10 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         super(MainWindow, self).__init__()
         self.setupUi(self)
 
+        # list used to refresh combobox content easier
+        self.coComboBoxList = []
+        self.customerComboBoxList = []
+
         #################################################"
         # STARTS SQL CONNECTION
         #################################################"
@@ -103,9 +107,13 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # Open companies managmement window if combobox is empty
         if self.cbb_company.count() == 0:
             self.open_company_management_window()
-        # # Add a row it the table is empty
-        # if self.tw_co.rowCount() == 0:
-        #     self.btn_add_row()
+
+        # Update of all the combobox of the table
+        for cbb in self.customerComboBoxList:
+            self.loadCustomerToCompleter(cbb)
+
+        for cbb in self.coComboBoxList:
+            self.loadCOToCompleter(cbb)
 
     def load_companies(self, conn):
         req_companies = sqlmanagement.get_result(conn, "SELECT * FROM companies")
@@ -137,11 +145,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         for row in range(0, self.tw_co.rowCount()):
             self.tw_co.removeRow(self.tw_co.currentRow())
 
-    def btn_add_row(self):
-
-        # Adding a row in the table
-        self.tw_co.insertRow(self.tw_co.rowCount())
-
+    def addCOInfoTextEdit(self):
         ###################################################################################
         # Add field to display C/O info
         ###################################################################################
@@ -149,14 +153,10 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         te_coordonnees.setFixedWidth(200)
         self.tw_co.setCellWidget(self.tw_co.rowCount()-1, 2, te_coordonnees)
         te_coordonnees.setFixedHeight(40)
+        return te_coordonnees
 
-        ###################################################################################
-        # Add combobox for C/O on each new line
-        ###################################################################################
-        combo_co = QComboBox()
-        combo_co.setEditable(True)
-        combo_co.setFixedWidth(200)
-
+    def loadCOToCompleter(self, combo_co):
+        combo_co.clear()
         co_list = [' ']
         req_result = sqlmanagement.get_result(self.db_connection, "SELECT * FROM co")
         for co_name in req_result:
@@ -166,12 +166,35 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         co_completer = QCompleter(co_list)
         co_completer.setCaseSensitivity(Qt.CaseInsensitive)
         combo_co.setCompleter(co_completer)
+    def addCOComboBox(self, te_coordonnees):
+        ###################################################################################
+        # Add combobox for C/O on each new line
+        ###################################################################################
+        combo_co = QComboBox()
+        combo_co.setEditable(True)
+        combo_co.setFixedWidth(200)
+
+        self.loadCOToCompleter(combo_co)
 
         combo_co.currentTextChanged.connect(partial(self.get_co_details, te_coordonnees, combo_co.currentText()))
 
         self.tw_co.setCellWidget(self.tw_co.rowCount()-1, 1, combo_co)
-        # print(f"NB de CO = {combo_co.count()}")
 
+        self.coComboBoxList.append(combo_co)
+
+        return combo_co
+
+    def loadCustomerToCompleter(self, combo_cust):
+        combo_cust.clear()
+        customer_list = [' ']
+        req_result = sqlmanagement.get_result(self.db_connection, "SELECT * FROM customers")
+        for cust in req_result:
+            customer_list.append(cust[1])
+        cust_completer = QCompleter(customer_list)
+        cust_completer.setCaseSensitivity(Qt.CaseInsensitive)
+        combo_cust.setCompleter(cust_completer)
+
+    def addCustomerComboBox(self, combo_co):
         ###################################################################################
         # Add combobox for CUSTOMERS on each new line
         ###################################################################################
@@ -179,19 +202,15 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         combo_cust.setEditable(True)
         combo_cust.setFixedWidth(200)
 
-        customer_list = [' ']
-        req_result = sqlmanagement.get_result(self.db_connection, "SELECT * FROM customers")
-        for cust in req_result:
-            customer_list.append(cust[1])
-
-        cust_completer = QCompleter(customer_list)
-        cust_completer.setCaseSensitivity(Qt.CaseInsensitive)
-        combo_cust.setCompleter(cust_completer)
+        self.loadCustomerToCompleter(combo_cust)
 
         combo_cust.currentTextChanged.connect(partial(self.select_co_from_customer, combo_co, combo_cust.currentText()))
 
         self.tw_co.setCellWidget(self.tw_co.rowCount() - 1, 0, combo_cust)
-        
+
+        self.customerComboBoxList.append(combo_cust)
+
+    def addBtnCOUpdate(self):
         ###################################################################################
         # Add button to update data about C/O
         ###################################################################################
@@ -199,7 +218,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         btn_update_co.clicked.connect(self.update_co)
         self.tw_co.setCellWidget(self.tw_co.rowCount()-1, 3, btn_update_co)
 
-
+    def addBtnCustomerUpdate(self):
         ###################################################################################
         # Add button to update data about customer
         ###################################################################################
@@ -207,6 +226,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         btn_update_customer.clicked.connect(self.update_customer)
         self.tw_co.setCellWidget(self.tw_co.rowCount() - 1, 4, btn_update_customer)
 
+    def addReferenceTextEdit(self):
         ###################################################################################
         # Add a TextEdit box to set the reference
         ###################################################################################
@@ -216,6 +236,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         self.tw_co.setCellWidget(self.tw_co.rowCount() - 1, 5, te_reference)
 
+    def addCompanyComboBox(self):
         ###################################################################################
         # Add combobox for company on each new line and fill it with companies from JSON and
         # display the current default company
@@ -231,6 +252,19 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.tw_co.resizeColumnsToContents()
         self.tw_co.resizeRowsToContents()
         # self.tw_co.setColumnWidth(3, 290)
+
+    def btn_add_row(self):
+        # Adding a row in the table
+        self.tw_co.insertRow(self.tw_co.rowCount())
+
+        te_coordonnees = self.addCOInfoTextEdit()
+        cbb_co = self.addCOComboBox(te_coordonnees)
+        self.addCustomerComboBox(cbb_co)
+        self.addBtnCOUpdate()
+        self.addBtnCustomerUpdate()
+        self.addReferenceTextEdit()
+        self.addCompanyComboBox()
+
 
     def btn_delete_row(self):
         self.tw_co.removeRow(self.tw_co.currentRow())
