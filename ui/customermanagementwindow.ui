@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>468</width>
-    <height>479</height>
+    <width>756</width>
+    <height>847</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,14 +21,24 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>0</y>
-      <width>451</width>
-      <height>451</height>
+      <y>10</y>
+      <width>741</width>
+      <height>811</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
      <item row="0" column="0">
-      <widget class="QTableWidget" name="tw_companies">
+      <widget class="QTableWidget" name="tw_customers">
+       <column>
+        <property name="text">
+         <string>id</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Code client</string>
+        </property>
+       </column>
        <column>
         <property name="text">
          <string>Nom</string>
@@ -36,7 +46,12 @@
        </column>
        <column>
         <property name="text">
-         <string>Forme jur.</string>
+         <string>C/O Client</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>idCo</string>
         </property>
        </column>
       </widget>
@@ -59,7 +74,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="le_name"/>
+          <widget class="QLineEdit" name="le_code"/>
          </item>
         </layout>
        </item>
@@ -79,7 +94,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="le_form"/>
+          <widget class="QLineEdit" name="le_name"/>
          </item>
         </layout>
        </item>
@@ -105,12 +120,19 @@
           </widget>
          </item>
          <item>
-          <widget class="QComboBox" name="comboBox"/>
+          <widget class="QComboBox" name="cbb_co"/>
          </item>
         </layout>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QPushButton" name="btn_new">
+           <property name="text">
+            <string>Nouveau</string>
+           </property>
+          </widget>
+         </item>
          <item>
           <widget class="QPushButton" name="btn_add">
            <property name="text">
@@ -140,8 +162,16 @@
          </item>
          <item>
           <widget class="QPushButton" name="btn_quit">
+           <property name="font">
+            <font>
+             <bold>false</bold>
+            </font>
+           </property>
            <property name="text">
             <string>Quitter</string>
+           </property>
+           <property name="flat">
+            <bool>false</bool>
            </property>
           </widget>
          </item>

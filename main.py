@@ -19,7 +19,6 @@ from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import cm
 import sqlite3
 from datetime import datetime
-import qdarktheme
 
 import sqlmanagement
 
@@ -286,7 +285,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         p.PDFFile.setFont("Helvetica", 10)
         ok_for_print = False
         for row in range(0, self.tw_co.rowCount()):
-            if self.tw_co.cellWidget(row,0).currentText() != ' ':
+            if self.tw_co.cellWidget(row,0).currentText() != '':
                 req_customer = f"SELECT customer_name FROM customers WHERE customer_code='{self.tw_co.cellWidget(row,0).currentText()}'"
                 client = sqlmanagement.get_result(self.db_connection,req_customer)[0][0]
                 co = f"{self.tw_co.cellWidget(row,1).currentText()}\n{self.tw_co.cellWidget(row,2).toPlainText()}"
@@ -355,8 +354,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
 app = QtWidgets.QApplication(sys.argv)
 app.setStyle('Fusion')
-# Apply the complete dark theme to your Qt App.
-qdarktheme.setup_theme()
 
 window = MainWindow()
 window.show()

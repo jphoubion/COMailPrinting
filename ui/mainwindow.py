@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'mainwindow.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.4.2
+## Created by: Qt User Interface Compiler version 6.4.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -148,7 +148,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 1280, 20))
+        self.menubar.setGeometry(QRect(0, 0, 1280, 22))
         self.menufichier = QMenu(self.menubar)
         self.menufichier.setObjectName(u"menufichier")
         self.menuImport = QMenu(self.menubar)
@@ -198,10 +198,10 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"R\u00e9f\u00e9rences", None));
         ___qtablewidgetitem6 = self.tw_co.horizontalHeaderItem(6)
         ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"Soc. emettrice", None));
-        self.btnAddRow.setText(QCoreApplication.translate("MainWindow", u"Ajouter une ligne", None))
+        self.btnAddRow.setText(QCoreApplication.translate("MainWindow", u"&Ajouter une ligne", None))
         self.btnDeleteRow.setText(QCoreApplication.translate("MainWindow", u"Supprimer une ligne", None))
         self.btnEmptyTable.setText(QCoreApplication.translate("MainWindow", u"Vider la table", None))
-        self.btnPrint.setText(QCoreApplication.translate("MainWindow", u"Export en PDF", None))
+        self.btnPrint.setText(QCoreApplication.translate("MainWindow", u"&Export en PDF", None))
         self.menufichier.setTitle(QCoreApplication.translate("MainWindow", u"fichier", None))
         self.menuImport.setTitle(QCoreApplication.translate("MainWindow", u"Gestion des donn\u00e9es", None))
     # retranslateUi

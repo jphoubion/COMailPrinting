@@ -132,7 +132,7 @@
              <string notr="true"/>
             </property>
             <property name="text">
-             <string>Ajouter une ligne</string>
+             <string>&amp;Ajouter une ligne</string>
             </property>
            </widget>
           </item>
@@ -156,7 +156,7 @@
              <bool>true</bool>
             </property>
             <property name="text">
-             <string>Export en PDF</string>
+             <string>&amp;Export en PDF</string>
             </property>
            </widget>
           </item>
@@ -188,7 +188,7 @@
      <x>0</x>
      <y>0</y>
      <width>1280</width>
-     <height>20</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menufichier">

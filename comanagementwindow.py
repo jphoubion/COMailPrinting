@@ -7,12 +7,12 @@ from PySide6.QtWidgets import QMainWindow, QLabel, QTextEdit, QApplication
 import sqlmanagement
 from ui.comanagementwindow import Ui_CoManagementWindow
 
-
 class CoManagementWindow(QtWidgets.QMainWindow, Ui_CoManagementWindow):
 
     def __init__(self, conn, parent=None):
         super(CoManagementWindow, self).__init__(parent)
         self.setupUi(self)
+
         self.db_connection = conn
         self.parentWindow = parent
 
@@ -27,6 +27,7 @@ class CoManagementWindow(QtWidgets.QMainWindow, Ui_CoManagementWindow):
         self.btn_modify.clicked.connect(partial(self.modifyCo, self.db_connection))
         self.btn_delete.clicked.connect(partial(self.deleteCo, self.db_connection))
         self.btn_quit.clicked.connect(self.quit)
+
         self.tw_co.cellClicked.connect(self.fillFields)
 
     def fillTable(self, conn):
