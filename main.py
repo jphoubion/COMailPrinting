@@ -206,6 +206,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         combo_cust.currentTextChanged.connect(partial(self.select_co_from_customer, combo_co, combo_cust.currentText()))
 
         self.tw_co.setCellWidget(self.tw_co.rowCount() - 1, 0, combo_cust)
+        combo_cust.setFocus()
 
         self.customerComboBoxList.append(combo_cust)
 
@@ -215,7 +216,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         ###################################################################################
         btn_update_co = QPushButton("MAJ")
         btn_update_co.clicked.connect(self.update_co)
+        btn_update_co.setDisabled(True)
         self.tw_co.setCellWidget(self.tw_co.rowCount()-1, 3, btn_update_co)
+
 
     def addBtnCustomerUpdate(self):
         ###################################################################################
@@ -223,6 +226,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         ###################################################################################
         btn_update_customer = QPushButton("MAJ")
         btn_update_customer.clicked.connect(self.update_customer)
+        btn_update_customer.setDisabled(True)
         self.tw_co.setCellWidget(self.tw_co.rowCount() - 1, 4, btn_update_customer)
 
     def addReferenceTextEdit(self):
@@ -266,13 +270,12 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         te_coordonnees = self.addCOInfoTextEdit()
         cbb_co = self.addCOComboBox(te_coordonnees)
         self.addIdCoField()
-        self.addCustomerComboBox(cbb_co)
+        self.addCustomerComboBox(cbb_co) # give the CO combobox ref to the customer combobox to link the CO to the customer
         self.addIdCustomerField()
         self.addBtnCOUpdate()
         self.addBtnCustomerUpdate()
         self.addReferenceTextEdit()
         self.addCompanyComboBox()
-
 
     def btn_delete_row(self):
         self.tw_co.removeRow(self.tw_co.currentRow())
