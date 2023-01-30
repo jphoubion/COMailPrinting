@@ -43,6 +43,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.coComboBoxList = []
         self.customerComboBoxList = []
 
+        self.coList = []
+
         #################################################"
         # STARTS SQL CONNECTION
         #################################################"

@@ -18,7 +18,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QComboBox, QGridLayout, QHBoxLayout,
     QHeaderView, QLabel, QLineEdit, QMainWindow,
     QPushButton, QSizePolicy, QSpacerItem, QStatusBar,
-    QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget)
+    QTableView, QVBoxLayout, QWidget)
 
 class Ui_CustomerManagementWindow(object):
     def setupUi(self, CustomerManagementWindow):
@@ -121,22 +121,10 @@ class Ui_CustomerManagementWindow(object):
 
         self.gridLayout.addLayout(self.verticalLayout, 1, 0, 1, 1)
 
-        self.tw_customers = QTableWidget(self.layoutWidget)
-        if (self.tw_customers.columnCount() < 5):
-            self.tw_customers.setColumnCount(5)
-        __qtablewidgetitem = QTableWidgetItem()
-        self.tw_customers.setHorizontalHeaderItem(0, __qtablewidgetitem)
-        __qtablewidgetitem1 = QTableWidgetItem()
-        self.tw_customers.setHorizontalHeaderItem(1, __qtablewidgetitem1)
-        __qtablewidgetitem2 = QTableWidgetItem()
-        self.tw_customers.setHorizontalHeaderItem(2, __qtablewidgetitem2)
-        __qtablewidgetitem3 = QTableWidgetItem()
-        self.tw_customers.setHorizontalHeaderItem(3, __qtablewidgetitem3)
-        __qtablewidgetitem4 = QTableWidgetItem()
-        self.tw_customers.setHorizontalHeaderItem(4, __qtablewidgetitem4)
-        self.tw_customers.setObjectName(u"tw_customers")
+        self.tv_customers = QTableView(self.layoutWidget)
+        self.tv_customers.setObjectName(u"tv_customers")
 
-        self.gridLayout.addWidget(self.tw_customers, 0, 0, 1, 1)
+        self.gridLayout.addWidget(self.tv_customers, 0, 0, 1, 1)
 
         CustomerManagementWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QStatusBar(CustomerManagementWindow)
@@ -157,15 +145,5 @@ class Ui_CustomerManagementWindow(object):
         self.btn_add.setText(QCoreApplication.translate("CustomerManagementWindow", u"Ajouter", None))
         self.btn_delete.setText(QCoreApplication.translate("CustomerManagementWindow", u"Supprimer", None))
         self.btn_quit.setText(QCoreApplication.translate("CustomerManagementWindow", u"Quitter", None))
-        ___qtablewidgetitem = self.tw_customers.horizontalHeaderItem(0)
-        ___qtablewidgetitem.setText(QCoreApplication.translate("CustomerManagementWindow", u"id", None));
-        ___qtablewidgetitem1 = self.tw_customers.horizontalHeaderItem(1)
-        ___qtablewidgetitem1.setText(QCoreApplication.translate("CustomerManagementWindow", u"Code client", None));
-        ___qtablewidgetitem2 = self.tw_customers.horizontalHeaderItem(2)
-        ___qtablewidgetitem2.setText(QCoreApplication.translate("CustomerManagementWindow", u"Nom", None));
-        ___qtablewidgetitem3 = self.tw_customers.horizontalHeaderItem(3)
-        ___qtablewidgetitem3.setText(QCoreApplication.translate("CustomerManagementWindow", u"C/O", None));
-        ___qtablewidgetitem4 = self.tw_customers.horizontalHeaderItem(4)
-        ___qtablewidgetitem4.setText(QCoreApplication.translate("CustomerManagementWindow", u"idCo", None));
     # retranslateUi
 

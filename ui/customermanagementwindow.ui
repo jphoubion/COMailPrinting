@@ -151,33 +151,7 @@
       </layout>
      </item>
      <item row="0" column="0">
-      <widget class="QTableWidget" name="tw_customers">
-       <column>
-        <property name="text">
-         <string>id</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>Code client</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>Nom</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>C/O</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>idCo</string>
-        </property>
-       </column>
-      </widget>
+      <widget class="QTableView" name="tv_customers"/>
      </item>
     </layout>
    </widget>
