@@ -61,7 +61,7 @@ class CustomerManagementWindow(QtWidgets.QMainWindow, Ui_CustomerManagementWindo
 
     def setupConnection(self):
         self.btn_new.clicked.connect(self.newCustomer)
-        self.btn_add.clicked.connect(self.modifiyCustomer)
+        self.btn_add.clicked.connect(self.addCustomer)
         self.btn_delete.clicked.connect(self.deleteCustomer)
         self.btn_quit.clicked.connect(self.quit)
 
@@ -73,10 +73,14 @@ class CustomerManagementWindow(QtWidgets.QMainWindow, Ui_CustomerManagementWindo
 
 
     def addCustomer(self):
-        pass
-
-    def modifiyCustomer(self):
-        pass
+        req = f"""INSERT INTO customers (customer_code, customer_name, co_id) 
+                    VALUES ('{self.le_code.text()}','{self.le_name.text()}',{self.coId})"""
+        print(req)
+        query = QSqlQuery()
+        if query.exec(req):
+            print("ok !")
+        else:
+            print("KO !")
 
     def deleteCustomer(self):
         pass
@@ -85,7 +89,8 @@ class CustomerManagementWindow(QtWidgets.QMainWindow, Ui_CustomerManagementWindo
         req = f"select id from co where co_name='{test}'"
         query = QSqlQuery(req)
         query.first()
-        self.coId = query.value('id')
+        self.coId = query.value(0)
+        print(req, query.value(0))
 
     def quit(self):
         self.close()
