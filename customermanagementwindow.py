@@ -73,12 +73,13 @@ class CustomerManagementWindow(QtWidgets.QMainWindow, Ui_CustomerManagementWindo
         print(req)
         query = QSqlQuery()
         if query.exec(req):
-            print("ok !")
+            QMessageBox.information(self, "COMailPrinting - Ajout d'un client", "Client ajouté avec succès !",
+                                    QMessageBox.StandardButton.Ok)
         else:
-            print("KO !")
+            QMessageBox.warning(self, "COMailPrinting - Ajout d'un client",
+                                f"Erreur lors de l'ajout !\n\nErreur retournée :\n{query.lastError().databaseText()}")
 
         self.tv_customers.setModel(self.model)
-        # self.tv_customers.selectRow()
         self.le_name.setText('')
         self.le_code.setText('')
 
