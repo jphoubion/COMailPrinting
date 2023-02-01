@@ -4,7 +4,7 @@ from PySide6 import QtWidgets, QtCore
 from PySide6.QtCore import Qt
 from PySide6.QtSql import QSqlTableModel, QSqlDatabase, QSqlRelationalTableModel, QSqlRelation, QSqlRelationalDelegate, \
     QSqlQuery
-from PySide6.QtWidgets import QMainWindow, QLabel, QApplication, QMessageBox, QTableView
+from PySide6.QtWidgets import QMainWindow, QLabel, QApplication, QMessageBox, QTableView, QDialog
 
 import sqlmanagement
 from ui.customermanagementwindow import Ui_CustomerManagementWindow
@@ -84,13 +84,17 @@ class CustomerManagementWindow(QtWidgets.QMainWindow, Ui_CustomerManagementWindo
 
 
     def deleteCustomer(self):
-        model = self.model
-        indices = self.tv_customers.selectionModel().selectedRows()
-        print(indices)
-        for index in sorted(indices):
-            model.removeRow(index.row())
+        dialog = QMessageBox.question(self,"COMailPrinting - Confirmation de suppression",
+                                      "Confirmez-vous la suppression de cet ligne ?",
+                                      QMessageBox.StandardButton.Ok | QMessageBox.StandardButton.Cancel)
 
-        self.tv_customers.setModel(self.model)
+        if dialog == QMessageBox.StandardButton.Ok:
+            model = self.model
+            indices = self.tv_customers.selectionModel().selectedRows()
+            for index in sorted(indices):
+                model.removeRow(index.row())
+
+            self.tv_customers.setModel(self.model)
 
     def get_coId(self, pModel, pIndex, test):
         req = f"select id from co where co_name='{test}'"
