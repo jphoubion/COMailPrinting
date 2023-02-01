@@ -42,6 +42,7 @@ class CustomerManagementWindow(QtWidgets.QMainWindow, Ui_CustomerManagementWindo
             self.model.setHeaderData(3, Qt.Horizontal, "C/O")
             self.model.select()
             self.tv_customers.setModel(self.model)
+            self.tv_customers.setSortingEnabled(True)
             self.tv_customers.hideColumn(0)
             self.tv_customers.setItemDelegate(QSqlRelationalDelegate())
             self.tv_customers.resizeColumnsToContents()
@@ -60,16 +61,10 @@ class CustomerManagementWindow(QtWidgets.QMainWindow, Ui_CustomerManagementWindo
 
 
     def setupConnection(self):
-        self.btn_new.clicked.connect(self.newCustomer)
+        # self.btn_new.clicked.connect(self.newCustomer)
         self.btn_add.clicked.connect(self.addCustomer)
         self.btn_delete.clicked.connect(self.deleteCustomer)
         self.btn_quit.clicked.connect(self.quit)
-
-    def newCustomer(self):
-        """cleaning the customers field to create a new one"""
-        # self.model.insertRow(2, QtCore.QModelIndex())
-        self.le_name.setText('')
-        self.le_code.setText('')
 
 
     def addCustomer(self):
@@ -83,6 +78,10 @@ class CustomerManagementWindow(QtWidgets.QMainWindow, Ui_CustomerManagementWindo
             print("KO !")
 
         self.tv_customers.setModel(self.model)
+        # self.tv_customers.selectRow()
+        self.le_name.setText('')
+        self.le_code.setText('')
+
 
     def deleteCustomer(self):
         model = self.model
