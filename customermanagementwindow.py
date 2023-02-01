@@ -85,7 +85,13 @@ class CustomerManagementWindow(QtWidgets.QMainWindow, Ui_CustomerManagementWindo
         self.tv_customers.setModel(self.model)
 
     def deleteCustomer(self):
-        pass
+        model = self.model
+        indices = self.tv_customers.selectionModel().selectedRows()
+        print(indices)
+        for index in sorted(indices):
+            model.removeRow(index.row())
+
+        self.tv_customers.setModel(self.model)
 
     def get_coId(self, pModel, pIndex, test):
         req = f"select id from co where co_name='{test}'"
