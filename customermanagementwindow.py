@@ -82,6 +82,8 @@ class CustomerManagementWindow(QtWidgets.QMainWindow, Ui_CustomerManagementWindo
         else:
             print("KO !")
 
+        self.tv_customers.setModel(self.model)
+
     def deleteCustomer(self):
         pass
 
