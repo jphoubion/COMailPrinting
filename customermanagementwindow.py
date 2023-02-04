@@ -26,8 +26,8 @@ class CustomerManagementWindow(QtWidgets.QMainWindow, Ui_CustomerManagementWindo
         if not con.open():
             QMessageBox.critical(
                 None,
-                "QTableView Example - Error!",
-                "Database Error: %s" % con.lastError().databaseText(),
+                "COMailPrinting - Erreur !",
+                "Erreur DB : %s" % con.lastError().databaseText(),
             )
         else:
             # Populates the table with CUSTOMERS
