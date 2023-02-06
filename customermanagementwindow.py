@@ -44,6 +44,7 @@ class CustomerManagementWindow(QtWidgets.QMainWindow, Ui_CustomerManagementWindo
             self.tv_customers.setModel(self.model)
             self.tv_customers.setSortingEnabled(True)
             self.tv_customers.hideColumn(0)
+            self.tv_customers.sortByColumn(1, QtCore.Qt.AscendingOrder)
             self.tv_customers.setItemDelegate(QSqlRelationalDelegate())
             self.tv_customers.resizeColumnsToContents()
 
