@@ -116,5 +116,6 @@ class CompanyManagementWindow(QtWidgets.QMainWindow, Ui_CompanyManagementWindow)
             self.parentWindow.cbb_company.clear()
             self.parentWindow.load_companies(self.db_connection)
             self.parentWindow.cbb_company.setEnabled(True)
-            # self.parentWindow.btn_add_row()
+            if self.parentWindow.tw_co.rowCount() == 0:
+                self.parentWindow.btn_add_row()
             self.close()

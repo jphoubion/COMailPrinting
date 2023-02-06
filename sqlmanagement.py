@@ -32,7 +32,9 @@ def drop_create_tables(conn, cursor):
 
     cursor.execute("CREATE TABLE 'co' ('id'	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, \
                                     'co_name' TEXT NOT NULL UNIQUE, \
-                                    'co_address'	TEXT NOT NULL)")
+                                    'co_address'	TEXT NOT NULL, \
+                                    'is_lawyer' INTEGER NOT NULL, \
+                                    'is_cpas' INTEGER NOT NULL)")
     conn.commit()
 
     cursor.execute("CREATE TABLE 'customers' ( \

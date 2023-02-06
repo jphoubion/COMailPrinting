@@ -54,12 +54,20 @@ class ImportFromXls:
         db_connection = conn
         if self.sheet is not None:
             for row in self.sheet.iter_rows(min_row=2):
-                req_co = "INSERT INTO co (co_name, co_address) VALUES "
+                req_co = "INSERT INTO co (co_name, co_address, is_lawyer, is_cpas) VALUES "
                 co_name = str(row[3].value).upper().replace("'","").replace("C/O ME ",'').\
                     replace("C/O ME. ",'').replace("C/O MAITRE ",'').replace('MAITRE ','').lstrip()
-                # print(co_name)
                 address = f"{row[5].value}\n{row[7].value}\n{row[8].value}".replace("'", ' ')
-                req_co += f"('{co_name.upper()}', '{address.upper()}'),"
+                co_code = ["C/O ME", "C/O ME.", "CO MAITRE", "MAITRE", "MAÎTRE"]
+                if any([code in str(row[3].value).upper() for code in co_code]):
+                    lawyer = 1
+                else:
+                    lawyer = 0
+                if "CPAS" in str(row[3].value).upper():
+                    cpas = 1
+                else:
+                    cpas = 0
+                req_co += f"('{co_name.upper()}', '{address.upper()}', '{lawyer}', '{cpas}'),"
                 try:
                     db_cursor.execute(req_co[:-1])
                     db_connection.commit()

@@ -71,7 +71,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 self.cbb_company.clear()
                 self.cbb_company.setEnabled(False)
                 # Empty the main table
-                self.empty_table()
+                # self.empty_table()
         else:
             ################################
             # Add the first row of the table
@@ -110,11 +110,13 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.open_company_management_window()
 
         # Update of all the combobox of the table
-        for cbb in self.customerComboBoxList:
-            self.loadCustomerToCompleter(cbb)
+        if len(self.customerComboBoxList) > 0:
+            for cbb in self.customerComboBoxList:
+                self.loadCustomerToCompleter(cbb)
 
-        for cbb in self.coComboBoxList:
-            self.loadCOToCompleter(cbb)
+        if len(self.coComboBoxList) > 0:
+            for cbb in self.coComboBoxList:
+                self.loadCOToCompleter(cbb)
 
     def load_companies(self, conn):
         req_companies = sqlmanagement.get_result(conn, "SELECT * FROM companies")
@@ -127,7 +129,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         result = QMessageBox.critical(self, "COMailPrinting - Vidange de la base de données",
                                             "Etes-vous certain de vouloir  vider la base donnée ?\n\n" \
                                             "Il faudra réimporter les clients depuis un fichier XLSX" \
-                                            " et recéer réencoder les sociétés émettrices.", \
+                                            " et recéer les sociétés émettrices.", \
                                             QMessageBox.StandardButton.Ok | QMessageBox.StandardButton.Cancel)
         if result == QMessageBox.StandardButton.Ok:
             res = sqlmanagement.drop_create_tables(conn, cursor)
@@ -137,7 +139,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 self.cbb_company.setEnabled(False)
                 # Empty the main table
                 self.empty_table()
-                QMessageBox.information(self, "COMailPrinting - Vidange de la base de données",
+                QMessageBox.information(self, "COMailPrinting - Vidage de la base de données",
                                             "Base de données éffacée !",\
                                             QMessageBox.StandardButton.Ok)
 
@@ -172,6 +174,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # Add combobox for C/O on each new line
         ###################################################################################
         combo_co = QComboBox()
+        combo_co.setAutoFillBackground(True)
         combo_co.setEditable(True)
         combo_co.setFixedWidth(200)
 
@@ -186,7 +189,10 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         return combo_co
 
     def loadCustomerToCompleter(self, combo_cust):
-        combo_cust.clear()
+
+        # if combo_cust.count() > 0:
+        #     print(combo_cust.count())
+        #     combo_cust.clear()
         customer_list = [' ']
         req_result = sqlmanagement.get_result(self.db_connection, "SELECT * FROM customers")
         for cust in req_result:
@@ -200,6 +206,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # Add combobox for CUSTOMERS on each new line
         ###################################################################################
         combo_cust = QComboBox()
+        combo_cust.setAutoFillBackground(True)
         combo_cust.setEditable(True)
         combo_cust.setFixedWidth(200)
 
@@ -247,6 +254,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # display the current default company
         ###################################################################################
         combo_company = QComboBox()
+        combo_company.setAutoFillBackground(True)
         combo_company.setFixedWidth(150)
         req_companies = sqlmanagement.get_result(self.db_connection, "SELECT * FROM companies")
         for company in req_companies:
@@ -294,12 +302,17 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 req_customer = f"SELECT customer_name FROM customers WHERE customer_code='{self.tw_co.cellWidget(row,0).currentText()}'"
                 client = sqlmanagement.get_result(self.db_connection,req_customer)[0][0]
                 co = f"{self.tw_co.cellWidget(row,1).currentText()}\n{self.tw_co.cellWidget(row,2).toPlainText()}"
+                # print(co)
+                req_lawyer = f"SELECT is_lawyer FROM CO WHERE co_name = '{self.tw_co.cellWidget(row,1).currentText()}'"
+                # print(req_lawyer)
+                is_lawyer = sqlmanagement.get_result(self.db_connection,req_lawyer)
+                # print(f"is lowyaer = {is_lawyer}")
                 reference = self.tw_co.cellWidget(row,5).text()
                 company = self.tw_co.cellWidget(row,6).currentText()
                 req_company = f"SELECT company_type FROM companies WHERE company_name = '{company}'"
                 company_type = sqlmanagement.get_result(self.db_connection,req_company)[0][0]
                 # PDFFile_name = self.tw_co.cellWidget(row,0).currentText()
-                p.create_pages(co, client, reference, company, company_type)
+                p.create_pages(co, is_lawyer[0][0], client, reference, company, company_type)
                 ok_for_print = True
             else:
                 ok_for_print = False
@@ -330,6 +343,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 co_name = sqlmanagement.get_result(self.db_connection, f"SELECT co_name FROM co WHERE id = {co_id_from_customer[0][0]}")
                 # print(co_name)
                 combo_co.setCurrentText(co_name[0][0])
+                if "CPAS" in co_name[0][0]:
+                    combo_co.setStyleSheet("background-color: #00AAFF")
             else:
                 combo_co.setCurrentText('')
         else:

@@ -8,6 +8,7 @@ from PySide6.QtWidgets import QMainWindow, QLabel, QTextEdit, QApplication, QMes
 import sqlmanagement
 from ui.comanagementwindow import Ui_CoManagementWindow
 
+
 class CoManagementWindow(QtWidgets.QMainWindow, Ui_CoManagementWindow):
 
     def __init__(self, conn, parent=None):
