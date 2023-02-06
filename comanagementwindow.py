@@ -39,6 +39,8 @@ class CoManagementWindow(QtWidgets.QMainWindow, Ui_CoManagementWindow):
             self.model.setHeaderData(0, Qt.Horizontal, "id")
             self.model.setHeaderData(1, Qt.Horizontal, "Nom")
             self.model.setHeaderData(2, Qt.Horizontal, "Adresse")
+            self.model.setHeaderData(3, Qt.Horizontal, "Avocat")
+            self.model.setHeaderData(4, Qt.Horizontal, "CPAS")
             self.model.select()
             self.tv_co.setModel(self.model)
             self.tv_co.setSortingEnabled(True)
