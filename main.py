@@ -328,7 +328,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             co_id_from_customer = sqlmanagement.get_result(self.db_connection, f"SELECT co_id FROM customers WHERE customer_code = '{customer}'")
             if len(co_id_from_customer) > 0:
                 co_name = sqlmanagement.get_result(self.db_connection, f"SELECT co_name FROM co WHERE id = {co_id_from_customer[0][0]}")
-                print(co_name)
+                # print(co_name)
                 combo_co.setCurrentText(co_name[0][0])
             else:
                 combo_co.setCurrentText('')
