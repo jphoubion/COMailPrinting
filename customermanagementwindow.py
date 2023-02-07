@@ -106,5 +106,10 @@ class CustomerManagementWindow(QtWidgets.QMainWindow, Ui_CustomerManagementWindo
         print(req, query.value(0))
 
     def quit(self):
+        # Update of all the combobox of the table
+        if len(self.parentWindow.customerComboBoxList) > 0:
+            for cbb in self.parentWindow.customerComboBoxList:
+                self.parentWindow.loadCustomerToCompleter(cbb)
+
         self.close()
 

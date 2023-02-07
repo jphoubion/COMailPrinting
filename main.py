@@ -46,6 +46,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # list used to refresh combobox content easier
         self.coComboBoxList = []
         self.customerComboBoxList = []
+        self.companyComboBoxList = []
 
         self.coList = []
 
@@ -268,6 +269,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         self.tw_co.resizeColumnsToContents()
         self.tw_co.resizeRowsToContents()
+
+        self.companyComboBoxList.append(combo_company)
         # self.tw_co.setColumnWidth(3, 290)
 
     def addIdCustomerField(self):
