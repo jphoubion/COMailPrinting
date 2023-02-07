@@ -3,6 +3,9 @@ import sys
 
 import PySide6
 from PySide6.QtCore import Qt
+from PySide6.QtPdf import QPdfDocument
+from PySide6.QtPdfWidgets import QPdfView
+from PySide6.QtPrintSupport import QPrinter, QPrintDialog, QPrintPreviewDialog
 
 if sys.platform == "windows":
     sys.argv += ['-platform', 'windows:darkmode=2']
@@ -17,6 +20,7 @@ from PySide6.QtWidgets import QDialog, QFileDialog, QLabel, QMessageBox, QComboB
 from reportlab.pdfgen.canvas import Canvas
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import cm
+
 import sqlite3
 from datetime import datetime
 

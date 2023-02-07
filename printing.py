@@ -1,15 +1,26 @@
+from PySide6 import QtPrintSupport, QtGui
 from reportlab.lib.units import cm
+from reportlab.platypus import Paragraph
 from datetime import datetime
+
+from PySide6.QtPrintSupport import QPrinter, QPrintDialog, QPrintPreviewDialog
 
 class Printing:
     def __init__(self):
         self.PDFFile = None
 
     def create_pages(self, co, is_lawyer, client, reference, company, company_type):
+        # paragraphe = Paragraph("""
+        # Bonjour,
+        # Je m'appelle JP HOUBION,         Bien à vous.
+        # """)
+        # paragraphe.wrapOn(self.PDFFile, 100, 100)
+        # paragraphe.drawOn(self.PDFFile, 100,100)
         now = datetime.now()
         address = co.split('\n')
         print(address)
         self.PDFFile.setFont("Helvetica", 10)
+        self.PDFFile
         self.PDFFile.drawRightString(19 * cm, 27 * cm, f'Anhée, le {now.strftime("%d/%m/%Y")}')
         self.PDFFile.drawString(12 * cm, 25.5 * cm, f"{client}")
         if "CPAS" in address[0]:
@@ -30,21 +41,27 @@ class Printing:
         civilite = ""
         print(address[0])
         if any(civilite in address[0] for civilite in civilite_femme):
-            civilite = "chère Madame,"
+            civilite = "Chère Madame,"
         elif any(civilite in address[0] for civilite in civilite_homme):
-            civilite = "cher Monsieur,"
+            civilite = "Cher Monsieur,"
         elif is_lawyer == 1:
-            civilite = "cher Maître,"
+            civilite = "Cher Maître,"
         else:
-            civilite = "chère Madame, Monsieur,"
-        self.PDFFile.drawString(2 * cm, 17 * cm, civilite)
-        self.PDFFile.drawString(2 * cm, 16 * cm, f"Nous nous permettons de vous adresser en annexe la (les) facture(s) concernant votre administré(e).")
-        self.PDFFile.drawString(2 * cm, 15.5 * cm, f"Nous vous remercions pour votre intervention dans ce dossier.")
-        self.PDFFile.drawString(2 * cm, 14 * cm, f"Nous restons à votre disposition via le 0493/112.112 ou via comptaclient@lcmobility.be pour toutes ")
-        self.PDFFile.drawString(2 * cm, 13.5 * cm, f"demandes complémentaires.")
-        self.PDFFile.drawString(2 * cm, 13 * cm, f"Nous vous prions d'agréer, {civilite} l'expression de nos sincères salutations.")
-        self.PDFFile.drawString(15 * cm, 4 * cm, company)
-        self.PDFFile.drawString(17.5 * cm, 4 * cm, company_type)
-        self.PDFFile.drawString(15 * cm, 3.5 * cm, "Le service comptabilité.")
-        self.PDFFile.showPage() # Close the page, the next mail will be on another page
+            civilite = "Chère Madame, Monsieur,"
 
+        main_text_bloc = Paragraph(f""" {civilite}<BR/><BR/>
+        Nous nous permettons de vous adresser en annexe la (les) facture(s) concernant votre administré(e).<BR/>
+        Nous vous remercions pour votre intervention dans ce dossier.<BR/><BR/>
+
+        Nous restons à votre disposition via le <B>0493/112.112</B> ou via <B>comptaclient@lcmobility.be</B> pour toutes demandes complémentaires.<BR/><BR/>      
+
+        Nous vous prions d'agréer, {civilite} l'expression de nos sincères salutations.<BR/>
+        """)
+        main_text_bloc.wrapOn(self.PDFFile, 500,500)
+        main_text_bloc.drawOn(self.PDFFile, 2 * cm, 14 * cm)
+
+        signature_bloc = Paragraph(f"{company} {company_type}<BR/>Le service comptabilité.")
+        signature_bloc.wrapOn(self.PDFFile, 200, 200)
+        signature_bloc.drawOn(self.PDFFile, 15 * cm, 4 * cm)
+
+        self.PDFFile.showPage() # Close the page, the next mail will be on another page
