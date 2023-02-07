@@ -15,7 +15,7 @@ class Printing:
         if "CPAS" in address[0]:
             self.PDFFile.drawString(12 * cm, 25 * cm, f"{address[0]}")
         elif is_lawyer == 1:
-            self.PDFFile.drawString(12 * cm,25 * cm, f"MAITRE {address[0]}")
+            self.PDFFile.drawString(12 * cm,25 * cm, f"C/O MAITRE {address[0]}")
         else:
             self.PDFFile.drawString(12 * cm, 25 * cm, f"{address[0]}")
         self.PDFFile.drawString(12 * cm, 24.5 * cm, address[1])
@@ -27,20 +27,22 @@ class Printing:
         self.PDFFile.drawString(2 * cm, 21 * cm, f"Référence : {reference}")
         civilite_femme = ['MME', 'MADAME']
         civilite_homme = ['MR', 'MONSIEUR']
+        civilite = ""
         print(address[0])
         if any(civilite in address[0] for civilite in civilite_femme):
-            self.PDFFile.drawString(2 * cm, 17 * cm, f"Madame,")
+            civilite = "chère Madame,"
         elif any(civilite in address[0] for civilite in civilite_homme):
-            self.PDFFile.drawString(2 * cm, 17 * cm, f"Monsieur,")
+            civilite = "cher Monsieur,"
         elif is_lawyer == 1:
-            self.PDFFile.drawString(2 * cm, 17 * cm, f"Maître,")
+            civilite = "cher Maître,"
         else:
-            self.PDFFile.drawString(2 * cm, 17 * cm, f"Madame, Monsieur,")
+            civilite = "chère Madame, Monsieur,"
+        self.PDFFile.drawString(2 * cm, 17 * cm, civilite)
         self.PDFFile.drawString(2 * cm, 16 * cm, f"Nous nous permettons de vous adresser en annexe la (les) facture(s) concernant votre administré(e).")
         self.PDFFile.drawString(2 * cm, 15.5 * cm, f"Nous vous remercions pour votre intervention dans ce dossier.")
         self.PDFFile.drawString(2 * cm, 14 * cm, f"Nous restons à votre disposition via le 0493/112.112 ou via comptaclient@lcmobility.be pour toutes ")
         self.PDFFile.drawString(2 * cm, 13.5 * cm, f"demandes complémentaires.")
-        self.PDFFile.drawString(2 * cm, 13 * cm, f"Nous vous prions d'agréer, cher Maître, l'expression de nos sincères salutations.")
+        self.PDFFile.drawString(2 * cm, 13 * cm, f"Nous vous prions d'agréer, {civilite} l'expression de nos sincères salutations.")
         self.PDFFile.drawString(15 * cm, 4 * cm, company)
         self.PDFFile.drawString(17.5 * cm, 4 * cm, company_type)
         self.PDFFile.drawString(15 * cm, 3.5 * cm, "Le service comptabilité.")

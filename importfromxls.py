@@ -36,7 +36,7 @@ class ImportFromXls:
         if self.sheet is not None:
             for row in self.sheet.iter_rows(min_row=2):
                 co_name = str(row[3].value).upper().replace("'","").replace("C/O ME ",'').replace("C/O ME. ",'').\
-                    replace("C/O MAITRE ",'').replace('MAITRE ','').lstrip()
+                    replace("C/O MAITRE ",'').replace('MAITRE ','').replace('MAÎTRE ','').lstrip()
                 co_id = sqlmanagement.get_result(db_connection, f"SELECT * FROM co WHERE co_name='{co_name}'")
                 # remove weird characters from the name
                 customer = self.clean_string(row[2].value)
@@ -56,7 +56,7 @@ class ImportFromXls:
             for row in self.sheet.iter_rows(min_row=2):
                 req_co = "INSERT INTO co (co_name, co_address, is_lawyer, is_cpas) VALUES "
                 co_name = str(row[3].value).upper().replace("'","").replace("C/O ME ",'').\
-                    replace("C/O ME. ",'').replace("C/O MAITRE ",'').replace('MAITRE ','').lstrip()
+                    replace("C/O ME. ",'').replace("C/O MAITRE ",'').replace('MAITRE ','').replace('MAÎTRE ','').lstrip()
                 address = f"{row[5].value}\n{row[7].value}\n{row[8].value}".replace("'", ' ')
                 co_code = ["C/O ME", "C/O ME.", "CO MAITRE", "MAITRE", "MAÎTRE"]
                 if any([code in str(row[3].value).upper() for code in co_code]):
