@@ -7,7 +7,7 @@ import sqlite3
 import re
 
 import sqlmanagement
-
+# TODO: Corriger l'import des personnes avec noms composés, plus de tiret etc
 
 class ImportFromXls:
 
