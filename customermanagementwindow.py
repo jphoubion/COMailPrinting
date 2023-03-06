@@ -4,7 +4,8 @@ from PySide6 import QtWidgets, QtCore
 from PySide6.QtCore import Qt
 from PySide6.QtSql import QSqlTableModel, QSqlDatabase, QSqlRelationalTableModel, QSqlRelation, QSqlRelationalDelegate, \
     QSqlQuery
-from PySide6.QtWidgets import QMainWindow, QLabel, QApplication, QMessageBox, QTableView, QDialog
+from PySide6.QtWidgets import QMainWindow, QLabel, QApplication, QMessageBox, QTableView, QDialog, QDataWidgetMapper, \
+    QComboBox
 
 import sqlmanagement
 from ui.customermanagementwindow import Ui_CustomerManagementWindow
@@ -33,20 +34,32 @@ class CustomerManagementWindow(QtWidgets.QMainWindow, Ui_CustomerManagementWindo
             # Populates the table with CUSTOMERS
             self.model = QSqlRelationalTableModel(self)
             self.model.setTable("customers")
-            self.tv_customers.setAlternatingRowColors(True)
             self.model.setRelation(3, QSqlRelation("co", "id", "co_name"))
+            self.tv_customers.setAlternatingRowColors(True)
             self.model.setEditStrategy(QSqlTableModel.OnFieldChange)
             self.model.setHeaderData(0, Qt.Horizontal, "id")
             self.model.setHeaderData(1, Qt.Horizontal, "Code client")
             self.model.setHeaderData(2, Qt.Horizontal, "Nom")
             self.model.setHeaderData(3, Qt.Horizontal, "C/O")
             self.model.select()
+
+            self.mapper = QDataWidgetMapper()
+
             self.tv_customers.setModel(self.model)
             self.tv_customers.setSortingEnabled(True)
             self.tv_customers.hideColumn(0)
             self.tv_customers.sortByColumn(1, QtCore.Qt.AscendingOrder)
             self.tv_customers.setItemDelegate(QSqlRelationalDelegate())
             self.tv_customers.resizeColumnsToContents()
+            self.tv_customers.setSelectionBehavior(QTableView.SelectRows);
+            self.tv_customers.clicked.connect(lambda x: self.mapper.setCurrentModelIndex(self.tv_customers.currentIndex()))
+
+            self.mapper.setModel(self.model)
+            self.mapper.addMapping(self.le_code, 1)
+            self.mapper.addMapping(self.le_name, 2)
+            self.mapper.addMapping(self.cbb_co, 3)
+            self.mapper.setSubmitPolicy(QDataWidgetMapper.AutoSubmit)
+            self.mapper.toFirst()
 
             # Populates the combobox with C/O
             self.co_model = QSqlTableModel(self)
@@ -54,11 +67,11 @@ class CustomerManagementWindow(QtWidgets.QMainWindow, Ui_CustomerManagementWindo
             self.co_model.setSort(1, QtCore.Qt.AscendingOrder)
             column = self.co_model.fieldIndex("co_name")  # gives the index of the "co_name" field in the table
             self.co_model.select()
+            self.cbb_co.setEditable(True)
             self.cbb_co.setModel(self.co_model)
             self.cbb_co.setModelColumn(column)  # set the table column to display in the combobox
+            # get the co_id to link to the new customer
             self.cbb_co.currentTextChanged.connect(partial(self.get_coId, self.cbb_co.model(), self.cbb_co.currentText()))
-
-
 
 
     def setupConnection(self):
