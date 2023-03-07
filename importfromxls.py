@@ -76,7 +76,7 @@ class ImportFromXls:
                     # print(req_co)
 
     def clean_string(self, string):
-        # remove weird characters from the name
+        # remove weird characters from the name but keeps hyphen
         pattern = re.compile('[\W_0-9]\-+')
         dirty_name = str(string).split()
         cleaned_list = [pattern.sub('', word) for word in dirty_name]
