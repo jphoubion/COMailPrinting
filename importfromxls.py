@@ -77,7 +77,7 @@ class ImportFromXls:
 
     def clean_string(self, string):
         # remove weird characters from the name
-        pattern = re.compile('[\W_0-9]+')
+        pattern = re.compile('[\W_0-9]\-+')
         dirty_name = str(string).split()
         cleaned_list = [pattern.sub('', word) for word in dirty_name]
         return ' '.join(cleaned_list).upper()

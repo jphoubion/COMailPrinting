@@ -35,7 +35,7 @@ class CustomerManagementWindow(QtWidgets.QMainWindow, Ui_CustomerManagementWindo
             self.model = QSqlRelationalTableModel(self)
             self.model.setTable("customers")
             self.model.setRelation(3, QSqlRelation("co", "id", "co_name"))
-            self.tv_customers.setAlternatingRowColors(True)
+            # self.tv_customers.setAlternatingRowColors(True)
             self.model.setEditStrategy(QSqlTableModel.OnFieldChange)
             self.model.setHeaderData(0, Qt.Horizontal, "id")
             self.model.setHeaderData(1, Qt.Horizontal, "Code client")

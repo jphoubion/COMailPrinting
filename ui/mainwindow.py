@@ -27,7 +27,8 @@ class Ui_MainWindow(object):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(1280, 720)
-        MainWindow.setStyleSheet(u"")
+        MainWindow.setStyleSheet(u"background-color: rgb(46, 52, 54);\n"
+"color: rgb(238, 238, 236);")
         self.actionGestion = QAction(MainWindow)
         self.actionGestion.setObjectName(u"actionGestion")
         self.actionQuitter = QAction(MainWindow)
@@ -101,6 +102,9 @@ class Ui_MainWindow(object):
         __qtablewidgetitem6 = QTableWidgetItem()
         self.tw_co.setHorizontalHeaderItem(6, __qtablewidgetitem6)
         self.tw_co.setObjectName(u"tw_co")
+        self.tw_co.setStyleSheet(u"background-color: rgb(85, 87, 83);\n"
+"alternate-background-color: rgb(136, 138, 133);\n"
+"color: rgb(238, 238, 236);")
 
         self.horizontalLayout_2.addWidget(self.tw_co)
 

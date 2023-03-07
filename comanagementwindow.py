@@ -33,8 +33,7 @@ class CoManagementWindow(QtWidgets.QMainWindow, Ui_CoManagementWindow):
             # Populates the table with CUSTOMERS
             self.model = QSqlRelationalTableModel(self)
             self.model.setTable("co")
-            self.tv_co.setAlternatingRowColors(True)
-            # self.model.setRelation(3, QSqlRelation("co", "id", "co_name"))
+            # self.tv_co.setAlternatingRowColors(True)
             self.model.setEditStrategy(QSqlTableModel.OnFieldChange)
             self.model.setHeaderData(0, Qt.Horizontal, "id")
             self.model.setHeaderData(1, Qt.Horizontal, "Nom")
@@ -46,7 +45,6 @@ class CoManagementWindow(QtWidgets.QMainWindow, Ui_CoManagementWindow):
             self.tv_co.setSortingEnabled(True)
             self.tv_co.hideColumn(0)
             self.tv_co.sortByColumn(1, QtCore.Qt.AscendingOrder)
-            # self.tv_co.setItemDelegate(QSqlRelationalDelegate())
             self.tv_co.resizeColumnsToContents()
             self.tv_co.resizeRowsToContents()
 
