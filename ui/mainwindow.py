@@ -49,6 +49,8 @@ class Ui_MainWindow(object):
         self.actionCustomerManagement.setObjectName(u"actionCustomerManagement")
         self.actionCoManagement = QAction(MainWindow)
         self.actionCoManagement.setObjectName(u"actionCoManagement")
+        self.actionDropCompanyTable = QAction(MainWindow)
+        self.actionDropCompanyTable.setObjectName(u"actionDropCompanyTable")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.gridLayout = QGridLayout(self.centralwidget)
@@ -169,6 +171,7 @@ class Ui_MainWindow(object):
         self.menuImport.addAction(self.actionCoManagement)
         self.menuImport.addSeparator()
         self.menuImport.addAction(self.actionDropTables)
+        self.menuImport.addAction(self.actionDropCompanyTable)
 
         self.retranslateUi(MainWindow)
 
@@ -187,6 +190,7 @@ class Ui_MainWindow(object):
         self.actionDropCreateCompanies.setText(QCoreApplication.translate("MainWindow", u"Supprimer et recr\u00e9er la table des soci\u00e9t\u00e9s", None))
         self.actionCustomerManagement.setText(QCoreApplication.translate("MainWindow", u"Gestion des clients", None))
         self.actionCoManagement.setText(QCoreApplication.translate("MainWindow", u"Gestion des C/O", None))
+        self.actionDropCompanyTable.setText(QCoreApplication.translate("MainWindow", u"Supprimer et recr\u00e9er la table des soci\u00e9t\u00e9s", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Soci\u00e9t\u00e9 \u00e9metrice du courrier par d\u00e9faut:", None))
         ___qtablewidgetitem = self.tw_co.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Client", None));

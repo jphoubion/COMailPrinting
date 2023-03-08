@@ -29,7 +29,6 @@ import sqlmanagement
 from importfromxls import ImportFromXls
 
 from ui.mainwindow import Ui_MainWindow
-# from ui.companymanagementwindow import Ui_CompanyManagementWindow
 
 from companymanagementwindow import CompanyManagementWindow
 from comanagementwindow import CoManagementWindow
@@ -97,6 +96,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.actionCoManagement.triggered.connect(self.open_co_management_window)
         self.actionImport_customers.triggered.connect(partial(self.import_data, self.db_connection, self.cursor))
         self.actionDropTables.triggered.connect(partial(self.drop_create_tables, self.db_connection, self.cursor))
+        self.actionDropCompanyTable.triggered.connect(partial(self.drop_company_table,self.db_connection, self.cursor))
 
 
         # Connect BUTTONS to methods
@@ -115,13 +115,24 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.open_company_management_window()
 
         # Update of all the combobox of the table
-        if len(self.customerComboBoxList) > 0:
-            for cbb in self.customerComboBoxList:
-                self.loadCustomerToCompleter(cbb)
+        if self.tw_co.rowCount() > 0:
+            print("refresh des combos")
+            print(len(self.customerComboBoxList))
+            if len(self.customerComboBoxList) > 0:
+                for cbb in self.customerComboBoxList:
+                    try:
+                        self.loadCustomerToCompleter(cbb)
+                    except:
+                        print("COMBOBOX deleted - import")
 
-        if len(self.coComboBoxList) > 0:
-            for cbb in self.coComboBoxList:
-                self.loadCOToCompleter(cbb)
+            if len(self.coComboBoxList) > 0:
+                for cbb in self.coComboBoxList:
+                    try:
+                        self.loadCOToCompleter(cbb)
+                    except:
+                        print("COMBOBOX C/O deleted - import")
+        else:
+            print("pas de refresh des combo")
 
     def load_companies(self, conn):
         req_companies = sqlmanagement.get_result(conn, "SELECT * FROM companies")
@@ -139,19 +150,33 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         if result == QMessageBox.StandardButton.Ok:
             res = sqlmanagement.drop_create_tables(conn, cursor)
             if res is None:
-                # Empty the COMPANIES combobox and disables it
-                self.cbb_company.clear()
-                self.cbb_company.setEnabled(False)
                 # Empty the main table
                 self.empty_table()
-                QMessageBox.information(self, "COMailPrinting - Vidage de la base de données",
+                self.customerComboBoxList.clear()
+                self.coComboBoxList.clear()
+                QMessageBox.information(self, "COMailPrinting - Vidange de la base de données",
                                             "Base de données éffacée !",\
                                             QMessageBox.StandardButton.Ok)
 
+    def drop_company_table(self, conn, cursor):
+        result = QMessageBox.critical(self, "COMailPrinting - Vidange de la table des sociétés",
+                                      "Etes-vous certain de vouloir  vider la table des sociétés ?", \
+                                      QMessageBox.StandardButton.Ok | QMessageBox.StandardButton.Cancel)
+        if result == QMessageBox.StandardButton.Ok:
+            res = sqlmanagement.drop_create_company_table(conn, cursor)
+            if res is None:
+                # Empty the COMPANIES combobox and disables it
+                self.cbb_company.clear()
+                self.cbb_company.setEnabled(False)
+                QMessageBox.information(self, "COMailPrinting - Vidange de la base table des sociétés",
+                                        "Table éffacée !", \
+                                        QMessageBox.StandardButton.Ok)
     def empty_table(self):
         self.tw_co.selectRow(0)
         for row in range(0, self.tw_co.rowCount()):
             self.tw_co.removeRow(self.tw_co.currentRow())
+        self.customerComboBoxList.clear()
+        self.coComboBoxList.clear()
 
     def addCOInfoTextEdit(self):
         ###################################################################################
@@ -174,6 +199,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         co_completer = QCompleter(co_list)
         co_completer.setCaseSensitivity(Qt.CaseInsensitive)
         combo_co.setCompleter(co_completer)
+
     def addCOComboBox(self, te_coordonnees):
         ###################################################################################
         # Add combobox for C/O on each new line
@@ -194,7 +220,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         return combo_co
 
     def loadCustomerToCompleter(self, combo_cust):
-
         # if combo_cust.count() > 0:
         #     print(combo_cust.count())
         #     combo_cust.clear()
@@ -295,6 +320,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.addCompanyComboBox()
 
     def btn_delete_row(self):
+
         self.tw_co.removeRow(self.tw_co.currentRow())
 
     def btn_print(self):

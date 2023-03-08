@@ -39,9 +39,10 @@ class ImportFromXls:
                     replace("C/O MAITRE ",'').replace('MAITRE ','').replace('MAÎTRE ','').lstrip()
                 co_id = sqlmanagement.get_result(db_connection, f"SELECT * FROM co WHERE co_name='{co_name}'")
                 # remove weird characters from the name
-                customer = self.clean_string(row[2].value)
+                customer = str(row[2].value).replace("(", "").replace(")", "").replace("*","").replace("!","").replace("'", " ")
                 req_customers = "INSERT INTO customers (customer_code, customer_name, co_id) VALUES "
                 req_customers += f"('{row[0].value}', '{customer}', '{co_id[0][0]}')"
+                print(req_customers)
                 try:
                     db_cursor.execute(req_customers)
                     db_connection.commit()
@@ -77,7 +78,7 @@ class ImportFromXls:
 
     def clean_string(self, string):
         # remove weird characters from the name but keeps hyphen
-        pattern = re.compile('[\W_0-9]\-+')
-        dirty_name = str(string).split()
+        pattern = re.compile("[\W_0-9]+")
+        dirty_name = str(string).replace("'", " ").split()
         cleaned_list = [pattern.sub('', word) for word in dirty_name]
         return ' '.join(cleaned_list).upper()

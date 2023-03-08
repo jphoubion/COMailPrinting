@@ -214,6 +214,7 @@ color: rgb(238, 238, 236);</string>
     <addaction name="actionCoManagement"/>
     <addaction name="separator"/>
     <addaction name="actionDropTables"/>
+    <addaction name="actionDropCompanyTable"/>
    </widget>
    <addaction name="menufichier"/>
    <addaction name="menuImport"/>
@@ -266,6 +267,11 @@ color: rgb(238, 238, 236);</string>
   <action name="actionCoManagement">
    <property name="text">
     <string>Gestion des C/O</string>
+   </property>
+  </action>
+  <action name="actionDropCompanyTable">
+   <property name="text">
+    <string>Supprimer et recréer la table des sociétés</string>
    </property>
   </action>
  </widget>

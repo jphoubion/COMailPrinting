@@ -122,7 +122,11 @@ class CustomerManagementWindow(QtWidgets.QMainWindow, Ui_CustomerManagementWindo
         # Update of all the combobox of the table
         if len(self.parentWindow.customerComboBoxList) > 0:
             for cbb in self.parentWindow.customerComboBoxList:
-                self.parentWindow.loadCustomerToCompleter(cbb)
+                try:
+                    self.parentWindow.loadCustomerToCompleter(cbb)
+                except:
+                    print("COMBOBOX deleted")
+                    pass
 
         self.close()
 

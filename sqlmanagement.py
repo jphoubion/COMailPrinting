@@ -27,8 +27,7 @@ def drop_create_tables(conn, cursor):
     conn.commit()
     cursor.execute("DROP TABLE IF EXISTS customers")
     conn.commit()
-    cursor.execute("DROP TABLE IF EXISTS companies")
-    conn.commit()
+
 
     cursor.execute("CREATE TABLE 'co' ('id'	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, \
                                     'co_name' TEXT NOT NULL UNIQUE, \
@@ -45,12 +44,15 @@ def drop_create_tables(conn, cursor):
                     FOREIGN KEY('co_id') REFERENCES 'co'('id') ON DELETE RESTRICT );")
     conn.commit()
 
-    cursor.execute("CREATE TABLE 'companies' ( \
-                                'id'	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, \
-                                'company_name'	TEXT NOT NULL UNIQUE, \
-                                'company_type'	TEXT NOT NULL)")
+
+def drop_create_company_table(conn, cursor):
+    cursor.execute("DROP TABLE IF EXISTS companies")
     conn.commit()
 
-
+    cursor.execute("CREATE TABLE 'companies' ( \
+                                    'id'	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, \
+                                    'company_name'	TEXT NOT NULL UNIQUE, \
+                                    'company_type'	TEXT NOT NULL)")
+    conn.commit()
 
 
